@@ -52,7 +52,8 @@
 			{% endfor %}
 		</div>
 		<div class="informative-content">
-			{{ informative.content | safe }}
+			{{ informative.content | safe }}	
+			<a href="{{ informative.file.url }}" download="Dafonte Informativo">Download pdf</a>
 		</div>
 	</div>
 	<div class="informative-date col-3"> {% trans "Publicado em" %}: {{ informative.creation_date | date:"SHORT_DATE_FORMAT" }}</div>
