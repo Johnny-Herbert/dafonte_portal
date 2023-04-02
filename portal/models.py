@@ -326,6 +326,7 @@ class PublicationType(Model):
     # Tipos de Publicações e seus IDs
     PRESS = 1
     ARTICLE = 2
+    INFORMATIVE = 3
 
     name = CharField("Nome", max_length=50, default="")
 

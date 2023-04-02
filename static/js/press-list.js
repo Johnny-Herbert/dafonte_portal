@@ -55,6 +55,17 @@ $(document).ready(function() {
 					array.push(id);
 				}
 			});
+
+			$("div[id^=informative-]").each(function(){
+				var id = $(this).attr('id');
+				var display = $(this).css('display');
+				if (array.includes(id)) {
+					$(this).css('display', 'none');
+				}
+				else if (!array.includes(id) && display !== 'none'){
+					array.push(id);
+				}
+			});
 		}
 	}
 
