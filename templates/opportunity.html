@@ -1,0 +1,526 @@
+{% extends "base-with-header-content-bg.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+{% load opportunity_tags %}
+
+{% block header_bg_url %}{{ page.background_image }}{% endblock %}
+
+{% block extra_css %}
+    <style>
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			.header{display:block;}
+			.header .logo{padding-top:50px;}
+		}
+	</style>
+<link rel="stylesheet" href="{% static "stylesheets/opportunity.css" %}" />
+<link rel="stylesheet" href="{% static "stylesheets/datepicker.css" %}" />
+{% endblock %}
+
+{% block header_content %}
+{% endblock %}
+
+{% block content-bg %}
+<div class="opportunity-content">
+    {% if flash %}
+        {% if flash.status == 'success' %}
+            <div class="alert alert-success" role="alert">
+                {{ flash.message }}
+            </div>
+        {% elif flash.status == 'error' %}
+            <div class="alert alert-danger" role="alert">
+                {{ flash.message }}
+            </div>
+        {% endif %}
+    {% endif %}
+    {% if opportunity and opportunity.active %}
+        <div class="opportunity-info">
+            <h5>{% trans "Oportunidade" %}</h5>
+            <p>{{ opportunity.title }}</p>
+            <p>{{ opportunity.display_city }}</p>
+            <div class="description-opportunity">
+                <p>{{ opportunity.description_short | safe}}</p>
+                {{ opportunity.description | safe }}
+            </div>
+
+            <h5>{% trans "Requisitos" %}</h5>
+            <div class="requirements-opportunity">
+                {{ opportunity.requirements | safe}}
+            </div>
+        </div>
+    {% endif %}
+    {% if opportunity and not opportunity.active %}
+    <h3 class="not-available">{% trans "Esta vaga não está mais disponível. Porém você pode nos enviar seu currículo." %}</h3>
+    {% endif %}
+    <form class="opportunity-form"  action="{% opportuniy_form_url %}"  method="POST">
+        {% csrf_token %}
+        {% if opportunity and opportunity.active %}
+            <input name="opportunity-pk" type="hidden" value="{{ opportunity.pk }}" />
+        {% endif %}
+        <div class="form-personal form">
+            <h5>{% trans "Informe seus dados" %}</h5>
+            {% csrf_token %}
+            {%if application %}
+                <div class="form-group">
+                    <label class="">{% trans "Nome" %}</label>
+                    <input name="personal-name" class="form-control {% is_invalid application.errors 'name' %}" placeholder="{% trans "Seu nome" %}" value="{{application.cleaned_data.name}}"/>
+                    {% error_message application.errors 'name' %}
+                </div>
+                <div class="form-group">
+                    <label class="">{% trans "E-mail" %}</label>
+                    <input name="personal-email" class="form-control {% is_invalid application.errors 'email' %}" placeholder="{% trans "Informe seu e-mail" %}" value="{{application.cleaned_data.email}}"/>
+                    {% error_message application.errors 'email' %}
+                </div>
+                <div class="form-group">
+                    <label class="">{% trans "Telefone" %}</label>
+                    <input name="personal-phone" class="form-control {% is_invalid application.errors 'phone' %}" placeholder="{% trans "Informe seu número de telefone com DDD" %}" value="{{application.cleaned_data.phone}}"/>
+                    {% error_message application.errors 'phone' %}
+                </div>
+                <div class="form-group">
+                    <label class="">{% trans "Endereço" %}</label>
+                    <input name="personal-address" class="form-control {% is_invalid application.errors 'address' %}" placeholder="{% trans "Informe seu endereço" %}" value="{{application.cleaned_data.address}}"/>
+                    {% error_message application.errors 'address' %}
+                </div>
+                {% if not opportunity or not opportunity.active %}
+                    <div class="form-group">
+                        <label class="">{% trans "Cargo" %}</label>
+                        <select name="personal-role" class="form-control {% is_invalid application.errors 'role' %}" placeholder="{% trans "Cargo pretendido" %}" value="{{application.cleaned_data.role}}" id="personal-role-info">
+                            {% for role in role_choices %}
+                                {% if application.cleaned_data.role == role.0 %}
+                                    <option value="{{role.0}}" selected>{{ role.1 }}</option>
+                                {% else %}
+                                    <option value="{{role.0}}">{{ role.1 }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="">{% trans "Local" %}</label>
+                        <select name="personal-local" class="form-control {% is_invalid application.errors 'local' %}" placeholder="{% trans "Local pretendido" %}" value="{{application.cleaned_data.local}}">
+                            {% for local in local_choices %}
+                            <option value="{{local.0}}">{{ local.1 }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="intend_area-hidden">
+                        <label class="">{% trans "Área Pretendida" %}</label>
+                        <input name="personal-intend_area" class="form-control {% is_invalid application.errors 'intend_area' %}" placeholder="{% trans "Área Pretendida [Ex: Financeiro, Recepção.]" %}" value="{{application.cleaned_data.intend_area}}"/>
+                        {% error_message application.errors 'intend_area' %}
+                    </div>
+
+                    <div class="form-group"  id="practice-area-hidden">
+                        <label class="">{% trans "Área de Atuação" %}</label>
+                        <select name="personal-practice_areas" class="form-control {% is_invalid application.errors 'practice_areas' %}" placeholder="{% trans "Área de Atuação" %}" value="{{application.cleaned_data.practice_areas}}">
+                            {% for area in practice_areas %}
+                                {% if application.cleaned_data.practice_areas == area.pk and application.cleaned_data.role != 'SUPPORT' %}
+                                    <option value="{{area.pk}}" selected>{{ area.name }}</option>
+                                {% else %}
+                                    <option value="{{area.pk}}">{{ area.name }}</option>
+                                {% endif %}
+                            {% endfor %}
+                            {% if application.cleaned_data.role == 'SUPPORT' or not application.cleaned_data.practice_areas %}
+                                <option value="" selected>---------</option>
+                            {% elif application.cleaned_data.practice_areas %}
+                                <option value="">---------</option>
+                            {% endif %}
+                        </select>
+                        {% error_message application.errors 'practice_areas' %}
+                    </div>
+
+                    <div class="form-group" id="specialization-sector-hidden">
+                        <label class="">{% trans "Setor de Especialização" %}</label>
+                        <select name="personal-specialization_sectors" class="form-control {% is_invalid application.errors 'specialization_sectors' %}" placeholder="{% trans "Setor de Especialização" %}" value="{{application.cleaned_data.specialization_sectors}}">
+                            {% for sector in specialization_sectors %}
+                                {% if application.cleaned_data.specialization_sectors == area.pk and application.cleaned_data.role != 'SUPPORT' %}
+                                    <option value="{{sector.pk}}" selected>{{ sector.name }}</option>
+                                {% else %}
+                                    <option value="{{sector.pk}}">{{ sector.name }}</option>
+                                {% endif %}
+                            {% endfor %}
+                            {% if application.cleaned_data.role == 'SUPPORT' or not application.cleaned_data.specialization_sectors  %}
+                                <option value="" selected>---------</option>
+                            {% elif application.cleaned_data.specialization_sectors  %}
+                                <option value="">---------</option>
+                            {% endif %}
+                        </select>
+                    </div>
+                {% else %}
+                    <select name="personal-role" class="form-control {% is_invalid application.errors 'role' %}" placeholder="{% trans "Cargo pretendido" %}" value="{{opportunity.role}}" style="display: none"  id="personal-role-info">
+                        <option value="{{opportunity.role}}">{{opportunity.role}}</option>
+                    </select>
+                    <select name="personal-local" class="form-control {% is_invalid application.errors 'local' %}" placeholder="{% trans "Local pretendido" %}" value="{{opportunity.role}}" style="display: none">
+                        <option value="{{opportunity.city}}">{{opportunity.city}}</option>
+                    </select>
+                {% endif %}
+            {% else %}
+                <div class="form-group">
+                    <label class="">{% trans "Nome" %}</label>
+                    <input name="personal-name" class="form-control" placeholder="{% trans "Seu nome" %}" />
+                </div>
+                <div class="form-group">
+                    <label class="">{% trans "E-mail" %}</label>
+                    <input name="personal-email" class="form-control" placeholder="{% trans "Informe seu e-mail" %}" />
+                </div>
+                <div class="form-group">
+                    <label class="">{% trans "Telefone" %}</label>
+                    <input name="personal-phone" class="form-control" placeholder="{% trans "Informe seu número de telefone com DDD" %}" />
+                </div>
+                <div class="form-group">
+                    <label class="">{% trans "Endereço" %}</label>
+                    <input name="personal-address" class="form-control" placeholder="{% trans "Informe seu endereço" %}" />
+                </div>
+
+                {% if not opportunity or not opportunity.active%}
+                    <div class="form-group">
+                        <label class="">{% trans "Cargo" %}</label>
+                        <select name="personal-role" class="form-control" placeholder="{% trans "Cargo pretendido" %}"  id="personal-role-info">
+                            {% for role in role_choices %}
+                                <option value="{{role.0}}">{{ role.1 }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div style="display:none" class="form-group" id="intend_area-hidden">
+                        <label class="">{% trans "Área Pretendida" %}</label>
+                        <input name="personal-intend_area" class="form-control" placeholder="{% trans "Área Pretendida [Ex: Financeiro, Recepção.]" %}"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="">{% trans "Local" %}</label>
+                        <select name="personal-local" class="form-control" placeholder="{% trans "Local pretendido" %}">
+                            {% for local in local_choices %}
+                            <option value="{{local.0}}">{{ local.1 }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group"  id="practice-area-hidden">
+                        <label class="">{% trans "Área de Atuação" %}</label>
+                        <select name="personal-practice_areas" class="form-control" placeholder="{% trans "Área de Atuação" %}">
+                            {% for area in practice_areas %}
+                            <option value="{{area.pk}}">{{ area.name }}</option>
+                            {% endfor %}
+                            <option value="" selected>---------</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="specialization-sector-hidden">
+                        <label class="">{% trans "Setor de Especialização" %}</label>
+                        <select name="personal-specialization_sectors" class="form-control" placeholder="{% trans "Setor de Especialização" %}">
+                            {% for sector in specialization_sectors %}
+                            <option value="{{sector.pk}}">{{ sector.name }}</option>
+                            {% endfor %}
+                            <option value="" selected>---------</option>
+                        </select>
+                    </div>
+                {% else %}
+                    <select name="personal-role" class="form-control" placeholder="{% trans "Cargo pretendido" %}" style="display: none" id="personal-role-info">
+                        <option value="{{opportunity.role}}">{{opportunity.role}}</option>
+                    </select>
+                    <select name="personal-local" class="form-control" placeholder="{% trans "Local pretendido" %}" style="display: none">
+                        <option value="{{opportunity.city}}">{{opportunity.city}}</option>
+                    </select>
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="form-academic form">
+            <input type="hidden" name="academic-TOTAL_FORMS" value="{% forms_amount academics %}">
+            <input type="hidden" name="academic-INITIAL_FORMS" value="0">
+            <input type="hidden" name="academic-MAX_NUM_FORMS" value="">
+            <h5>{% trans "Formação Acadêmica" %}</h5>
+            <p>{% trans "Adicionar suas atividades em ordem cronológica" %} - {% trans "da mais recente para mais antiga" %}.</p>
+            <div class="form-academic-table">
+                <div class="academic-infos-list-container">
+                    {% if academics %}
+                        {% for academic in academics %}
+                            <div class="academic-infos form-infos-block" id="academic-{{forloop.counter0}}">
+                                <div class="form-group">
+                                    <label class="">{% trans "Curso" %}</label>
+                                    <input name="academic-{{forloop.counter0}}-course" class="form-control academic-course 
+                                    {% is_invalid academic.errors 'course' %}" placeholder="{% trans "Digite aqui seu curso" %}" value="{{academic.cleaned_data.course}}"/>
+                                    {% error_message academic.errors 'course' %}
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Instituição" %}</label>
+                                    <input name="academic-{{forloop.counter0}}-institution" class="form-control academic-institution {% is_invalid academic.errors 'institution' %}"
+                                        placeholder="{% trans "Digite aqui sua instituição de ensino" %}" value="{{academic.cleaned_data.institution}}"/>
+                                    {% error_message academic.errors 'institution' %}
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Ano de Conclusão" %}</label>
+                                    <input id="datepicker-year" type="text" name="academic-{{forloop.counter0}}-conclusion" class="form-control academic-conclusion {% is_invalid academic.errors 'conclusion' %}" placeholder="{% trans "Digite o seu ano de conclusão"%}" value="{{academic.cleaned_data.conclusion}}"/>
+                                    {% error_message academic.errors 'conclusion' %}
+                                </div>
+                            <div class="form-group">
+                                {% if academic.cleaned_data.incomplete_course %}
+                                    <input id="check-{{forloop.counter0}}-incomplete_course" onclick="checkCourseProgress(this)" type="checkbox" name="academic-{{forloop.counter0}}-incomplete_course" class="form-control academic-incomplete_course {% is_invalid academic.errors 'incomplete_course' %}" placeholder="{% trans "Incompleto" %}" value="{{academic.cleaned_data.incomplete_course}}" checked/>
+                                {% else %}
+                                    <input id="check-{{forloop.counter0}}-incomplete_course" onclick="checkCourseProgress(this)" type="checkbox" name="academic-{{forloop.counter0}}-incomplete_course" class="form-control academic-incomplete_course {% is_invalid academic.errors 'incomplete_course' %}" placeholder="{% trans "Incompleto" %}" value="{{academic.cleaned_data.incomplete_course}}"/>
+                                {% endif %}
+                                <label class="">{% trans "Incompleto" %}</label>
+                                {% error_message academic.errors 'incomplete_course' %}
+                            </div>
+                            {% if academic.cleaned_data.in_progress %}
+                                <div class="form-group form-group__progress">
+                                    <input type="checkbox" id="check-{{forloop.counter0}}" name="academic-{{forloop.counter0}}-in_progress" onclick="showInProgress(this)" class="form-control academic-in_progress {% is_invalid academic.errors 'in_progress' %}" placeholder="{% trans "Em progresso"%}" value="{{academic.cleaned_data.in_progress}}" checked/>
+                                    <label class="">{% trans "Em Andamento" %}</label>
+                                    {% error_message academic.errors 'in_progress' %}
+                                </div>
+
+                                <div id="show-{{forloop.counter0}}" class="show-progress">
+                                    <div class="form-group">
+                                        <label class="">{% trans "Período Atual" %}</label>
+                                        {{academic.cleaned_data.period}}
+                                        <select name="academic-{{forloop.counter0}}-period" class="form-control academic-period {% is_invalid academic.errors 'period' %}" placeholder="{% trans "Período Atual"%}" value="{{academic.cleaned_data.period}}">
+                                            {% for period in period_choices %}
+                                                {% if period.0 == academic.cleaned_data.period %}
+                                                    <option value="{{period.0}}" selected>{{period.1}}</option>
+                                                {% else %}
+                                                    <option value="{{period.0}}">{{period.1}}</option>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </select>
+                                        {% error_message academic.errors 'period' %}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="">{% trans "Turno do curso" %}</label>
+                                        <select name="academic-{{forloop.counter0}}-shift" class="form-control academic-shift {% is_invalid academic.errors 'shift' %}" placeholder="{% trans "Turno do curso"%}" value="{{academic.cleaned_data.shift}}">
+                                            {% for shift in shift_choices %}
+                                                {% if shift.0 == academic.cleaned_data.shift %}
+                                                    <option value="{{shift.0}}" selected>{{shift.1}}</option>
+                                                {% else %}
+                                                    <option value="{{shift.0}}">{{shift.1}}</option>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </select>
+                                        {% error_message academic.errors 'shift' %}
+                                    </div>
+                                </div>
+                            {% else %}
+                                <div class="form-group form-group__progress">
+                                    <input type="checkbox" id="check-{{forloop.counter0}}" name="academic-{{forloop.counter0}}-in_progress" onclick="showInProgress(this)" class="form-control academic-in_progress {% is_invalid academic.errors 'in_progress' %}" placeholder="{% trans "Em progresso"%}" value="{{academic.cleaned_data.in_progress}}"/>
+                                    <label class="">{% trans "Em Andamento" %}</label>
+                                    {% error_message academic.errors 'in_progress' %}
+                                </div>
+
+                                <div style="display: none" id="show-{{forloop.counter0}}" class="show-progress">
+                                    <div class="form-group">
+                                        <label class="">{% trans "Período Atual" %}</label>
+                                        <select name="academic-{{forloop.counter0}}-period" class="form-control academic-period {% is_invalid academic.errors 'period' %}" placeholder="{% trans "Período Atual"%}" value="{{academic.cleaned_data.period}}">
+                                            {% for period in period_choices %}
+                                                <option value="{{period.0}}">{{period.1}}</option>
+                                            {% endfor %}
+                                        </select>
+                                        {% error_message academic.errors 'period' %}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="">{% trans "Turno do curso" %}</label>
+                                        <select name="academic-{{forloop.counter0}}-shift" class="form-control academic-shift {% is_invalid academic.errors 'shift' %}" placeholder="{% trans "Turno do curso"%}" value="{{academic.cleaned_data.shift}}">
+                                            {% for shift in shift_choices %}
+                                                <option value="{{shift.0}}">{{shift.1}}</option>
+                                            {% endfor %}
+                                        </select>
+                                        {% error_message academic.errors 'shift' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="academic-infos form-infos-block" id="academic-0">
+                            <div class="form-group">
+                                <label class="">{% trans "Curso" %}</label>
+                                <input name="academic-0-course" class="form-control academic-course " placeholder="{% trans "Digite aqui seu curso" %}" />
+                            </div>
+                            <div class="form-group">
+                                <label class="">{% trans "Instituição" %}</label>
+                                <input name="academic-0-institution" class="form-control academic-institution"
+                                    placeholder="{% trans "Digite aqui sua instituição de ensino" %}" />
+                            </div>
+                            <div class="form-group">
+                                <label class="">{% trans "Ano de Conclusão" %}</label>
+                                <input id="datepicker-year" type="text" name="academic-0-conclusion" class="form-control academic-conclusion" placeholder="{% trans "Digite o seu ano de conclusão"%}" />
+                            </div>
+                            <div class="form-group">
+                                <input value="false" id="check-0-incomplete_course" onclick="checkCourseProgress(this)" type="checkbox" name="academic-0-incomplete_course" class="form-control academic-incomplete_course" placeholder="{% trans "Incompleto" %}" />
+                                <label class="">{% trans "Incompleto" %}</label>
+                            </div>
+                            <div class="form-group form-group__progress">
+                                <input value="false" id="check-0" type="checkbox" name="academic-0-in_progress" onclick="showInProgress(this)" class="form-control academic-in_progress" placeholder="{% trans "Em progresso"%}"/>
+                                <label class="">{% trans "Em Andamento" %}</label>
+                            </div>
+                            <div style="display: none" id="show-0" class="show-progress">
+                                <div class="form-group">
+                                    <label class="">{% trans "Período Atual" %}</label>
+                                    <select name="academic-0-period" class="form-control academic-period" placeholder="{% trans "Período Atual"%}">
+                                        {% for period in period_choices %}
+                                            <option value="{{period.0}}">{{period.1}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Turno do curso" %}</label>
+                                    <select name="academic-0-shift" class="form-control academic-shift" placeholder="{% trans "Turno do curso"%}">
+                                        {% for shift in shift_choices %}
+                                            <option value="{{shift.0}}">{{shift.1}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+                <a class="btn btn-pill btn-outline-primary btn-add-academic-formation">+ {% trans "Adicionar formação" %}</a>
+
+            </div>
+        </div>
+        <div class="form-professional form">
+            <input type="hidden" name="professional-TOTAL_FORMS" value="{% forms_amount professionals %}">
+            <input type="hidden" name="professional-INITIAL_FORMS" value="0">
+            <input type="hidden" name="professional-MAX_NUM_FORMS" value="">
+            <h5>{% trans "Experiência Profissional" %}</h5>
+            <p>{% trans "Adicionar suas experiências profissionais em ordem cronológica" %} - {% trans "da mais recente para mais antiga" %}.</p>
+            <div class="form-professional-table">
+                <div class="professional-infos-list-container">
+                    {% if professionals %}
+                        {% for professional in professionals %}
+                            <div id="professional-{{forloop.counter0}}" class="professional-infos form-infos-block">
+                                <div class="form-group">
+                                    <label class="">{% trans "Empresa" %}</label>
+                                    <input name="professional-{{forloop.counter0}}-enterprise" class="form-control professional-enterprise {% is_invalid professional.errors 'enterprise' %}" placeholder="{% trans "Digite aqui sua Empresa" %}" value="{{professional.cleaned_data.enterprise}}"/>
+                                    {% error_message professional.errors 'enterprise' %}
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Cargo" %}</label>
+                                    <input name="professional-{{forloop.counter0}}-function" class="form-control professional-function {% is_invalid professional.errors 'function' %}" placeholder="{% trans "Digite aqui seu cargo" %}" value="{{professional.cleaned_data.function}}"/>
+                                    {% error_message professional.errors 'function' %}
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Cargo Atual" %}</label>
+                                    {% if professional.cleaned_data.actual_function %}
+                                        <input id="check-{{forloop.counter0}}-actual_function" checked onclick="checkActualFunction(this)" type="checkbox" value="{{professional.cleaned_data.actual_function}}" name="professional-{{forloop.counter0}}-actual_function" class="form-control professional-actual_function {% is_invalid professional.errors 'actual_function' %}" placeholder="{% trans "Cargo atual" %}" />
+                                    {% else %}
+                                        <input id="check-{{forloop.counter0}}-actual_function" onclick="checkActualFunction(this)" type="checkbox" value="{{professional.cleaned_data.actual_function}}" name="professional-{{forloop.counter0}}-actual_function" class="form-control professional-actual_function {% is_invalid professional.errors 'actual_function' %}" placeholder="{% trans "Cargo atual" %}" />
+                                    {% endif %}
+                                    {% error_message professional.errors 'actual_function' %}
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Área de Atuação" %}</label>
+                                    <input name="professional-{{forloop.counter0}}-area" class="form-control professional-area {% is_invalid professional.errors 'area' %}" placeholder="{% trans "Digite aqui sua área de atuação" %}" value="{{professional.cleaned_data.area}}"/>
+                                    {% error_message professional.errors 'area' %}
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Data de Início" %}</label>
+                                    <input id="datepicker-{{forloop.counter0}}-date_begin" name="professional-{{forloop.counter0}}-date_begin" class="form-control professional-date_begin {% is_invalid professional.errors 'date_begin' %}" value="{{professional.cleaned_data.date_begin | date:'m/Y' }}"/>
+                                    {% error_message professional.errors 'date_begin' %}
+                                </div>
+                                <div class="form-group">
+                                    <label class="">{% trans "Data de Término" %}</label>
+                                    <input id="datepicker-{{forloop.counter0}}-date_finish" name="professional-{{forloop.counter0}}-date_finish" class="form-control professional-date_finish {% is_invalid professional.errors 'date_finish' %}" value="{{professional.cleaned_data.date_finish | date:'m/Y' }}"/>
+                                    {% error_message professional.errors 'date_finish' %}
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="professional-activities {% is_invalid professional.errors 'activties' %}" name="professional-{{forloop.counter0}}-activities" cols="76" rows="5"
+                                        placeholder="{% trans "Principais atividades desenvolvidas" %}" >{{professional.cleaned_data.activities}}</textarea>
+                                    {% error_message professional.errors 'activities' %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div id="professional-0" class="professional-infos form-infos-block">
+                            <div class="form-group">
+                                <label class="">{% trans "Empresa" %}</label>
+
+                                <input name="professional-0-enterprise" class="form-control professional-enterprise" placeholder="{% trans "Digite aqui sua Empresa" %}" />
+                            </div>
+                            <div class="form-group">
+                                <label class="">{% trans "Cargo" %}</label>
+                                <input name="professional-0-function" class="form-control professional-function" placeholder="{% trans "Digite aqui seu cargo" %}" />
+                            </div>
+                            <div class="form-group">
+                                <label class="">{% trans "Cargo Atual" %}</label>
+                                <input id="check-0-actual_function" type="checkbox" value="false" onclick="checkActualFunction(this)" name="professional-0-actual_function" class="form-control professional-actual_function" placeholder="{% trans "Cargo atual" %}" />
+                            </div>
+                            <div class="form-group">
+                                <label class="">{%trans "Área de Atuação" %}</label>
+                                <input name="professional-0-area" class="form-control professional-area" placeholder="{% trans "Digite aqui sua área de atuação" %}" />
+                            </div>
+                            <div class="form-group">
+                                <label class="">{% trans "Data de Início" %}</label>
+                                <input id="datepicker-0-date_begin" name="professional-0-date_begin" class="form-control professional-date_begin">
+                            </div>
+                            <div class="form-group">
+                                <label class="">{% trans "Data de Término" %}</label>
+                                <input id="datepicker-0-date_finish" name="professional-0-date_finish" class="form-control professional-date_finish date_begin">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="professional-activities" name="professional-0-activities" cols="76" rows="5"
+                                    placeholder="{% trans "Principais atividades desenvolvidas" %}"></textarea>
+                            </div>
+                        </div>
+                    {%endif%}
+                </div>
+                <a class="btn btn-pill btn-outline-primary btn-add-professional-formation">+ {% trans "Adicionar experiência" %}</a>
+            </div>
+        </div>
+        <div class="form-language form">
+            <input type="hidden" name="language-TOTAL_FORMS" value="{% forms_amount languages %}">
+            <input type="hidden" name="language-INITIAL_FORMS" value="0">
+            <input type="hidden" name="language-MAX_NUM_FORMS" value="">
+            <h5>{% trans "Idiomas" %}</h5>
+            <div class="form-language-table">
+                <div class="language-infos-list-container">
+                    {% if languages %}
+                        {% for language in languages %}
+                            <div class="language-infos form-infos-block">
+                                <input name="language-{{forloop.counter0}}-language" class="form-control language-language {% is_invalid language.errors 'language' %}" placeholder="{% trans "Idioma" %}" value="{{language.cleaned_data.language}}"/>
+                                {% error_message language.errors 'language' %}
+                                <label class="">{% trans "Nível de Conhecimento" %}</label>
+                                <select name="language-{{forloop.counter0}}-level" class="form-control language-level {% is_invalid language.errors 'level' %}"" >
+                                    {% for level in language_level_choices %}
+                                        {% if language.cleaned_data.level == level.0 %}
+                                            <option value="{{level.0}}" selected>{{level.1}}</option>
+                                        {% else %}
+                                            <option value="{{level.0}}">{{level.1}}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                {% error_message language.errors 'level' %}
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="language-infos form-infos-block">
+                            <input name="language-0-language" class="form-control language-language" placeholder="{% trans "Idioma" %}" />
+                            <label class="">{% trans "Nível de Conhecimento" %}</label>
+                            <select name="language-0-level" class="form-control language-level" >
+                                {% for level in language_level_choices %}
+                                    <option value="{{level.0}}">{{level.1}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    {% endif %}
+                </div>
+                <a class="btn btn-pill btn-outline-primary btn-add-language">+ {% trans "Adicionar idioma" %}</a>
+            </div>
+        </div>
+        <div class="form-activities form">
+            <h5>{% trans "Qualificações e atividades complementares" %}</h5>
+            <textarea name="personal-extra_qualification" cols="76" rows="5" placeholder="{% trans "Conte-nos mais" %}">{{application.cleaned_data.extra_qualification}}</textarea>
+        </div>
+        <button class="btn btn-pill btn-outline-primary send" type="submit"> {% trans "Enviar Currículo" %}</button>
+    </form>
+
+</div>
+
+{% endblock %}
+   
+{% block extra_js %}
+    <script src="{% static "js/opportunity.js" %}"></script>
+    <script src="{% static "custom-libs/jquery.mask.js" %}"></script>
+    <script src="{% static "js/contact.js" %}"></script>
+    <script src="{% static "js/datepicker.min.js" %}"></script>
+    <script src="{% static "js/datepicker.pt-BR.js" %}"></script>
+{% endblock %}

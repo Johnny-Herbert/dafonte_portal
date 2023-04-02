@@ -1,0 +1,78 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static "stylesheets/lib-customs/slick.min.css" %}"/>
+<link rel="stylesheet" href="{% static "stylesheets/calendar.css" %}" />
+
+<div class="row second-row column-gutters calendar-row">
+    {% if latest_events %}
+    <div class="events col-lg-8">
+        <div class="events-images-container col-lg-4">
+            <div class="slider-for">
+                {% for event in latest_events %}
+                    {% if event.picture %}
+                        <div class="event-image" style="background-image:url({{ event.picture.url }})" alt="Imagem do Evento"></div>
+                    {% else %}
+                        <div class="event-image" style="background-image:url({% static "images/pics/img-compartilhamento.png" %})" alt="Imagem do Evento"></div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="events-info col-lg-6">
+            <h5>{% trans "Eventos" %}</h5>
+            <div class="slider-nav">
+                {% for event in latest_events %}
+                <div class="info">
+                    <div class="date-town">
+                        <i class="material-icons">today</i>
+                        <p>{{ event.date|date:"d/m/Y" }}</p>
+                        {% if event.city or event.country %}
+                            <i class="material-icons local">location_on</i>
+                            {% if event.city and event.country %}
+                                <p>{{ event.city }}/{{ event.country }}</p>
+                            {% elif event.city and not event.country %}
+                                <p>{{ event.city }}</p>
+                            {% elif event.country and not event.city %}
+                                <p>{{ event.country }}</p>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <p>{{ event.description_short }}</p>
+                    <a href="{% url "event-detail" event.pk %}">{% trans "Informações do evento" %}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if latest_publications %}
+    <div class="publications col-lg-4">
+        <h5>{% trans "Publicações" %}</h5>
+        <div class="publication-slicker">
+            {% for publication in latest_publications %}
+            <div class="info publication-info">
+                <div class="date-town">
+                    <i class="material-icons">today</i>
+                    <p>{{ publication.creation_date|date:"d/m/Y" }}</p>
+                </div>
+                <p>{{ publication.description_short }}</p>
+                <a href="
+                    {% if publication.type.name == 'Imprensa' %}
+                        {% url 'press-detail' publication.pk %}
+                    {% else %}
+                        {% url 'article-detail' publication.pk %}
+                    {% endif %}
+                ">{% trans "Acesse a publicação" %}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery-migrate.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/slick.min.js" %}"></script>
+<script src="{% static "js/calendar.js" %}"></script>

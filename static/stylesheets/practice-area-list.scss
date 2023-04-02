@@ -1,0 +1,217 @@
+@import "global-variables";
+
+.blurb-header {
+  @media screen and (max-width: $breakpoint-phone) {
+    text-align: center;
+  }
+
+  .title {
+    max-width: 650px;
+    margin-bottom: 16px;
+  }
+}
+
+.practice-area-list {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #262729;
+  width: 100vw;
+  align-items: flex-start;
+
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    align-self: baseline;
+    @media screen and (max-width: $breakpoint-phone) {
+      order: 2;
+    }
+  }
+
+  .practice-area-list-content {
+    list-style: none;
+    padding: 0;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    margin-bottom: 48px;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: $breakpoint-phone) {
+      order: 3;
+      column-count: 1;
+      //max-height: 290px;
+      //overflow: hidden;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    // Flexbox não funciona bem com column-count no Firefox, então a posição do ::before está relativa
+    > li {
+      margin-bottom: 16px;
+      font-weight: 500;
+      white-space: nowrap;
+
+      // &::before {
+      //   font-family: Material Icons, sans-serif;
+      //   content: "navigate_next navigate_next";
+      //   word-spacing: -0.9em;
+      //   white-space: nowrap;
+      //   color: $color-primary;
+      //   position: relative;
+      //   top: 2px;
+      //   margin-right: 8px;
+      // }
+
+      > a {
+        color: white;
+        margin-left: 25px;
+        white-space: normal;
+      }
+    }
+  }
+
+  .emphasis {
+    margin-bottom: 32px;
+  }
+
+  .search-container {
+    width: 75em;
+    @media screen and (max-width: $breakpoint-phone) {
+      order: 1;
+      width: auto;  
+    }
+
+    > .filters {
+      margin-bottom: 18px;
+
+      .search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        position:relative;
+      }
+
+      .filters-initial {
+        margin: 16px;
+      }
+
+      .filter-area > div {
+        display: flex;
+        align-items: center;
+        position:relative;
+      }
+
+      .filters-initial {
+        white-space: nowrap;
+        margin: 16px;
+        @media screen and (max-width: $breakpoint-phone) {
+          display: none;
+          white-space: normal;
+          text-align: center;
+        }
+        > label {
+          > span {
+            cursor: pointer;
+            font-weight: 600;
+          }
+
+          > input {
+            display: none;
+
+            &:checked + span {
+              color: $color-primary;
+            }
+
+            &:disabled + span {
+              pointer-events: none;
+              color: #575758;
+            }
+          }
+        }
+      }
+
+      .form-control {
+        height: 46px;
+      }
+
+      input {
+        border: 1px solid #494949;
+        border-radius: 23px;
+        background-color: rgba(67, 67, 67, 0.1);
+        transition: background-color 1s, border-color 1s;
+
+        &:focus {
+          background-color: white;
+          border-color: $color-primary;
+          border-width: 2px;
+          color: #464646;
+          font-weight: 500;
+
+          &::placeholder {
+            color: rgba(38, 39, 41, 0.2);
+          }
+        }
+
+        + .material-icons {
+          position: absolute;
+          top:50%;
+          transform:translateY(-50%);
+          right: calc(15px + 1rem);
+          font-size: 18px;
+        }
+      }
+
+      select {
+        color: white;
+        border: 1px solid #494949;
+        border-radius: 4px;
+        background-color: #1e1e1e;
+
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Chrome */
+        -webkit-appearance: none;
+        /* For IE10 */
+        &::-ms-expand {
+          display: none;
+        }
+
+        + .material-icons {
+          pointer-events: none;
+          color: $color-primary;
+          position: absolute;
+          top:50%;
+          transform:translateY(-50%);
+          right: calc(15px + 1rem);
+          font-size: 18px;
+        }
+      }
+    }
+
+    .filters-initial {
+      font-size: 12px;
+    }
+  }
+}
+
+#specialization-sectors{
+	@media screen and (max-width: $breakpoint-phone) {
+		order: 5;
+		margin-top: 20px;
+	}
+}
+
+#sector-content{
+  width: 75.6em;
+
+  @media screen and (max-width: $breakpoint-phone) {
+    order: 6 !important;
+    width: 100%;
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,138 @@
+{% load staticfiles %} {% load i18n %}
+
+<div class="row footer column-gutters">
+	<div class="col-12 logo-container">
+		<div class="logo">
+			<img class="logo-footer" src="{% static "images/logo-default.png" %}" alt="da Fonte logo" />
+		</div>
+	</div>
+	<div class="col-lg-2 site-map">
+		<div class="row">
+			<div class="col-6 col-lg-12">
+				<ul class="site-map-list">
+					<li><a href="{% url 'home'%}"> {% trans "Início" %}</a></li>
+					<li><a href="{% url 'practice-area-list'%}"> {% trans "Atuação" %}</a></li>
+					<li>
+						{% trans "Quem Somos" %}
+						<ul>
+							<li><a href="{% url 'culture'%}">{% trans "História e Cultura" %}</a></li>
+							<li><a href="{% url 'member-list'%}"> {% trans "Equipe" %}</a></li>
+							<li><a href="{% url 'who-we-are'%}">{% trans "Escritórios" %}</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col-6 col-lg-12">
+				<ul class="site-map-list">
+					<li>{% trans "Publicações" %}
+						<ul>
+							<li><a href="{% url 'press-list'%}">{% trans "Imprensa" %}</a></li>
+							<li><a href="{% url 'article-list'%}">{% trans "Artigos" %}</a></li>
+						</ul>
+					</li>
+					<li><a href="{% url 'event-list'%}">{% trans "Eventos" %}</a></li>
+					<li><a href="{% url "privacy-policy" %}">{% trans "Política de Privacidade" %}</a></li>
+					<li><a href="{% url 'social-responsability'%}">{% trans "Responsabilidade Social" %}</a></li>
+					<li>
+						{% trans "Contato" %}
+						<ul>
+							<li><a href="{% url 'contact'%}">{% trans "Fale Conosco" %}</a></li>
+							<li><a href="{% url 'opportunity'%}">{% trans "Oportunidades" %}</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-5 offices">
+		{% for office in offices %}
+			<div class="office">
+				<div class="emphasis">{{ office.city }}</div>
+					<div class="location">
+						{% if office.address %}
+							<div>{{ office.address }}</div>
+							<div>
+								{%if office.postcode|length %}
+									CEP: {{ office.postcode }},
+								{% endif %}
+								{%if office.neighborhood|length %}
+									{{ office.neighborhood }},
+								{% endif %}
+								{%if office.city|length %}
+									{{ office.city }}{%if office.state|length %}/{{ office.state }},{% endif %}
+								{% endif %}
+								{% if office.country|length %}
+									{{ office.country }}
+								{% endif %}
+							</div>
+						{% endif %}
+					<div class="contact">
+						<div>{{ office.phone }}</div>
+						<div><a class="contact-email" href="mailto:{{ office.email }}">{{ office.email }}</a></div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="col-lg-4 awards-partners">
+{#		<div class="awards">#}
+{#			<div class="emphasis">{% trans "Prêmios" %}</div>#}
+{#			<div class="showcase">#}
+{#				{% for award in awards %}#}
+{#					<div class="award">#}
+{#						<img src="{{ award.picture.url }}" alt="Imagem do Prêmio" />#}
+{#					</div>#}
+{#				{% endfor %}#}
+{#			</div>#}
+{#		</div>#}
+		<div class="partners">
+			<div class="emphasis">{% trans "Parceiros" %}</div>
+			<div class="showcase">
+				{% for partner in partners %}
+					<div class="partner">
+						{% if partner.logo_footer %}
+							{% if partner.site %}
+								<a href="{{ partner.site }}" target="_blank"><img src="{{ partner.logo_footer.url }}" alt="Logo do Parceiro" style="width: 100px;"/></a>
+							{% else %}
+								<img src="{{ partner.logo_footer.url }}" alt="Logo do Parceiro" style="width: 100px;"/>
+							{% endif %}
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="affiliates">
+			<div class="emphasis">{% trans "Filiado à" %}</div>
+			<div class="showcase">
+				{% for affiliate in affiliates %}
+					<div class="affiliate">
+						{% if affiliate.logo_footer %}
+							{% if affiliate.site %}
+								<a href="{{ affiliate.site }}" target="_blank"><img src="{{ affiliate.logo_footer.url }}" alt="Logo do Parceiro" /></a>
+							{% else %}
+								<img src="{{ affiliate.logo_footer.url }}" alt="Logo do Parceiro" />
+							{% endif %}
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-1 social">
+		<a href="https://facebook.com/dafonteadvogados/" class="social-icon">
+			<img src="{% static "images/icons/facebook.svg" %}" alt="Facebook" />
+		</a>
+		<a href="https://www.linkedin.com/company/da-fonte-advogados/" class="social-icon">
+			<img src="{% static "images/icons/linkedin.svg" %}" alt="LinkedIn" />
+		</a>
+		<a href="https://twitter.com/dafonteadv" class="social-icon">
+			<img src="{% static "images/icons/twitter.svg" %}" alt="Twitter" />
+		</a>
+		<a href="https://instagram.com/dafonteadvogados/" class="social-icon">
+			<img src="{% static "images/icons/instagram.svg" %}" alt="Instagram" />
+		</a>
+	</div>
+	<div class="col-12 copyright">
+		© {% now "Y" %} da Fonte, advogados. Todos os direitos reservados.
+	</div>
+</div>

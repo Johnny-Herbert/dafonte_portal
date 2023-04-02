@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{% if practice_area.picture.name == "" %}{{ page.background_image.url }}{% else %}{{ practice_area.picture }}{% endif %}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "stylesheets/back-arrow-row.css" %}" />
+<link rel="stylesheet" href="{% static "stylesheets/lawyer-card.css" %}" />
+<link rel="stylesheet" href="{% static "stylesheets/practice-area-detail.css" %}" />
+<link rel="stylesheet" type="text/css" href="{% static "stylesheets/lib-customs/slick.min.css" %}"/>
+{% endblock %}
+{% block extra_js %}
+<script src="{% static "js/practice-area-detail.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery-migrate.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/slick.min.js" %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="content">
+	<div class="back-button-row row">
+		<a href="{% url "practice-area-list" %}"><i class="material-icons">arrow_back</i>Voltar</a>
+	</div>
+	<div class="practice-details row">
+		<div class="practice-details-block">
+			<div class="practice-name">{{ practice_area.name }}</div>
+			<div class="practice-description">{{ practice_area.description|safe }}</div>
+		</div>
+		<div class="practice-details-approaches">
+			<div class="approaches-title">{% trans "Soluções" %}</div>
+			<div class="approaches">
+			</div>
+			<ul>
+				{% for approach in practice_area.approaches.all %}
+				<li>{{ approach.text }}</li>
+				{% endfor %}
+			</ul>
+			<div class="list-title">
+			{% blocktrans trimmed with practice_name=practice_area.name %}
+				Advogados de {{ practice_name }}
+			{% endblocktrans %}
+		</div>
+		</div>
+	</div>
+	<div class="practice-laywers">
+		<div class="laywer-card-list">
+			<div class='mobile-navigation previous'><i class='material-icons'>navigate_before</i></div>
+			<div class="lawyer-scroller">
+				{% for lawyer in practice_area.lawyers.all %}
+				<div class="member-card-container {% classed forloop.counter0 0 "active" %}">
+					<div class="member-card">
+						<div class="member-photo">
+							{% if lawyer.photo.file is not None %}
+							<div>
+								<img src="{{ lawyer.photo.url }}" alt="Foto" />
+							</div>
+							{% else %}
+							<i class="material-icons">person</i>
+							{% endif %}
+							<div class="member-name">
+								<span>{{ lawyer.full_name }}</span>
+							</div>
+						</div>
+						<div class="member-body">
+							<ul style="margin-top: {% if lawyer.practice_areas.all|length > 4 %}32px;{% else %}0px;{% endif %}">
+								{% for practice_area in lawyer.practice_areas.all %}
+									<li>{{ practice_area.name }}</li>
+								{% endfor %}
+								{% if lawyer.practice_areas.all and lawyer.specialization_sector.all %}
+									<li class="member-divisor"></li>
+								{% endif %}
+								{% for specialization_sector in lawyer.specialization_sector.all %}
+									<li>{{ specialization_sector.name }}</li>
+								{% endfor %}
+							</ul>
+						</div>
+						<div>
+							<a class="btn btn-pill btn-primary btn-sm" href="{% url "member-detail" lawyer.id %}">{% trans "Ver perfil completo" %}</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class='mobile-navigation next'><i class='material-icons'>navigate_next</i></div>
+		</div>
+	</div>
+</div>
+{% include "includes/calendar.html" %}
+
+{% include "includes/offices-green-row.html" with offices=offices %}
+{% endblock %}

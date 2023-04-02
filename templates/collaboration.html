@@ -1,0 +1,58 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<style>
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			.header{display:block;}
+			.header .logo{padding-top:50px;}
+		}
+		</style>
+<link rel="stylesheet" href="{% static "stylesheets/collaboration.css" %}" />
+{% endblock %}
+
+
+{% block header_content %}
+<div class="row collaboration-header">
+	<div class="col-lg-6">
+		<div class="blurb-header">
+			<h1 class="title">{% trans "Canal de Colaboração" %}</h1>
+			<p class="collaboration-text">{% page_param "collaboration-text" %}</p>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="collaboration-form" >
+			<div class="form-group">
+				<label class="" >{% trans 'Onde o incidente aconteceu?' %}</label>
+				<select name="select" class="form-control">
+					<option value="sao-paulo"selected>São Paulo</option>
+					<option value="brasilia" >Brasília</option>
+					<option value="pernambuco">Pernambuco</option>
+					<option value="bahia">Bahia</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="">{% trans 'Descreva a situação, indicando com detalhes o problema e as partes envolvidas:' %}</label>
+				<textarea name="message" class="form-control" placeholder="{% trans "Insira aqui as informações do ocorrido" %}"></textarea>
+			</div>
+			<div class="form-group">
+				<label class="">{% trans 'Indique a data do problema:' %}</label>
+				<input type="date" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label class="">{% trans 'Deseja anexar uma foto?' %}</label>
+				<input type="file" name="photo" class="form-control-file file-upload" />
+			</div>
+			<div>
+				<input class="btn btn-primary" type="submit" value="{% trans "Enviar" %}"/>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+

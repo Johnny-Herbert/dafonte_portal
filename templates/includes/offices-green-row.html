@@ -1,0 +1,42 @@
+{% load staticfiles %}
+{% load site_tags %}
+
+<link rel="stylesheet" href="{% static "stylesheets/offices-green-row.css" %}" />
+<script src="{% static "js/offices-green-row.js" %}"></script>
+
+<div class="content" style="padding-top:0px;">
+	<div class="office-list row {% classed hide_on_desktop True "d-lg-none" %}">
+		<div class="mobile-navigation previous"><i class="material-icons">navigate_before</i></div>
+		<div class="offices-scroller">
+			{% for office in offices %}
+				<div class="office {% classed forloop.counter0 0 "active" %}" data-office-id="{{ office.id }}">
+					<div class="city">{{ office.city }}</div>
+					<div class="location">
+						{% if office.address %}
+							<div>{{ office.address }}</div>
+							<div>
+								{%if office.postcode|length %}
+									CEP: {{ office.postcode }},
+								{% endif %}
+								{%if office.neighborhood|length %}
+									{{ office.neighborhood }},
+								{% endif %}
+								{%if office.city|length %}
+									{{ office.city }}{%if office.state|length %}/{{ office.state }},{% endif %}
+								{% endif %}
+								{% if office.country|length %}
+									{{ office.country }}
+								{% endif %}
+							</div>
+						{% endif %}
+					</div>
+					<div class="contact">
+						<div>{{ office.phone }}</div>
+						<div><a class="contact-email" href="mailto:{{ office.email }}">{{ office.email }}</a></div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="mobile-navigation next"><i class="material-icons">navigate_next</i></div>
+	</div>
+</div>

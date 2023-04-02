@@ -1,0 +1,211 @@
+@import "global-variables";
+
+
+.calendar-row{
+    background-color:#47484B !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 100%;
+    margin: 0 !important;
+
+    .events{
+        display: flex;
+        flex-wrap: wrap;
+        // flex-direction: row;
+
+
+        .events-info{
+            padding-left: 30px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            @media screen and (max-width: 975px) {
+                border-bottom: 1px solid #979797;
+            }
+            .event-info{
+                display: flex;
+                flex-direction: column;
+                .date-town{
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom:8px;
+
+                    i{
+                        font-size:15px;
+                        margin-bottom:auto;
+                        margin-top: auto;
+                        margin-right: 8px;
+                    }
+                    .local{
+                        margin-left: 12px;
+
+                    }
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+        }
+    }
+    .events-images-container{
+        @media screen and (max-width: 975px) {
+            margin-top:30px;
+        }
+        .slider-for{
+            height: 100% !important;
+            .slick-list{
+                height: 100% !important;
+                .slick-track{
+                    height: 100% !important;
+
+                    .event-image{
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        min-height: 170px;
+                        background-position: left;
+                        @media screen and (max-width: $breakpoint-phone){
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .publications{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 0 !important;
+        @media screen and (max-width: 975px) {
+            padding-left:30px !important;
+        }
+
+        h5{
+            padding-left:15px;
+            @media screen and (max-width: 975px) {
+                padding-left:none;
+            }
+        }
+
+        .slick-dots{
+            padding-left:15px;
+            @media screen and (max-width: 975px) {
+                padding-left:none;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-phone) {
+        margin:0 !important;
+
+        .events-info{
+            padding:15px 15px 10px 15px !important;
+        }
+        .publications{
+            h5{
+                padding-left:0;
+            }
+            .publication-info{
+                padding-left:0;
+            }
+            .slick-dots{
+                padding-left:0 !important;
+            }
+        }
+    }
+}
+
+.publication-info{
+    border-left: 1px solid #979797;
+    padding-left:15px;
+    @media screen and (max-width: 975px) {
+        border:none;
+        padding-left:none;
+    }
+}
+
+.slick-slider{
+    height: 90%;
+}
+
+.slick-dotted{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: flex-start;
+    padding-bottom:18px;
+    
+	margin: 0;
+	padding: 1rem 0;
+	
+	list-style-type: none;
+	
+		li {
+			margin: 0 0.25rem;
+		}
+	
+		button {
+			display: block;
+			width: 8px;
+			height: 9px;
+			padding: 0;
+			
+			border: 1px solid white;
+			border-radius: 100%;
+            background-color: transparent;
+			
+			text-indent: -9999px;
+		}
+	
+		li.slick-active button {
+			background-color: white;
+		}
+	
+}
+
+.slick-arrow{
+    display: none !important;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    .date-town{
+        display: flex;
+        flex-direction: row;
+        margin-bottom:8px;
+
+        i{
+            font-size:15px;
+            margin-bottom:auto;
+            margin-top: auto;
+            margin-right: 8px;
+        }
+        .local{
+            margin-left: 12px;
+
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    p{
+        max-height: 3.9em;
+        overflow: hidden;
+        word-break: break-word;
+
+    }
+}
+
+h5{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 14px;
+    margin-bottom: 15px;
+}

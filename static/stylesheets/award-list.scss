@@ -1,0 +1,72 @@
+@import "global-variables";
+
+.blurb-header {
+  word-wrap: anywhere;
+}
+.award-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  background-color: #151616;
+  flex-wrap: wrap;
+  padding: 0 50px 0 50px;
+
+  @media screen and (max-width: $breakpoint-phone) {
+    background-color: #262729;
+    width: 100vw;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .award {
+    height: 410px;
+    width: 339px;
+    border-radius: 4px;
+    background-color: #262729;
+    margin: 20px;
+    text-align: center;
+    @media screen and (max-width: $breakpoint-phone) {
+      width: 140px;
+      height: auto;
+      border-radius: 0px;
+      margin: 15px;
+    }
+    .award-picture {
+      height: 287px;
+      width: 339px;
+      border-radius: 4px 4px 0 0;
+      background-color: #f3f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: $breakpoint-phone) {
+        width: 140px;
+        height: 140px;
+        border-radius: 0px;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .award-text {
+      p {
+        padding-left: 10px;
+        padding-right: 10px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+.awards-title {
+  display: none;
+  @media screen and (max-width: $breakpoint-phone) {
+    display: block;
+    background-color: #262729;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: -10px;
+  }
+}

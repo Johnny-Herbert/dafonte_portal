@@ -1,0 +1,38 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "stylesheets/back-arrow-row.css" %}" />
+<link rel="stylesheet" href="{% static "stylesheets/award-list.css" %}" />
+{% endblock %}
+
+{% block header_content %}
+<div class="blurb-header">
+	<h1 class="title">{% page_param "header-blurb-title" %}</h1>
+	<div class="text">{% page_param "header-blurb-text" %}</div>
+
+</div>
+{% endblock %}
+
+{% block content %}
+<h6 class="awards-title">{% trans "Premiações" %}</h6>
+<div class="award-container">
+	{% for award in awards %}
+	<div class="award">
+		<div class="award-picture">
+			{% if award.picture %}
+				<img src="{{ award.picture.url }}" alt="Logo do Prêmio"  />
+			{% endif %}
+		</div>
+		<div class="award-text">
+			<p>{{ award.description | safe }}</p>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}

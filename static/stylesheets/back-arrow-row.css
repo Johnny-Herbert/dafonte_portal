@@ -1,0 +1,33 @@
+.back-button-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.back-button-row > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #1BD495;
+}
+
+.back-button-row > a:hover {
+  text-decoration: none;
+  color: #13B277;
+}
+
+.back-button-row > a .material-icons {
+  font-size: 16px;
+  margin-right: 4px;
+}
+/*# sourceMappingURL=back-arrow-row.css.map */

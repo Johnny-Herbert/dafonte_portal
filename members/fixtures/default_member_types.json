@@ -1,0 +1,33 @@
+[
+	{
+		"model": "members.MemberType",
+		"pk": 1,
+		"fields": {
+			"name_pt_br": "Advogado",
+			"name_en": "Lawyer"
+		}
+	},
+	{
+		"model": "members.MemberType",
+		"pk": 2,
+		"fields": {
+			"name_pt_br": "Equipe Administrativa",
+			"name_en": "Administrative Staff"
+		}
+	},
+	{
+		"model": "members.MemberType",
+		"pk": 3,
+		"fields": {
+			"name": "Trainee"
+		}
+	},
+	{
+		"model": "members.MemberType",
+		"pk": 4,
+		"fields": {
+			"name_pt_br": "Estagiário",
+			"name_en": "Intern"
+		}
+	}
+]

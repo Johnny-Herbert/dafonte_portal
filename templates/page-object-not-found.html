@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+	<style>
+		.content {
+			text-align: center;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div class="emphasis">
+		Página com slug "{{ slug }}" não encontrado. Favor acessar a Página Administrativa do sistema e adicioná-la.
+	</div>
+{% endblock %}

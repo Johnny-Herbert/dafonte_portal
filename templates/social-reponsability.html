@@ -1,0 +1,42 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<link rel="stylesheet" href="{% static "stylesheets/social-responsability.css" %}" />
+{% endblock %}
+
+{% block header_content %}
+	<div class="blurb-header">
+		<h1 class="title">{% trans "Responsabilidade Social" %}</h1>
+		<div class="text">{% page_param "header-blurb-text" %}</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="social-responsability-container content">
+		<div class="row">
+			<h4 class="title">{% trans "Entidades Apoiadas" %}</h4>
+			<div class="entities-list">
+				{% for entity in social_entities %}
+					<div class="entity-card">
+						<div class="entity-picture">
+							{% if entity.picture %}
+								<img src="{{ entity.picture.url }}" alt="Imagem da Entidade"/>
+							{% endif %}
+						</div>
+						<div class="entity-info">
+							<div class="entity-name">{{ entity.name }}</div>
+							<div class="entity-description">{{ entity.description }}</div>
+							<a class="btn btn-pill btn-primary btn-sm d-lg-block" href="{{ entity.site }}" target="_blank">{% trans "Conheça o projeto" %}</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

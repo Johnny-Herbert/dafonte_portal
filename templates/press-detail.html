@@ -1,0 +1,65 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image }}{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static "stylesheets/press-detail.css" %}" />
+{% endblock %}
+
+{% block header_content %}
+<div class="blurb-header press-title">
+	<div class="text">{% trans "Publicações" %} / {% trans "Imprensa" %}</div>
+	<h1 class="title">{{press.title}}</h1>
+</div>
+{% endblock %}
+{% block content %}
+<div class="press-container">
+	<div class="press-mobile">
+		<div class="press-back-mobile">
+			<a href="{% url "press-list" %}">
+				<i class="material-icons">
+					arrow_back
+				</i>
+				<p>{% trans "Voltar" %}</p>
+			</a>
+		</div>
+		<div class="press-date-mobile"> {% trans "Publicado em" %}: {{ press.creation_date | date:"SHORT_DATE_FORMAT" }}</div>
+
+	</div>
+	<div class="press-back col-3">
+		<a href="{% url "press-list" %}">
+			<i class="material-icons">
+				arrow_back
+			</i>
+			<p>{% trans "Voltar" %}</p>
+		</a>
+	</div>
+	<div class="press-mid col-sm-12 col-md-6">
+		<div class=" press-members">
+			{% for member in press.related_members.all %}
+			<a href="{% url 'member-detail' member.lawyer.pk %}">
+				<span>
+					{% if member.photo %}
+					<img src="{{ member.photo.url }}" alt="Imagem do Membro" />
+					{% else %}
+					<img src="{% static "images/pics/member-photo-placeholder.png"%}" alt="Imagem Padrão do Membro" />
+					{% endif %}
+					<p>{{ member.full_name }}</p>
+				</span>
+			</a>
+			{% endfor %}
+		</div>
+		<div class="press-content">
+			{{ press.content | safe }}
+		</div>
+	</div>
+	<div class="press-date col-3"> {% trans "Publicado em" %}: {{ press.creation_date | date:"SHORT_DATE_FORMAT" }}</div>
+</div>
+
+
+{% endblock %}

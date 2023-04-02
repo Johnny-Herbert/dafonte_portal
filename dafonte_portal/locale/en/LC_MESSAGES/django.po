@@ -1,0 +1,637 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-31 10:07-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: applying/views.py:61
+msgid "Verifique se todos os campos foram preenchidos corretamente"
+msgstr "Verify if all fields have been filled out correctly"
+
+#: applying/views.py:70
+msgid "Formulário enviado com sucesso!"
+msgstr "Form sent successfully!"
+
+#: dafonte_portal/settings/base.py:112
+#, fuzzy
+#| msgid "Português do Brasil"
+msgid "Português"
+msgstr "Brazilian Portuguese"
+
+#: dafonte_portal/settings/base.py:113
+msgid "Inglês"
+msgstr "English"
+
+#: templates/400.html:16
+msgid "Solicitação inválida."
+msgstr ""
+
+#: templates/403.html:16
+msgid "Você não tem permissão de acesso nessa página."
+msgstr ""
+
+#: templates/404.html:16
+msgid "Página não encontrada."
+msgstr "Page not found."
+
+#: templates/500.html:16
+msgid "Erro interno."
+msgstr ""
+
+#: templates/article-detail.html:15 templates/article-list.html:24
+#: templates/base-includes/footer.html:28
+#: templates/base-includes/nav-desktop.html:75
+#: templates/base-includes/nav-phone.html:78
+#: templates/includes/calendar.html:44 templates/press-detail.html:15
+#: templates/press-list.html:24
+msgid "Publicações"
+msgstr "Publications"
+
+#: templates/article-detail.html:15 templates/article-list.html:24
+#: templates/base-includes/footer.html:31
+#: templates/base-includes/nav-desktop.html:83
+msgid "Artigos"
+msgstr "Articles"
+
+#: templates/article-detail.html:27 templates/article-detail.html:38
+#: templates/event-detail.html:43 templates/member-detail.html:17
+#: templates/press-detail.html:27 templates/press-detail.html:38
+msgid "Voltar"
+msgstr ""
+
+#: templates/article-detail.html:30 templates/article-detail.html:58
+#: templates/press-detail.html:30 templates/press-detail.html:60
+#, fuzzy
+#| msgid "Publicações"
+msgid "Publicado em"
+msgstr "Published in"
+
+#: templates/article-list.html:36
+msgid "Buscar nos Artigos"
+msgstr "Search on articles"
+
+#: templates/article-list.html:57 templates/article-list.html:82
+msgid "Ler artigo completo"
+msgstr "Read full article"
+
+#: templates/award-list.html:23 templates/who-we-are.html:30
+msgid "Premiações"
+msgstr "Awards"
+
+#: templates/base-includes/footer.html:14
+msgid "Início"
+msgstr ""
+
+# ###########################
+# Traduções a partir daqui #
+# ###########################
+#
+#: templates/base-includes/footer.html:15
+#: templates/base-includes/nav-desktop.html:48
+#: templates/base-includes/nav-phone.html:54
+msgid "Atuação"
+msgstr "Practice"
+
+#: templates/base-includes/footer.html:17
+#: templates/base-includes/nav-desktop.html:53
+#: templates/base-includes/nav-phone.html:59
+msgid "Quem Somos"
+msgstr "Who we are"
+
+#: templates/base-includes/footer.html:19
+#: templates/base-includes/nav-phone.html:63
+msgid "História e Cultura"
+msgstr "Culture and history"
+
+#: templates/base-includes/footer.html:20
+#: templates/base-includes/nav-desktop.html:59
+#: templates/base-includes/nav-phone.html:65
+msgid "Equipe"
+msgstr "Team"
+
+#: templates/base-includes/footer.html:21
+#, fuzzy
+#| msgid "Institucional / Escritórios"
+msgid "Escritórios"
+msgstr "Institutional / Offices"
+
+#: templates/base-includes/footer.html:30
+#: templates/base-includes/nav-desktop.html:80 templates/press-detail.html:15
+#: templates/press-list.html:24
+msgid "Imprensa"
+msgstr "Press"
+
+#: templates/base-includes/footer.html:34
+#: templates/base-includes/nav-desktop.html:88
+#: templates/base-includes/nav-phone.html:91 templates/event-detail.html:15
+#: templates/event-list.html:16 templates/includes/calendar.html:24
+msgid "Eventos"
+msgstr "Events"
+
+#: templates/base-includes/footer.html:35
+#: templates/base-includes/nav-desktop.html:89
+#: templates/base-includes/nav-phone.html:92
+#: templates/social-reponsability.html:15
+msgid "Responsabilidade Social"
+msgstr "Social responsibility"
+
+#: templates/base-includes/footer.html:37
+#: templates/base-includes/nav-desktop.html:90
+#: templates/base-includes/nav-phone.html:93
+msgid "Contato"
+msgstr "Contact"
+
+#: templates/base-includes/footer.html:39
+msgid "Fale Conosco"
+msgstr ""
+
+#: templates/base-includes/footer.html:40
+#, fuzzy
+#| msgid "Oportunidades em destaque:"
+msgid "Oportunidades"
+msgstr "Featured oppotunities"
+
+#: templates/base-includes/footer.html:74
+msgid "Parceiros"
+msgstr "Partners"
+
+#: templates/base-includes/footer.html:86 templates/who-we-are.html:59
+msgid "Filiado à"
+msgstr "Affiliated with"
+
+#: templates/base-includes/nav-desktop.html:57
+#: templates/base-includes/nav-phone.html:64
+msgid "Institucional / Escritórios"
+msgstr "Institutional / Offices"
+
+#: templates/base-includes/nav-desktop.html:58
+msgid "Cultura Empresarial"
+msgstr "Corporate culture"
+
+#: templates/base-includes/nav-desktop.html:66
+#: templates/base-includes/nav-phone.html:69
+msgid "Folder Institucional"
+msgstr "Institutional folder"
+
+#: templates/base.html:13 templates/member-list.html:55
+msgid "Advogados"
+msgstr "Lawyers"
+
+#: templates/contact.html:21
+msgid "Estamos esperando o seu contato"
+msgstr "We are waiting for your contact"
+
+#: templates/contact.html:34 templates/opportunity.html:56
+#: templates/opportunity.html:77
+msgid "Nome"
+msgstr "Name"
+
+#: templates/contact.html:35 templates/opportunity.html:57
+#: templates/opportunity.html:78
+msgid "Seu nome"
+msgstr "Your name"
+
+#: templates/contact.html:39 templates/opportunity.html:62
+#: templates/opportunity.html:82
+msgid "Informe seu e-mail"
+msgstr "Enter your e-mail"
+
+#: templates/contact.html:42 templates/opportunity.html:66
+#: templates/opportunity.html:85
+msgid "Telefone"
+msgstr "Phone Number"
+
+#: templates/contact.html:43 templates/opportunity.html:67
+#: templates/opportunity.html:86
+msgid "Informe seu número de telefone com DDD"
+msgstr "Enter your phone number"
+
+#: templates/contact.html:46
+#, fuzzy
+#| msgid "Enviar mensagem"
+msgid "Mensagem"
+msgstr "Send message"
+
+#: templates/contact.html:47
+msgid "Como podemos lhe ajudar?"
+msgstr "How can we help you?"
+
+#: templates/contact.html:49
+msgid "Enviar mensagem"
+msgstr "Send message"
+
+#: templates/contact.html:60
+msgid "Já viu nosso folder institucional?"
+msgstr "Already seen our institutional folder?"
+
+#: templates/contact.html:63
+msgid "Folder institucional"
+msgstr "Institutional folder"
+
+#: templates/culture.html:32
+msgid "Nossa Crença:"
+msgstr "Our belief:"
+
+#: templates/culture.html:39
+msgid "Nossa Missão:"
+msgstr "Our mission"
+
+#: templates/culture.html:47 templates/who-we-are.html:73
+msgid ""
+"Faça o download do nosso folder institucional e saiba mais sobre nossa "
+"empresa:"
+msgstr "Download our institutional folder and learn more about our company"
+
+#: templates/culture.html:50 templates/who-we-are.html:76
+msgid "Acessar folder institucional"
+msgstr "Access institutional folder"
+
+#: templates/culture.html:58
+msgid "Nossos valores:"
+msgstr "Our values:"
+
+#: templates/event-detail.html:32 templates/event-detail.html:75
+msgid "Ocorrerá em"
+msgstr ""
+
+#: templates/event-list.html:27
+msgid "Filtrar por data"
+msgstr ""
+
+#: templates/event-list.html:32
+msgid "Procurar"
+msgstr "Search"
+
+#: templates/event-list.html:38
+msgid "Próximos eventos:"
+msgstr "Next events"
+
+#: templates/event-list.html:63 templates/includes/calendar.html:35
+msgid "Informações do evento"
+msgstr "Event information"
+
+#: templates/home.html:25
+msgid "Conheça nossa atuação"
+msgstr "Learn our practice"
+
+#: templates/home.html:36
+msgid "Conheça nossa história"
+msgstr "Learn our history"
+
+#: templates/home.html:55
+msgid "Saiba mais sobre nossas premiações"
+msgstr "Learn more about the awards"
+
+#: templates/home.html:68
+msgid "Encontre nossos escritórios"
+msgstr "Find our offices"
+
+#: templates/home.html:74 templates/practice-area-list.html:25
+msgid "Áreas de atuação:"
+msgstr "Areas of expertise:"
+
+# ###########################
+# Traduções a partir daqui #
+# ###########################
+#
+#: templates/home.html:80
+#, fuzzy
+#| msgid "Atuação"
+msgid "Ver todas as áreas de atuação"
+msgstr "Practice"
+
+#: templates/home.html:84 templates/practice-area-list.html:33
+msgid "Setores de especialização:"
+msgstr "Sectors of expertise"
+
+#: templates/home.html:90
+msgid "Ver todos os setores de especialização"
+msgstr "View all sectors of expertise"
+
+#: templates/home.html:95 templates/practice-area-list.html:43
+msgid "Pesquisar por um de nossos profissionais:"
+msgstr "Search for a professional:"
+
+#: templates/home.html:99 templates/member-list.html:27
+#: templates/practice-area-list.html:47
+msgid "Buscar pelo nome"
+msgstr "Search by name"
+
+#: templates/home.html:121 templates/practice-area-list.html:69
+msgid "Todas as Áreas"
+msgstr "All practices"
+
+#: templates/home.html:142 templates/who-we-are.html:40
+msgid "Saiba mais"
+msgstr "Learn more"
+
+#: templates/home.html:163 templates/social-reponsability.html:34
+msgid "Conheça o projeto"
+msgstr "Know the project"
+
+#: templates/home.html:176
+msgid "Vamos conversar?"
+msgstr "Let's talk?"
+
+#: templates/home.html:178
+msgid "Entrar em contato"
+msgstr "Get in touch"
+
+#: templates/includes/calendar.html:59 templates/press-list.html:57
+#: templates/press-list.html:82
+msgid "Ler publicação completa"
+msgstr "Read full story"
+
+#: templates/includes/opportunities-row.html:11
+msgid "Faça parte do time"
+msgstr "Join the team"
+
+#: templates/includes/opportunities-row.html:12
+msgid "Oportunidades em destaque:"
+msgstr "Featured oppotunities"
+
+#: templates/includes/opportunities-row.html:32
+msgid "Sem vagas abertas no momento."
+msgstr "No vacancies at the moment."
+
+#: templates/includes/opportunities-row.html:44
+msgid "Enviar currículo"
+msgstr "Send resume"
+
+#: templates/member-detail.html:50
+msgid "Áreas de atuação"
+msgstr "Areas of expertise"
+
+#: templates/member-detail.html:65
+msgid "Baixar"
+msgstr "Download"
+
+#: templates/member-detail.html:73
+msgid "Experiência"
+msgstr "Profissional Experience"
+
+#: templates/member-detail.html:77
+msgid "Formação acadêmica"
+msgstr "Academic Formation"
+
+#: templates/member-detail.html:86
+msgid "Outras atividades"
+msgstr "Other activities"
+
+#: templates/member-detail.html:92
+msgid "Reconhecimentos e premiações"
+msgstr "Acknowledgments and awards"
+
+#: templates/member-list.html:44
+msgid "Todas"
+msgstr "All"
+
+#: templates/member-list.html:76
+msgid "Trainees e Estagiários"
+msgstr "Trainees"
+
+#: templates/member-list.html:84
+msgid "Equipe administrativa"
+msgstr "Staff"
+
+#: templates/member-list.html:111
+#, fuzzy
+#| msgid "Trainees e Estagiários"
+msgid "Estagiário"
+msgstr "Intern"
+
+#: templates/member-list.html:113
+msgid "Estagiária"
+msgstr "Intern"
+
+#: templates/member-list.html:138 templates/member-list.html:143
+#: templates/practice-area-detail.html:72
+#: templates/specialization-sector-detail.html:70
+msgid "Ver perfil completo"
+msgstr "View full profile"
+
+#: templates/member-list.html:153
+msgid "Nenhum profissional foi encontrado na sua busca. Tente novamente."
+msgstr ""
+
+#: templates/opportunity.html:32
+#, fuzzy
+#| msgid "Oportunidades em destaque:"
+msgid "Oportunidade"
+msgstr "Featured oppotunities"
+
+#: templates/opportunity.html:40
+msgid "Requisitos"
+msgstr ""
+
+#: templates/opportunity.html:52
+msgid "Informe seus dados"
+msgstr "Enter your e-mail"
+
+#: templates/opportunity.html:61 templates/opportunity.html:81
+msgid "E-mail"
+msgstr ""
+
+#: templates/opportunity.html:71 templates/opportunity.html:89
+msgid "Endereço"
+msgstr "Address"
+
+#: templates/opportunity.html:72 templates/opportunity.html:90
+#, fuzzy
+#| msgid "Informe seu e-mail"
+msgid "Informe seu endereço"
+msgstr "Enter your e-mail"
+
+#: templates/opportunity.html:98
+msgid "Formação Acadêmica"
+msgstr "Academic Formation"
+
+#: templates/opportunity.html:99
+msgid "Adicionar suas atividades em ordem cronológica"
+msgstr "Add yout activities in chronological order"
+
+#: templates/opportunity.html:99 templates/opportunity.html:151
+msgid "da mais recente para mais antiga"
+msgstr "from the latest to oldest"
+
+#: templates/opportunity.html:106 templates/opportunity.html:127
+msgid "Curso"
+msgstr "Course"
+
+#: templates/opportunity.html:108 templates/opportunity.html:128
+msgid "Digite aqui seu curso"
+msgstr "Enter your graduation"
+
+#: templates/opportunity.html:112 templates/opportunity.html:131
+msgid "Instituição"
+msgstr "University"
+
+#: templates/opportunity.html:114 templates/opportunity.html:133
+msgid "Digite aqui sua instituição de ensino"
+msgstr "Enter here your educational institution"
+
+#: templates/opportunity.html:118 templates/opportunity.html:136
+msgid "Ano de conclusão"
+msgstr "Conclusion year"
+
+#: templates/opportunity.html:119 templates/opportunity.html:137
+msgid "Digite o seu ano de conclusão"
+msgstr "Please enter your year of completion"
+
+#: templates/opportunity.html:142
+msgid "Adicionar formação"
+msgstr "Add Graduation"
+
+#: templates/opportunity.html:150
+msgid "Experiência Profissional"
+msgstr "Profissional Experience"
+
+#: templates/opportunity.html:151
+msgid "Adicionar suas experiências profissionais em ordem cronológica"
+msgstr "Add your professional experiences in chronological order"
+
+#: templates/opportunity.html:158 templates/opportunity.html:193
+msgid "Empresa"
+msgstr "Company"
+
+#: templates/opportunity.html:159 templates/opportunity.html:195
+msgid "Digite aqui sua Empresa"
+msgstr "Enter here your Company"
+
+#: templates/opportunity.html:163 templates/opportunity.html:198
+msgid "Cargo"
+msgstr "Role"
+
+#: templates/opportunity.html:165 templates/opportunity.html:200
+msgid "Digite aqui seu cargo"
+msgstr "Enter here your role"
+
+#: templates/opportunity.html:169 templates/opportunity.html:203
+msgid "Area"
+msgstr "Area"
+
+#: templates/opportunity.html:170 templates/opportunity.html:204
+msgid "Digite aqui sua area"
+msgstr "Enter here your area"
+
+#: templates/opportunity.html:174 templates/opportunity.html:207
+msgid "Data de Inicio"
+msgstr "Start Date"
+
+#: templates/opportunity.html:179 templates/opportunity.html:211
+msgid "Data de Término"
+msgstr "Finish Date"
+
+#: templates/opportunity.html:185 templates/opportunity.html:216
+msgid "Principais atividades desenvolvidas"
+msgstr "Main activities developed"
+
+#: templates/opportunity.html:221
+msgid "Adicionar experiência"
+msgstr "Add experience"
+
+#: templates/opportunity.html:228
+msgid "Idiomas"
+msgstr "Languages"
+
+#: templates/opportunity.html:234 templates/opportunity.html:240
+msgid "Idioma"
+msgstr "Language"
+
+#: templates/opportunity.html:244
+msgid "Adicionar idioma"
+msgstr "Add language"
+
+#: templates/opportunity.html:248
+msgid "Qualificações e atividades complementares"
+msgstr "Qualifications and complementary activities"
+
+#: templates/opportunity.html:249
+msgid "Conte-nos mais"
+msgstr "Tell us more"
+
+#: templates/opportunity.html:251
+msgid "Enviar Currículo"
+msgstr "Send resume"
+
+#: templates/practice-area-detail.html:32
+#: templates/specialization-sector-detail.html:30
+msgid "Soluções"
+msgstr "Approaches"
+
+#: templates/practice-area-detail.html:44
+#: templates/specialization-sector-detail.html:42
+#, python-format
+msgid "Advogados de %(practice_name)s"
+msgstr "Lawyers of %(practice_name)s"
+
+#: templates/press-list.html:36
+msgid "Buscar nas publicações"
+msgstr "Search on publications"
+
+#: templates/social-reponsability.html:22
+msgid "Entidades Apoiadas"
+msgstr "Supporting Entities"
+
+#: templates/who-we-are.html:26
+msgid "Quem somos"
+msgstr "Who we are"
+
+#: templates/who-we-are.html:45
+msgid "Parceiro"
+msgstr "Partner"
+
+#, fuzzy
+#~| msgid "da mais recente para mais antiga"
+#~ msgid "da mais recente para mais antiga."
+#~ msgstr "from the latest to oldest"
+
+#, fuzzy
+#~| msgid "Publicações"
+#~ msgid "Publicações / Artigos"
+#~ msgstr "Publications"
+
+#, fuzzy
+#~| msgid "Publicações"
+#~ msgid "Publicações / Imprensa"
+#~ msgstr "Publications"
+
+# ###########################
+# Traduções a partir daqui #
+# ###########################
+#
+#, fuzzy
+#~| msgid "Atuação"
+#~ msgid "Áreas de Atuação"
+#~ msgstr "Practice"
+
+#~ msgid "Perfil"
+#~ msgstr "Profile"
+
+#, fuzzy
+#~| msgid "Publicações"
+#~ msgid "Prêmios e Publicações"
+#~ msgstr "Publications"
+
+#~ msgid "Notícias e Eventos"
+#~ msgstr "News and events"
+
+#~ msgid "Go"
+#~ msgstr "Ir"
+
+#~ msgid "Esse campo é obrigatório"
+#~ msgstr "This field is required"

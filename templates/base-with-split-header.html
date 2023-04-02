@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block extra_css %}
+	<link rel="stylesheet" href="{% static "stylesheets/back-arrow-row.css" %}" />
+	<link rel="stylesheet" href="{% static "stylesheets/base-with-split-header.css" %}" />
+{% endblock %}
+
+{% block header_content_container %}
+	<div class="col-lg-4 header-content">
+		{% block header_content %}{% endblock %}
+	</div>
+{% endblock %}
+
+{% block header_content_split_container %}
+	<div class="col-8 d-none d-lg-flex">
+		<div class="header-split-content">
+			<div class="back-button-row">
+				<a href="{% block back_url %}{% endblock %}">
+					<i class="material-icons">arrow_back</i>
+					<span>Voltar</span>
+				</a>
+				<div class="header-languages">
+					<form class="language-menu" action="{% url "set_language" %}" method="post">
+						{% csrf_token %}
+						<input name="next" type="hidden" value="{{ redirect_to }}" />
+						<input name="language" type="hidden" value="" />
+
+						{% get_current_language as current_language_code %}
+						{% get_language_info for current_language_code as current_language %}
+						<div class="current-language">
+							<!-- <i class="flag">
+								{% static "images/icons/flags" as flag_folder %}
+								{% flag_file current_language_code as flag_file %}
+								<img src="{{ flag_folder }}/{{ flag_file }}" alt="Bandeira" />
+							</i> -->
+							<span>{% trans_lang current_language.code %}</span>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+
+						{% get_available_languages as available_languages_codes %}
+						{% get_language_info_list for available_languages_codes as available_languages %}
+						<ul class="language-list header-dropdown">
+							{% for language in available_languages %}
+								{% if language.code != current_language.code %}
+									<li data-language-code="{{ language.code }}">
+										<a>
+											<!-- <i class="flag">
+												{% static "images/icons/flags" as flag_folder %}
+												{% flag_file language.code as flag_file %}
+												<img src="{{ flag_folder }}/{{ flag_file }}" alt="Bandeira" />
+											</i> -->
+											<span>{% trans_lang language.code %}</span>
+										</a>
+									</li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</form>
+				</div>
+			</div>
+
+			{% block split_header_content %}{% endblock %}
+		</div>
+	</div>
+{% endblock %}

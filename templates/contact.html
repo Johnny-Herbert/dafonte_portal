@@ -1,0 +1,89 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<style>
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			.header{display:block;}
+			.header .logo{padding-top:50px;}
+		}
+	</style>
+<link rel="stylesheet" href="{% static "stylesheets/contact.css" %}" />
+{% endblock %}
+
+{% block extra_js%}
+<script src="{% static "custom-libs/jquery.mask.js" %}"></script>
+<script src="{% static "js/contact.js" %}"></script>
+{% endblock %}
+{% block header_content %}
+<div class="row contact-header">
+	<div class="col-lg-6">
+		<div class="blurb-header">
+			<h1 class="title">{% trans "Estamos esperando o seu contato" %}</h1>
+			<div class="text">{% page_param "header-blurb-text" %}</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		{% if contact_created %}
+		<div class="alert alert-success" role="alert">
+			Seu contato foi enviado!
+		</div>
+		{% endif %}
+		<form class="contact-form" action="{% url "contact" %}" method="POST">
+			{% csrf_token %}
+			<div class="form-group">
+				<label class="">{% trans 'Nome' %}</label>
+				<input name="name" class="form-control" placeholder="{% trans "Seu nome" %}" />
+			</div>
+			<div class="form-group">
+				<label class="">E-mail</label>
+				<input name="email" class="form-control" placeholder="{% trans "Informe seu e-mail" %}" />
+			</div>
+			<div class="form-group">
+				<label class="">{% trans 'Telefone' %}</label>
+				<input name="telefone" class="form-control" placeholder="{% trans "Informe seu número de telefone com DDD" %}" />
+			</div>
+			<div class="form-group">
+				<label class="">{% trans 'Mensagem' %}</label>
+				<textarea name="message" class="form-control" placeholder="{% trans "Como podemos lhe ajudar?" %}"></textarea>
+			</div>
+			<input class="btn btn-pill btn-primary" type="submit" value="{% trans "Enviar mensagem" %}"
+				style="vertical-align: top;" />
+		</form>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% include "includes/offices-green-row.html" %}
+{% include "includes/opportunities-row.html" %}
+<div class="contact-container">
+	<h3>{% trans "Já viu nosso folder institucional?" %}</h3>
+	<a class="btn btn-pill btn-primary" href="{% url "institutional-folder" %}">
+		<i class="fas fa-file-download"></i>
+		<span>{% trans "Folder institucional" %}</span>
+	</a>
+	{#		<h4 class="title">{% trans "Entidades Apoiadas:" %}</h4>#}
+	{#		<div class="entities-list">#}
+	{#			{% for event in events %}#}
+	{#				<div class="entity-card">#}
+	{#					<div class="entity-picture">#}
+	{#						<img src="/{{ event.picture.name }}" alt="Imagem do Evento" />#}
+	{#					</div>#}
+	{#					<div class="entity-info">#}
+	{#						<div class="entity-name">Aria Social</div>#}
+	{#						<div class="entity-description">{{ event.description_short }}</div>#}
+	{#						<a class="btn btn-pill btn-primary btn-sm d-none d-lg-block" href="">{% trans "Conheça o projeto" %}</a>#}
+	{#						<a class="btn btn-pill btn-primary btn-sm d-lg-none" href="">{% trans "Acessar site da instituição" %}</a>#}
+	{#						<a class="emphasis d-none d-lg-block" href="">{% trans "Acessar site da instituição" %}</a>#}
+	{#					</div>#}
+	{#				</div>#}
+	{#			{% endfor %}#}
+	{#		</div>#}
+</div>
+{% endblock %}

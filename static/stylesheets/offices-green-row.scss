@@ -1,0 +1,103 @@
+@import "global-variables";
+
+.office-list {
+	position: relative;
+	$padding-y: 40px;
+	padding-top: $padding-y;
+	padding-bottom: $padding-y;
+	background-color: $color-primary-bright;
+
+	$mobile-row-padding-right: 32px;
+	@media screen and (max-width: $breakpoint-phone) {
+		margin-right: -$mobile-row-padding-right;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	$visible-right-space: 72px;
+	.office {
+		flex: 1 0 0;
+		$padding-x: 10px;
+		padding-left: $padding-x;
+		padding-right: $padding-x;
+		transition: opacity 500ms;
+
+		@media screen and (max-width: $breakpoint-phone) {
+			flex: 0 0 100%;
+			padding-left: 0;
+			$padding-right: 32px;
+			padding-right: $visible-right-space - $padding-right + $mobile-row-padding-right;
+
+			&:not(.active) {
+				opacity: .4;
+			}
+
+			&:nth-child(n+2) {
+				margin-left: -$visible-right-space + $padding-right;
+			}
+		}
+
+		.city {
+			font-weight: 700;
+			color: #FFFFFF;
+			margin-bottom: 4px;
+		}
+
+		.location {
+			color: $text-black-light;
+			font-size: 11px;
+			margin-bottom: 4px;
+		}
+
+		.contact {
+			color: $text-black;
+			font-size: 11px;
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	.offices-scroller {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.mobile-navigation {
+		position: absolute;
+		color: white;
+
+		$size: 18px;
+		.material-icons {
+			position: absolute;
+			font-size: $size;
+			top: calc(50% - #{$size/2});
+		}
+
+		&.previous {
+			display: none;
+			height: 100%;
+			width: 80px;
+			top: 0;
+			left: 0;
+			text-align: center;
+		}
+
+		&.next {
+			display: none;
+			height: 100%;
+			width: $visible-right-space + $size + 16px;
+			top: 0;
+			right: 0;
+			text-align: center;
+		}
+	}
+}

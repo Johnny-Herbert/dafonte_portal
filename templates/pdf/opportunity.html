@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            font-weight: 200;
+            font-size: 14px;
+        }
+
+        h4 {
+            margin-top: 40px;
+        }
+
+        .bold-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h5>
+        Currículo recebido pelo site em: {{apply.created_at |date:"M, d Y"}} às {{apply.created_at |date:"H:m"}}.
+    </h5>
+    <h1>
+        {{ apply.name }}
+    </h1>
+    <h4>Informações Pessoais:</h4>
+    <p>Email: {{ apply.email }}</p>
+    <p>Fone: {% if apply.phone %}{{ apply.phone }}{% else %}Não informado{% endif %}</p>
+    <p>Endereço: {{ apply.address }}</p>
+
+    <h4>Pretensões:</h4>
+    {% if opportunity is not None %}
+        <p>Vaga: {{ opportunity.title }}</p>
+        <p>Localidade: {{ opportunity.city }}</p>
+    {% endif %}
+    
+    {% if apply.role %}
+        <p>Cargo: {{ apply.role }}</p>
+    {% endif %}
+
+    {% if not opportunity and apply.local %}
+        <p>Localidade:
+        {% if apply.local == 'RC' %}
+            Recife-PE
+        {% elif apply.local == 'SP' %}
+            São Paulo-SP
+        {% elif apply.local == 'BS' %}
+            Brasília-DF
+        {% elif apply.local == 'SL' %}
+            Salvador-BA
+        {% endif %}</p>
+    {% endif %}
+    
+    {% if apply.raw_role == "SUPPORT" %}
+        <p>Área pretendida: {{apply.intend_area}}</p>
+    {% else %}
+        {% if apply.intend_area %}
+            <p>Área pretendida: {{apply.intend_area}}</p>
+        {% endif %}
+        {% if practice_area is not None %}
+            <p>Área de atuação: {{ practice_area }}</p>
+        {% endif %}
+        {% if specialization_sector is not None %}
+            <p>Setor de especialização: {{ specialization_sector }}</p>
+        {% endif %}
+    {% endif %}
+
+    <h4>Experiências Profissionais: </h4>
+    {% if not professionals %}
+        <p>Não informado</p>
+    {% endif %}
+    {% for prof in professionals %}
+    <p class="bold-title">{{ forloop.counter }} - {{prof.enterprise}}</p>
+    <p>Função: {{prof.function}} - {{prof.area}} ({{prof.date_begin|date:"M, Y"}}{% if prof.date_finish %} / {{prof.date_finish|date:"M, Y"}}{% endif %})
+    {% if prof.actual_function %}
+        <p>Cargo Atual: Sim</p>
+    {% endif %}
+    <p>Principais atividades: {{prof.activities}}</p>
+    {% endfor %}
+
+    <h4>Formação Acadêmica: </h4>
+    {% if not academics %}
+        <p>Não informado</p>
+    {% endif %}
+    {% for academic in academics %}
+    <p class="bold-title">{{ forloop.counter }} - {{academic.course}}</p>
+    <p>{{academic.institution}}</p>
+    <p>
+        Ano de formação: {{academic.conclusion}}
+        {% if  academic.in_progress %}
+            (Em curso)
+        {% elif academic.incomplete_course %}
+            (Curso Incompleto)
+        {% endif %}
+    </p>
+    {% if academic.in_progress %}
+        {% if academic.period != 'X' %}
+        <p>{{academic.period}}º Período -
+            {% if academic.shift == 'M' %}
+            Manhã
+            {% elif academic.shift == 'T' %}
+            Tarde
+            {% elif academic.shift == 'N' %}
+            Noite
+            {% else %}
+            Turno não informado
+            {% endif %}
+        </p>
+        {% else %}
+        <p>Periodo não informado -
+            {% if academic.shift == 'M' %}
+            Manhã
+            {% elif academic.shift == 'T' %}
+            Tarde
+            {% elif academic.shift == 'N' %}
+            Noite
+            {% else %}
+            Turno não informado
+            {% endif %}
+        </p>
+        {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <h4>Linguas: </h4>
+    {% if not languages %}
+        <p>Não informado</p>
+    {% endif %}
+    {% for obj in languages %}
+        <p class="bold-title">{{ forloop.counter }} - {{obj.language}}
+        {% if obj.level == 'beginner' %}
+                (Básico)
+            {% elif obj.level == 'intermediate' %}
+                (Intermediário)
+            {% elif obj.level == 'advanced' %}
+                (Avançado)
+            {% else %}
+                (Nível não informado)
+            {% endif %}
+        </p>
+    {% endfor %}
+    
+    <h4>
+        Qualificações e atividades complementares:
+    </h4>
+    {% if not apply.extra_qualification %}
+        <p>Não informado</p>
+    {% endif %}
+    <p>
+        {{ apply.extra_qualification|safe }}
+        {% autoescape off %}
+            {{ context_var }}
+        {% endautoescape %}
+    </p>
+</body>
+
+</html>

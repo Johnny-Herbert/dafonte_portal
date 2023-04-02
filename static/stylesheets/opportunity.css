@@ -1,0 +1,117 @@
+.opportunity-content {
+  background-color: white;
+  color: black;
+  min-width: 70%;
+  min-height: 300px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opportunity-content .not-available {
+  margin: 50px;
+}
+
+.opportunity-content .opportunity-info {
+  width: 60%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .opportunity-content .opportunity-info {
+    width: 90%;
+  }
+}
+
+.opportunity-content .form-infos-block {
+  padding-bottom: 2em;
+  padding-top: 1em;
+  border-bottom: dotted;
+  border-bottom-color: #d8d8d8;
+  border-bottom-width: 2px;
+}
+
+.opportunity-content .opportunity-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opportunity-content .form {
+  border: dotted;
+  border-color: #d8d8d8;
+  border-width: 2px;
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .opportunity-content .form {
+    width: 90%;
+  }
+}
+
+.opportunity-content .form-control {
+  background-color: #f7f7f7;
+  color: #010101;
+}
+
+.opportunity-content h5 {
+  margin-bottom: 15px;
+}
+
+.opportunity-content p {
+  margin-bottom: 35px;
+}
+
+.opportunity-content .btn {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: black;
+}
+
+.opportunity-content .btn .send {
+  margin-bottom: 20px;
+}
+
+.opportunity-content textarea {
+  resize: none;
+  background-color: #f7f7f7;
+  color: #010101;
+  border: 1px solid #e0e0e0;
+  border-radius: 1px;
+  padding: 5px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .opportunity-content textarea {
+    width: 100%;
+  }
+}
+
+.datepicker-panel {
+  background-color: #f7f7f7;
+  color: #010101;
+}
+
+/*# sourceMappingURL=opportunity.css.map */

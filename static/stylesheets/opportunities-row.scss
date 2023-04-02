@@ -1,0 +1,106 @@
+@import "global-variables";
+
+.opportunities-row {
+	background-color: #3f3f3f;
+
+	.content > & {
+		$padding-y: 48px;
+		padding-top: $padding-y;
+		padding-bottom: $padding-y;
+	}
+
+	> div:last-child {
+		padding-left: 60px;
+
+		@media screen and (max-width: $breakpoint-phone) {
+			padding-left: 32px;
+		}
+	}
+}
+
+.opportunities-list {
+	.title {
+		font-size: 32px;
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
+
+	.text {
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+
+
+	.opportunities-table {
+		width: 100%;
+		background-color: rgba(216, 216, 216, 0.1);
+		border-radius: 6px;
+
+		@media screen and (max-width: $breakpoint-phone) {
+			font-size: 12px;
+		}
+
+		tbody {
+			tr:nth-child(odd) {
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+
+			tr:last-child td {
+				padding-bottom: 22px;
+			}
+		}
+
+		td, th {
+			padding: 14px 36px;
+
+			@media screen and (max-width: $breakpoint-phone) {
+				padding: 14px 18px;
+			}
+
+			&:nth-child(n+2) {
+				border-left: 4px solid rgba(0, 0, 0, 0.15);
+
+				@media screen and (max-width: $breakpoint-phone) {
+					border: none;
+				}
+			}
+		}
+
+		th {
+			text-align: center;
+			font-weight: 400;
+			color: #999999;
+		}
+
+		td {
+			font-weight: 500;
+
+			&:nth-child(n+2) {
+				text-align: center;
+			}
+		}
+	}
+
+}
+
+.opportunities-blurb {
+	.title {
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
+
+	.text {
+		font-size: 12px;
+	}
+
+	button {
+		margin: 24px 0 32px;
+	}
+	.opportunities-apply{
+		.apply{
+			margin-bottom:20px;
+			margin-top: 20px;
+		}
+	}
+}

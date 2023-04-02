@@ -1,0 +1,73 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<link rel="stylesheet" href="{% static "stylesheets/search-container.css" %}" />
+	<link rel="stylesheet" href="{% static "stylesheets/event-list.css" %}" />
+{% endblock %}
+
+{% block header_content %}
+	<div class="blurb-header">
+		<h1 class="title">{% trans "Eventos" %}</h1>
+		<div class="text">{% page_param "header-blurb-text" %}</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="event-list-container content">
+		<div class="row">
+			<form class="search-container col-12" action="{% url "event-list" %}" method="GET">
+				<div class="filters row column-gutters">
+					<div class="col-xs-4 relative">
+						<div class="search">
+							<input type="month" name="search-term-date" class="form-control" placeholder="{% trans "Filtrar por data" %}" max="2999-12"/>
+							<i class="material-icons">date_range</i>
+						</div>
+					</div>
+					<div class="col-xs-2 submit">
+						<input type="submit" class="submit-button" value="{% trans 'Procurar' %}">
+					</div>
+				</div>
+			</form>
+			<div class="next-events-container col-12">
+			{% if show_next_events_title %}
+				<h4 class="title">{% trans "Próximos eventos:" %}</h4>
+			{% endif %}			
+				<div class="event-list">
+					{% for event in events %}
+						<div class="event-card-container">
+							<div class="event-datetime">
+								<span class="date">
+									<i class="material-icons">today</i>
+									<span>{{ event.date|date:"d/m/Y" }}</span>
+								</span>
+								<span class="time">
+									<i class="material-icons">location_on</i>
+									<span>{{ event.address }}</span>
+								</span>
+							</div>
+							<div class="event-card">
+								<div class="event-picture">
+									{% if event.picture %}
+									<img src="{{ event.picture.url }}" alt="Imagem do Evento" />
+									{% else %}
+									<img src="{% static "images/pics/img-compartilhamento.png" %}" alt="Imagem padrão do Evento" />
+									{% endif %}
+								</div>
+								<div class="event-info">
+									<div class="event-description">{{ event.description_short }}</div>
+									<a class="emphasis" href="{% url "event-detail" event.pk %}">{% trans "Informações do evento" %}</a>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				</div>
+		</div>
+	</div>
+{% endblock %}

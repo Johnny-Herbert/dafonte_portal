@@ -1,0 +1,111 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col, [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row.column-gutters {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row.column-gutters > .col,
+.row.column-gutters > div[class*=col-] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  color: #1BD495;
+}
+
+a:hover {
+  color: #13B277;
+}
+
+/**
+	Buttons
+ */
+.btn {
+  font-weight: 500;
+  padding: 1em 1.5em;
+}
+
+.btn > i + span {
+  margin-left: .5em;
+}
+
+[class^="btn-outline-"], [class*=" btn-outline-"] {
+  color: inherit;
+  border-width: 2px;
+}
+
+.btn-pill {
+  border-radius: 2em;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #1BD495;
+  border-color: #1BD495;
+}
+
+.btn-primary:hover {
+  background-color: #13B277;
+  border-color: #13B277;
+}
+
+.btn-outline-primary {
+  color: white;
+  border-color: #1BD495;
+}
+
+.btn-outline-primary:hover {
+  background-color: #1BD495;
+  border-color: #1BD495;
+}
+
+.btn-link {
+  color: #1BD495;
+}
+
+.btn-link:hover {
+  color: #13B277;
+}
+
+/*
+	Tabs
+*/
+.nav-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.nav-tabs .nav-item {
+  padding: 0 24px;
+  margin-bottom: -2px;
+}
+
+.nav-tabs .nav-item .nav-link {
+  padding: 18px 0;
+  background-color: inherit;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #1BD495;
+  border-bottom: 4px solid #1BD495;
+}
+/*# sourceMappingURL=bootstrap.css.map */

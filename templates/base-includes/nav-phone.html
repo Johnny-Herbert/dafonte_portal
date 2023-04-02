@@ -1,0 +1,121 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+<nav class="nav-mobile d-flex d-lg-none">
+	<div class="menu-icons">
+		<span>Menu</span>
+		<i class="icon-menu-open material-icons">menu</i>
+		<i class="icon-menu-close material-icons">close</i>
+	</div>
+	<hr />
+	<ul class="mobile-menu">
+		<li class="header-languages nested-list-container">
+			<form class="language-menu" action="{% url "set_language" %}" method="post">
+				{% csrf_token %}
+				<input name="next" type="hidden" value="{{ redirect_to }}" />
+				<input name="language" type="hidden" value="" />
+
+				{% get_current_language as current_language_code %}
+				{% get_language_info for current_language_code as current_language %}
+				<div class="current-language">
+					<!-- <i class="flag">
+						{% static "images/icons/flags" as flag_folder %}
+						{% flag_file current_language_code as flag_file %}
+						<img src="{{ flag_folder }}/{{ flag_file }}" alt="Bandeira" />
+					</i> -->
+					<span>{% trans_lang current_language.code %}</span>
+					<i class="material-icons">keyboard_arrow_down</i>
+				</div>
+
+				{% get_available_languages as available_languages_codes %}
+				{% get_language_info_list for available_languages_codes as available_languages %}
+				<ul class="language-list nested-list">
+					{% for language in available_languages %}
+						{% if language.code != current_language.code %}
+							<li data-language-code="{{ language.code }}">
+								<a>
+									<!-- <i class="flag">
+										{% static "images/icons/flags" as flag_folder %}
+										{% flag_file language.code as flag_file %}
+										<img src="{{ flag_folder }}/{{ flag_file }}" alt="Bandeira" />
+									</i> -->
+									<span>{% trans_lang language.code %}</span>
+								</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</form>
+		</li>
+		<li>
+			<ul class="header-navigation">
+				<li>
+					<a class="mobile-link" href="{% url "practice-area-list" %}">{% trans "Atuação" %}</a>
+				</li>
+				<li class="who-we-are nested-list-container">
+					<div>
+						<div>
+							<span>{% trans "Quem Somos" %}</span>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="nested-list">
+							<li><a class="mobile-link-intern" href="{% url "culture" %}">{% trans "História e Cultura" %}</a></li>
+							<li><a class="mobile-link-intern" href="{% url "who-we-are" %}">{% trans "Institucional / Escritórios" %}</a></li>
+							<li><a class="mobile-link-intern" href="{% url "member-list" %}?filter-member-type=lawyer">{% trans "Equipe" %}</a></li>
+							<li>
+								<a href="{% url "institutional-folder" %}">
+									<i class="fas fa-file-download"></i>
+									<span>{% trans "Folder Institucional" %}</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="pubilcations nested-list-container">
+					<div>
+						<div>
+							<span>{% trans "Publicações" %}</span>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="nested-list">
+							<li>
+								<a class="mobile-link-intern" href="{% url "press-list" %}">Imprensa</a>
+							</li>
+							<li>
+								<a class="mobile-link-intern" href="{% url "article-list" %}">Artigos</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a class="mobile-link" href="{% url "event-list" %}">{% trans "Eventos" %}</a></li>
+				<li class="who-we-are nested-list-container">
+					<div>
+						<div>
+							<span>{% trans "Ética e Privacidade" %}</span>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="nested-list">
+							<li><a class="mobile-link-intern" href="{% url "compliance" %}">{% trans "Compliance" %}</a></li>
+							<li><a class="mobile-link-intern" href="{% url "collaboration" %}">{% trans "Canal de colaboração" %}</a></li>
+							<li>
+								<a href="{% url "code-of-conduct" %}">
+									<i class="fas fa-file-download"></i>
+									<span>{% trans "Código de conduta" %}</span>
+								</a>
+							</li>
+							<li>
+								<a href="{% url "privacy-policy" %}">
+									<i class="fas fa-file-download"></i>
+									<span>{% trans "Política de Privacidade" %}</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a class="mobile-link" href="{% url "social-responsability" %}">{% trans "Responsabilidade Social" %}</a></li>
+				<li><a class="mobile-link" href="{% url "contact" %}">{% trans "Contato" %}</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>

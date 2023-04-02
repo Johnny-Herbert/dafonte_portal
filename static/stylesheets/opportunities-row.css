@@ -1,0 +1,103 @@
+.opportunities-row {
+  background-color: #3f3f3f;
+}
+
+.content > .opportunities-row {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.opportunities-row > div:last-child {
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .opportunities-row > div:last-child {
+    padding-left: 32px;
+  }
+}
+
+.opportunities-list .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.opportunities-list .text {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.opportunities-list .opportunities-table {
+  width: 100%;
+  background-color: rgba(216, 216, 216, 0.1);
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+  .opportunities-list .opportunities-table {
+    font-size: 12px;
+  }
+}
+
+.opportunities-list .opportunities-table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.opportunities-list .opportunities-table tbody tr:last-child td {
+  padding-bottom: 22px;
+}
+
+.opportunities-list .opportunities-table td, .opportunities-list .opportunities-table th {
+  padding: 14px 36px;
+}
+
+@media screen and (max-width: 767px) {
+  .opportunities-list .opportunities-table td, .opportunities-list .opportunities-table th {
+    padding: 14px 18px;
+  }
+}
+
+.opportunities-list .opportunities-table td:nth-child(n+2), .opportunities-list .opportunities-table th:nth-child(n+2) {
+  border-left: 4px solid rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  .opportunities-list .opportunities-table td:nth-child(n+2), .opportunities-list .opportunities-table th:nth-child(n+2) {
+    border: none;
+  }
+}
+
+.opportunities-list .opportunities-table th {
+  text-align: center;
+  font-weight: 400;
+  color: #999999;
+}
+
+.opportunities-list .opportunities-table td {
+  font-weight: 500;
+}
+
+.opportunities-list .opportunities-table td:nth-child(n+2) {
+  text-align: center;
+}
+
+.opportunities-blurb .title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.opportunities-blurb .text {
+  font-size: 12px;
+}
+
+.opportunities-blurb button {
+  margin: 24px 0 32px;
+}
+
+.opportunities-blurb .opportunities-apply .apply {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=opportunities-row.css.map */

@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<style>
+		.header{min-height:auto;}
+	</style>
+	<link rel="stylesheet" href="{% static "stylesheets/back-arrow-row.css" %}" />
+	<link rel="stylesheet" href="{% static "stylesheets/member-detail.css" %}" />
+{% endblock %}
+
+{% block content %}
+	<div class="content">
+		<div class="member-details row">
+			<div class="back-button-row col-12">
+				<a href="{% url "member-list" %}"><i class="material-icons">arrow_back</i>{% trans "Voltar" %}</a>
+			</div>
+			<div class="member-description col-md-4">
+				<div class="info-container">
+					<div style="background-image: url(
+						{% if member.photo %}
+							{{member.photo.url}}
+						{% else %}
+							{% static "images/pics/member-photo-placeholder.png"%}
+						{% endif %}
+						);" class="member-photo">
+						<div class="member-name">
+							<p>
+								{{member.first_name}}
+								{{member.last_name}}
+							</p>
+						</div>
+					</div>
+					<p class="info bold info-email">
+						{{member.email}}
+					</p>
+					<p class="info bold info-phone">
+						{{member.phone}}
+					</p>
+					{% for language in member.languages.all %}
+						<div>
+							<p class="info">
+								{{language.name}}
+							</p>
+						</div>
+					{% endfor %}
+					{% if member.practice_areas.all %}
+					<p class="info bold info-pratice">
+						{% trans "Áreas de atuação" %}:
+					</p>
+					<div class="info pratice-areas">
+						<ul>
+							{% for area in member.practice_areas.all %}
+							<li>
+								<a class="pratice-area" href="{% url "practice-area-detail" area.id %}">
+									{{ area.name }}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
+					{% if member.specialization_sector.all %}
+					<p class="info bold info-pratice">
+						{% trans "Setores de especialização" %}:
+					</p>
+					<div class="info pratice-areas">
+						<ul>
+							{% for sector in member.specialization_sector.all %}
+							<li>
+								<a class="pratice-area" href="{% url "specialization-sector-detail" sector.id %}">
+									{{ sector.name }}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}	
+					{% if member.vcard %}
+						<a href="{{ member.vcard.url }}" class="btn btn-pill btn-outline-primary">
+							<i class="material-icons">arrow_downward</i>
+							<p>
+								{% trans "Baixar" %} vCard
+							</p>
+						</a>
+					{% endif %}
+				</div>
+			</div>
+			<div class="member-experience col-xl-5">
+				<div class="info-container">
+					<h5>{% trans "Experiência" %}</h5>
+					<p>
+						{{ member.professional_experience | safe }}
+					</p>
+					<h5>{% trans "Formação acadêmica" %}</h5>
+					<p>
+						{{ member.academic_formation | safe }}
+					</p>
+				</div>
+			</div>
+			<div class="member-activities col-xl-3">
+				<div class="info-container">
+					{% if 	member.other_activities %}
+						<h5>{% trans "Outras atividades" %}</h5>
+						<p>
+							{{member.other_activities| safe }}
+						</p>
+						{% endif %}
+					{% if member.awards.all or member.awards_and_publications %}
+						<h5>{% trans "Reconhecimentos e premiações" %}</h5>
+						{{member.awards_and_publications | safe }}
+						<div class="info-awards">
+							{% if member.awards.all %}
+								{% for award in member.awards.all %}
+									<div class="award">
+										<div class="img-box">
+											{% if award.picture %}
+												<img src="{{ award.picture.url }}" alt="Logo do Prêmio"  />
+											{% endif %}
+										</div>
+										{{award.description | safe}}
+									</div>
+								{% endfor %}
+							{% endif %}
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include "includes/calendar.html" %}
+{% endblock %}

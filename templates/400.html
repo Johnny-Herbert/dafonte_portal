@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "stylesheets/error-pages.css" %}" />
+{% endblock %}
+{% block extra_js %}
+{% endblock %}
+{% block content %}
+<div class="content-error">
+    <div class="center-content">
+        <h1>400</h1>
+        <p>{% trans "Solicitação inválida." %}</p>
+    </div>
+</div>
+{% endblock %}

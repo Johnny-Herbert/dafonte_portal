@@ -1,0 +1,18 @@
+[
+	{
+		"model": "portal.PublicationType",
+		"pk": 1,
+		"fields": {
+			"name_pt_br": "Imprensa",
+			"name_en": "Press"
+		}
+	},
+	{
+		"model": "portal.PublicationType",
+		"pk": 2,
+		"fields": {
+			"name_pt_br": "Artigo",
+			"name_en": "Article"
+		}
+	}
+]

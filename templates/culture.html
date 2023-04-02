@@ -1,0 +1,73 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+{% load culture_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<link rel="stylesheet" href="{% static "stylesheets/culture.css" %}" />
+{% endblock %}
+{% block extra_js %}
+	<script src="{% static "js/who-we-are.js" %}"></script>
+{% endblock %}
+
+{% block header_content %}
+	<div class="blurb-header">
+		<h1 class="title">{% page_param "header-blurb-title" %}</h1>
+		<div class="text">{% page_param "header-blurb-text" %}</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="culture-container content">
+		<div class="row">
+			<div class="col-lg-8 col-statements">
+				<div class="statements">
+					<div class="statement">
+						<div class="statement-title">
+							<img src="{% static "images/icons/motto.png" %}" alt="Motto Icon" />
+							<h3>{% trans "Nossa Crença:" %}</h3>
+						</div>
+						<div>{% page_param "our-motto" %}</div>
+					</div>
+					<div class="statement">
+						<div class="statement-title">
+							<img src="{% static "images/icons/objective.png" %}" alt="Motto Icon" />
+							<h3>{% trans "Nossa Missão:" %}</h3>
+						</div>
+						<div>{% page_param "our-objective" %}</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-if">
+				<div class="institutional-folder">
+					<div>{% trans "Faça o download do nosso folder institucional e saiba mais sobre nossa empresa:" %}</div>
+					<a href="{% url "institutional-folder" %}" class="btn btn-pill btn-primary">
+						<i class="fas fa-file-download"></i>
+						<span>{% trans "Acessar folder institucional" %}</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-12 col-values">
+				<div class="values">
+					<div class="statement-title">
+						<img src="{% static "images/icons/value.png" %}" alt="Motto Icon" />
+						<h3>{% trans "Nossos valores:" %}</h3>
+					</div>
+					<div class="value-list">
+						{% for value in values %}
+							<div class="value">
+								<h4>{{ forloop.counter }}. {{ value.title }}</h4>
+								<div>{{ value.description }}</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+{% endblock %}

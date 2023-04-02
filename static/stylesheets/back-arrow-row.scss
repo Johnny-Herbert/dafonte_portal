@@ -1,0 +1,26 @@
+@import "global-variables";
+
+.back-button-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+
+	> a {
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 17px;
+		color: $color-primary;
+
+		&:hover {
+			text-decoration: none;
+			color: $color-primary-dark;
+		}
+
+		.material-icons {
+			font-size: 16px;
+			margin-right: 4px;
+		}
+	}
+}

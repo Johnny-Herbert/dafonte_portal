@@ -1,0 +1,51 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+<link rel="stylesheet" href="{% static "stylesheets/opportunities-row.css" %}" />
+
+<div class="row opportunities-row">
+	<div class="col-lg-8 opportunities-list">
+		<div>
+			<div>
+				<h2 class="title">{% trans "Faça parte do time" %}</h2>
+				<div class="text">{% trans "Oportunidades em destaque:" %}</div>
+				<table class="opportunities-table">
+					<thead>
+						<tr>
+							<th>Oportunidade</th>
+							<th>Cidade</th>
+							<th>Vagas</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for opportunity in open_opportunities %}						
+							{% if opportunity.active == True %}	
+								<tr>
+									<td><a href="{% url "opportunity-detail" opportunity.pk %}">{{ opportunity.title }}</a></td>
+									<td>{{ opportunity.display_city }}</td>
+									<td>{{ opportunity.spots }}</td>
+								</tr>
+							{% endif %}
+						{% empty %}
+						<tr>
+							<td colspan="3" style="text-align: center;">{% trans "Sem vagas abertas no momento." %}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-4 opportunities-blurb">
+		<div class="opportunities-apply">
+			<h4 class="title">{% page_param "opportunity-blurb-1-title" %}</h4>
+			<div class="text">{% page_param "opportunity-blurb-1-text" %}</div>
+			<a class="btn btn-pill btn-outline-primary apply" href="{% url "opportunity" %}">{% trans "Enviar currículo" %}</a>
+		</div>
+		<div>
+			<h4 class="title">{% page_param "opportunity-blurb-2-title" %}</h4>
+			<div class="text">{% page_param "opportunity-blurb-2-text" %}</div>
+		</div>
+	</div>
+</div>

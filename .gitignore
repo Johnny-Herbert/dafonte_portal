@@ -1,0 +1,6 @@
+\.idea/
+*.pyc
+\files
+*.css.map
+assets/
+/venv

@@ -1,0 +1,24 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<style>
+		.header{min-height:100px;}
+	</style>
+<link rel="stylesheet" href="{% static "stylesheets/compliance.css" %}" />
+{% endblock %}
+
+
+{% block content %}
+
+<div class="compliance-container">
+	<div class="row">
+		<h2 class="compliance-title">{% trans "Compliance" %}</h2>
+		<p class="compliance-text">{% page_param "compliance-text" %}</p>
+	</div>
+</div>
+{% endblock %}

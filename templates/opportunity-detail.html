@@ -1,0 +1,122 @@
+{% extends "base-with-header-content-bg.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image }}{% endblock %}
+
+{% block extra_css %}
+    <style>
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			.header{display:block;}
+			.header .logo{padding-top:50px;}
+		}
+	</style>
+<link rel="stylesheet" href="{% static "stylesheets/opportunity-detail.css" %}" />
+{% endblock %}
+
+{% block header_content %}
+{% endblock %}
+
+{% block content-bg %}
+
+<div class="opportunity-content">
+    <div class="opportunity-info">
+        <h5>Oportunidade</h5>
+        <p>{{ opportunity.title }}</p>
+        <p>{{ opportunity.display_city }}</p>
+        <div class="description-opportunity">
+            <p>{{ opportunity.description_short | safe}}</p>
+            {{ opportunity.description | safe }}
+        </div>
+
+        <h5>Requisitos</h5>
+        <div class="requirements-opportunity">
+            {{ opportunity.requirements | safe}}
+        </div>
+    </div>
+    <form class="opportunity-form" action="{% url "opportunity-detail" opportunity.id %}" method="POST">
+        <div class="form-personal form">
+            <h5>Informe seus dados</h5>
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="">Nome</label>
+                <input name="name" class="form-control" placeholder="Seu nome" />
+            </div>
+            <div class="form-group">
+                <label class="">E-mail</label>
+                <input name="email" class="form-control" placeholder="Informe seu e-mail" />
+            </div>
+            <div class="form-group">
+                <label class="">Telefone</label>
+                <input name="telefone" class="form-control" placeholder="Informe seu número de telefone com DDD" />
+            </div>
+            <div class="form-group">
+                <label class="">Endereço</label>
+                <input name="address" class="form-control" placeholder="Informe seu endereço" />
+            </div>
+
+        </div>
+        <div class="form-academic form">
+            <h5>Formação Acadêmica</h5>
+            <p>Adicionar suas atividades em ordem cronológica - da mais recente para mais antiga.</p>
+            <div class="form-academic-table">
+                    <div class="form-group">
+                        <label class="">Curso</label>
+                        <input name="curso" class="form-control" placeholder="Digite aqui seu curso" />
+                    </div>
+                    <div class="form-group">
+                        <label class="">Instituição</label>
+                        <input name="instituicao" class="form-control"
+                            placeholder="Digite aqui sua instituição de ensino" />
+                    </div>
+                    <div class="form-group">
+                        <label class="">Ano de conclusão</label>
+                        <input type="date" name="ano-conclusao" class="form-control" placeholder="Instituição" />
+                    </div>
+                <a class="btn btn-pill btn-outline-primary">+ Adicionar formação</a>
+
+            </div>
+        </div>
+        <div class="form-language form">
+            <h5>Idiomas</h5>
+            <input name="language" class="form-control" placeholder="Idioma" />
+            <a class="btn btn-pill btn-outline-primary">+ Adicionar idioma</a>
+        </div>
+        <div class="form-activities form">
+            <h5>Qualificações e atividades complementares</h5>
+            <textarea name="activities" cols="30" rows="5" placeholder="Conte-nos mais"></textarea>
+        </div>
+        <div class="form-professional form">
+            <h5>Experiência Profissional</h5>
+            <p>Adicionar suas experiências profissionais em ordem cronológica - da mais recente para mais antiga.</p>
+                <div class="form-group">
+                    <label class="">Empresa</label>
+
+                    <input name="empresa" class="form-control" placeholder="Digite aqui sua Empresa" />
+                </div>
+                <div class="form-group">
+                    <label class="">Cargo</label>
+
+                    <input name="cargo" class="form-control" placeholder="Digite aqui seu cargo" />
+                </div>
+                <div class="form-group">
+                    <label class="">Data de Inicio</label>
+                    <input type="date" name="ano-inicio" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="">Data de Término</label>
+                    <input type="date" name="ano-termino" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <textarea name="professional" cols="30" rows="5"
+                        placeholder="Principais atividades desenvolvidas"></textarea>
+                </div>
+            <a class="btn btn-pill btn-outline-primary">+ Adicionar experiência</a>
+        </div>
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,131 @@
+@import "global-variables";
+
+.event-title {
+  text-align: center;
+  margin: auto;
+
+  .title {
+    padding-top: 40px;
+  }
+}
+
+b, strong{
+  color: $color-primary;
+}
+
+$default-padding-x: 165px;
+$default-padding-x-phone: 32px;
+$default-padding-x-tablet: 4rem;
+.event-container {
+  background-color: #262729;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding-right: $default-padding-x;
+  padding-left: $default-padding-x;
+
+  @media screen and (max-width: $breakpoint-phone) {
+    padding-right: $default-padding-x-phone;
+    padding-left: $default-padding-x-phone;
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding-right: $default-padding-x-tablet ;
+    padding-left: $default-padding-x-tablet ;
+  }
+
+  .event-back {
+    flex-direction: row;
+    align-content: center;
+    height: auto;
+    p {
+      padding-top: 2px;
+    }
+    a {
+      display: flex;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    i {
+      color: #1bd495;
+    }
+  }
+
+  .event-back,
+  .event-date {
+    width: -moz-available;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    @media screen and (max-width: $breakpoint-phone) {
+      display: none;
+    }
+  }
+
+  
+  .event-content {
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+
+  .event-members {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    @media screen and (max-width: $breakpoint-phone) {
+      flex-direction: column;
+
+      span {
+        margin-bottom: 20px;
+      }
+    }
+    span {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+
+      img {
+        height: 42px;
+        width: 47px;
+        border-radius: 70%;
+        object-fit: cover;
+      }
+
+      p {
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+.event-mobile {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  @media screen and (max-width: $breakpoint-phone) {
+    display: flex;
+  }
+  a{
+    display: flex;
+
+    p{
+      padding-top: 2px;
+    }
+
+  }
+  a:hover{
+    text-decoration: none;
+  }
+
+  .event-date-mobile{
+    font-size: 12px;
+
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "DaFonte Portal",
+  "description": "Django - www.capyba.com",
+  "NOTE" : "postdeploy changes are NOT committed to the app image.",
+  "keywords": [
+    "dokku",
+    "django",
+    "capyba.com"
+  ],
+  "scripts": {
+    "dokku": {
+      "predeploy": "python manage.py migrate",
+      "postdeploy": "cat capyba"
+    }
+  }
+}

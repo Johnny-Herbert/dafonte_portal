@@ -1,0 +1,314 @@
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-right: 65px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-left {
+    padding-right: 0;
+  }
+}
+
+.header-left .header-press-list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.header-left .page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header-left .page-title .title {
+  max-width: 110px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-left .page-title .search .material-icons {
+  font-size: 22px;
+}
+
+.header-left .press-circle-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.back-button-row {
+  height: 60px !important;
+}
+
+.header-right .search-container {
+  margin-bottom: 20px;
+}
+
+.header-split-content {
+  padding-bottom: 30px;
+}
+
+.container-head {
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.presses-scroller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.presses-scroller .header-press {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.presses-scroller .header-press .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .presses-scroller .header-press .title {
+    font-size: 22px;
+  }
+}
+
+.presses-scroller .header-press .description {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+
+.presses-scroller .header-press .creation-date {
+  color: #919191;
+  margin-bottom: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.press-list-container {
+  padding-top: 48px;
+  padding-bottom: 20px;
+  background-color: #151616;
+  padding-right: 165px;
+  padding-left: 165px;
+}
+
+@media screen and (max-width: 767px) {
+  .press-list-container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .press-list-container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.press-list-container .press-list-header {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+.press-list-container .press-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .press-list-container .press-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.press-list-container .press-list .press-card {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 24px;
+  width: 320px;
+  height: 555px;
+  background-color: white;
+  color: #121212;
+}
+
+@media screen and (max-width: 767px) {
+  .press-list-container .press-list .press-card {
+    width: 300px;
+    height: 550px;
+  }
+}
+
+.press-list-container .press-list .press-card .press-card-header {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 287px;
+  background-color: white;
+}
+
+.press-list-container .press-list .press-card .press-card-header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.press-list-container .press-list .press-card .press-card-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  padding: 32px;
+  overflow: auto;
+  padding-top: 0;
+}
+
+.press-list-container .press-list .press-card .press-card-body h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.press-list-container .press-list .press-card .press-card-body p {
+  font-size: 12px;
+}
+
+.press-list-container .press-list .press-card .full-press-container {
+  padding: 0 32px 32px;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 1460px) {
+  .press-list-container .press-list .break-window {
+    display: none;
+  }
+}
+
+.press-list-container .pagination {
+  margin-top: 48px;
+  margin-bottom: 47px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination > div {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
+  overflow: hidden;
+}
+
+.pagination > div:first-child {
+  margin-left: 0;
+}
+
+.pagination > div:last-child {
+  margin-right: 0;
+}
+
+.pagination > div > a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: inherit;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination .arrow-left, .pagination .arrow-right {
+  color: #1BD495;
+  font-size: 22px;
+}
+
+.pagination .arrow-left.disabled, .pagination .arrow-right.disabled {
+  cursor: default;
+  color: rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.pagination .page-number {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination .ellipsis {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination .page-current {
+  background-color: #1BD495;
+  color: #121212;
+}
+/*# sourceMappingURL=press-list.css.map */

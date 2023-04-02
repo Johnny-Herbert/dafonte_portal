@@ -1,0 +1,91 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<link rel="stylesheet" href="{% static "stylesheets/practice-area-list.css" %}" />
+{% endblock %}
+{% block extra_js %}
+	<script src="{% static "js/member-list.js" %}"></script>
+{% endblock %}
+
+{% block header_content %}
+	<div class="blurb-header">
+		<h1 class="title">{% page_param "header-blurb-title" %}</h1>
+		<div class="text">{% page_param "header-blurb-text" %}</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="content">
+		<div class="practice-area-list row">
+			<h4 class="title" id="practice-areas">{% trans "Áreas de atuação:" %}</h4>
+			<ul class="practice-area-list-content">
+				{% for practice_area in practice_areas %}
+					<li class="list-wrap-icon">
+						<div class="wrap-icon">
+							<i class="material-icons">navigate_next</i>
+							<i class="material-icons last">navigate_next</i>
+						</div>
+						<a href="{% url "practice-area-detail" practice_area.id %}">{{ practice_area.name }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+			<h4 class="title" id="specialization-sectors">{% trans "Setores de especialização:" %}</h4>
+			<ul class="practice-area-list-content sector-content" id="sector-content">
+				{% for sector in specialization_sector %}
+					<li class="list-wrap-icon">
+						<div class="wrap-icon">
+							<i class="material-icons">navigate_next</i>
+							<i class="material-icons last">navigate_next</i>
+						</div>
+						<a href="{% url "specialization-sector-detail" sector.id %}">{{ sector.name }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+			{#		<div class="d-block d-lg-none emphasis"> {% trans "Ver todas as áreas de atuação" %}</div>#}
+			<form class="search-container" action="{% url "member-list" %}" method="GET">
+				<h4 class="title">{% trans "Pesquisar por um de nossos profissionais:" %}</h4>
+				<div class="filters row column-gutters">
+					<div class="col-lg-12">
+						<div class="search">
+							<input name="search-term" class="form-control" placeholder="{% trans 'Buscar pelo nome' %}" />
+							<label id="search-term-icon" class="material-icons">search</label>
+						</div>
+						<div class="filters-initial">
+							<input id="filter-by-initial" name="filter-by-initial" type="hidden" value="false" />
+							{% for initial in initials %}
+								<label>
+									<input type="radio" name="member-initial" value="{{ initial.value }}"
+											{% checked initial.value selected_initial %} {% disabled initial.disabled %} />
+									<span>{{ initial.value }}</span>
+								</label>
+								•
+							{% endfor %}
+	{#						<label>#}
+	{#							<input type="radio" name="member-initial" value="" {% checked "" selected_initial %} />#}
+	{#							<span>{% trans "Todas" %}</span>#}
+	{#						</label>#}
+						</div>
+					</div>
+					{% comment %} <div class="col-lg-6 filter-area">
+						<div>
+							<select id="" name="filter-practice-area" class="form-control">
+								<option value="all" selected>{% trans 'Todas as Áreas' %}</option>
+								{% for practice_area in practice_areas %}
+									<option value="{{ practice_area.id }}">{{ practice_area.name }}</option>
+								{% endfor %}
+							</select>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+					</div> {% endcomment %}
+				</div>
+			</form>
+		</div>
+	</div>
+	{% include "includes/offices-green-row.html" with offices=offices %}
+{% endblock %}

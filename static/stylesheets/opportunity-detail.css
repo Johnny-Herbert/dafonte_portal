@@ -1,0 +1,82 @@
+.opportunity-content {
+  background-color: white;
+  color: black;
+  min-width: 70%;
+  min-height: 300px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opportunity-content .opportunity-info {
+  width: 80%;
+}
+
+.opportunity-content .opportunity-info h5:first-of-type {
+  margin-top: 10px;
+}
+
+.opportunity-content .opportunity-info p, .opportunity-content .opportunity-info h5 {
+  text-align: left;
+}
+
+.opportunity-content .opportunity-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opportunity-content .form {
+  border: dotted;
+  border-color: #d8d8d8;
+  border-width: 2px;
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.opportunity-content .form-control {
+  background-color: #f7f7f7;
+  color: #010101;
+}
+
+.opportunity-content h5 {
+  margin-bottom: 15px;
+}
+
+.opportunity-content p {
+  margin-bottom: 35px;
+}
+
+.opportunity-content .btn {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.opportunity-content textarea {
+  resize: none;
+  background-color: #f7f7f7;
+  color: #010101;
+  border: 1px solid #e0e0e0;
+  border-radius: 1px;
+  padding: 5px;
+}
+/*# sourceMappingURL=opportunity-detail.css.map */

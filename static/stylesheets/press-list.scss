@@ -1,0 +1,246 @@
+@import "global-variables";
+
+.header-left {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-right: 65px;
+
+	@media screen and (max-width: $breakpoint-phone) {
+		padding-right: 0;
+	}
+
+	.header-press-list {
+		flex-grow: 1;
+	}
+
+	.page-title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+
+		.title {
+			max-width: 110px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.search {
+			.material-icons {
+				font-size: 22px;
+			}
+		}
+	}
+
+	.press-circle-navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+}
+
+.back-button-row{
+	height: 60px !important;
+}
+
+.header-right {
+	.search-container {
+		margin-bottom: 20px;
+	}
+}
+
+.header-split-content {
+	padding-bottom: 30px;
+}
+
+.container-head{
+	padding: 0 !important;
+	background-color:transparent !important;
+}
+
+.presses-scroller {
+	display: flex;
+	overflow: hidden;
+
+	.header-press {
+		flex: 0 0 100%;
+		display: flex;
+		flex-direction: column;
+
+		.title {
+			font-size: 32px;
+			font-weight: 700;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: $breakpoint-phone) {
+				font-size: 22px;
+			}
+		}
+
+		.description {
+			font-size: 16px;
+			margin-bottom: 16px;
+			line-height: 24px;
+		}
+
+		.creation-date {
+			color: #919191;
+			margin-bottom: 40px;
+			flex-grow: 1;
+		}
+	}
+}
+
+$default-padding-x: 165px;
+$default-padding-x-phone: 32px;
+$default-padding-x-tablet: 4rem;
+.press-list-container {
+	$padding-y: 48px;
+	padding-top: $padding-y;
+	padding-bottom: 20px;
+	background-color: #151616;
+	padding-right: $default-padding-x;
+	padding-left: $default-padding-x;
+	
+	@media screen and(max-width: $breakpoint-phone){
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		padding-right: $default-padding-x-tablet ;
+		padding-left: $default-padding-x-tablet ;
+	}
+
+	.press-list-header{
+		justify-content: space-around !important;
+	}
+	.press-list {
+		display: flex;
+		flex-wrap: wrap;
+
+		@media screen and(max-width: $breakpoint-phone){
+			justify-content: center;
+		}
+		.press-card {
+			flex-shrink: 0;
+			display: flex;
+			flex-direction: column;
+			margin: 24px;
+			width: 320px;
+			height: 555px;
+			background-color: white;
+			color:$text-black;
+
+			@media screen and (max-width: $breakpoint-phone) {
+				width: 300px;
+				height: 550px;
+			}
+
+			.press-card-header {
+				flex-shrink: 0;
+				height: 287px;
+				background-color: white;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.press-card-body {
+				flex: 1 0 0;
+				padding: 32px;
+				overflow: hidden;
+
+				h6 {
+					font-size: 14px;
+					font-weight: 600;
+					margin-bottom: 20px;
+				}
+
+				p {
+					font-size: 12px;
+				}
+			}
+
+			.full-press-container {
+				padding: 0 32px 32px;
+				margin-top: 32px;
+				color:white;
+			}
+		}
+
+		.break-window{
+			@media screen and (max-width:1460px){
+				display: none;
+			}
+		}
+	}
+
+	.pagination {
+		margin-top: 48px;
+		margin-bottom: 47px;
+		justify-content: flex-end;
+	}
+}
+
+.pagination {
+	display: flex;
+
+	> div {
+		$margin-x: 16px;
+		width: 40px;
+		height: 40px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 40px;
+		margin-left: $margin-x;
+		margin-right: $margin-x;
+		overflow: hidden;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		> a {
+			text-decoration: none;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			color: inherit;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.arrow-left, .arrow-right {
+		color: $color-primary;
+		font-size: 22px;
+
+		&.disabled {
+			cursor: default;
+			color: rgba(255, 255, 255, .15);
+			pointer-events: none;
+		}
+	}
+
+	.page-number {
+		background-color: rgba(0, 0, 0, .5);
+	}
+
+	.ellipsis {
+		background-color: rgba(0, 0, 0, .5);
+	}
+
+	.page-current {
+		background-color: $color-primary;
+		color: $text-black;
+	}
+}

@@ -1,0 +1,138 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+	<style>
+		.header{min-height:298px;}
+	</style>
+<link rel="stylesheet" href="{% static "stylesheets/who-we-are.css" %}" />
+{% endblock %}
+{% block extra_js %}
+<script src="{% static "js/who-we-are.js" %}"></script>
+{% endblock %}
+
+{% block header_content %}
+<div class="blurb-header">
+	<h1 class="title">{% page_param "header-blurb-title" %}</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="who-we-are-container content">
+	<div class="row">
+		<div class="col-lg-6">
+			<h2>{% trans "Quem somos" %}</h2>
+			<p class="who-we-are-text">{% page_param "who-we-are-text" %}</p>
+		</div>
+		<div class="col-lg-6 right-content">
+			<h2>{% trans "Premiações" %}</h2>
+			<div class="awards-showcase">
+				{% for award in awards %}
+				<div class="award">
+					<div class="award-picture">
+						{% if award.picture %}
+							<img src="{{ award.picture.url }}" alt="Imagem do Prêmio" />
+						{% endif %}
+					</div>
+					<div class="award-description">{{ award.description | safe }}</div>
+					<a class="emphasis" href="{% url "award-list"%}">{% trans "Saiba mais" %}</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div>
+				<h2>{% trans "Parceiro" %}</h2>
+				<div class="partners-container">
+					{% for partner in partners %}
+					<div class="partner">
+						<div class="partner-picture">
+							{% if partner.logo_normal %}
+								<img src="{{ partner.logo_normal.url }}" alt="Imagem do Parceiro" />
+								{% endif %}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div>
+					<h2>{% trans "Filiado à" %}</h2>
+					<div class="affiliate-container">
+						{% for affiliate in affiliates %}
+						<div class="affiliate">
+							<div class="affiliate-picture">
+								{% if affiliate.logo_normal %}
+									<img src="{{ affiliate.logo_normal.url }}" alt="Imagem do Filiado" />
+								{% endif %}
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			<div class="institutional-folder">
+				<div>{% trans "Faça o download do nosso folder institucional e saiba mais sobre nossa empresa:" %}</div>
+				<a href="{% url "institutional-folder" %}" class="btn btn-pill btn-primary">
+					<i class="fas fa-file-download"></i>
+					<span>{% trans "Acessar folder institucional" %}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="offices-map d-none d-lg-block" id="office">
+	<div class="row">
+		<div class="col-lg-4 office-vertical-list">
+			{% for office in offices %}
+			<div class="office {% classed forloop.counter0 0 "active" %}" data-office-id="{{ office.id }}">
+				<div class="city">{{ office.city }}</div>
+				<div class="location">
+					{% if office.address %}
+						<div>{{ office.address }}</div>
+						<div>
+							{%if office.postcode|length %}
+								CEP: {{ office.postcode }},
+							{% endif %}
+							{%if office.neighborhood|length %}
+								{{ office.neighborhood }},
+							{% endif %}
+							{%if office.city|length %}
+								{{ office.city }}{%if office.state|length %}/{{ office.state }},{% endif %}
+							{% endif %}
+							{% if office.country|length %}
+								{{ office.country }}
+							{% endif %}
+						</div>
+					{% endif %}
+				</div>
+				<div class="contact contact-infos">
+					<div><b>{{ office.phone }}</b></div>
+					<div><b>{{ office.email }}</b></div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="col-lg-8">
+			<div class="offices-maps">
+				{% for office in offices %}
+				<div class="map map-{{ office.id }}">
+					{{ office.gmaps_iframe|safe }}
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+{% include "includes/offices-green-row.html" with offices=offices hide_on_desktop=True %}
+<div class="maps-phone d-lg-none">
+	<div class="maps-scroller">
+		{% for office in offices %}
+		<div class="map map-{{ office.id }}">
+			{{ office.gmaps_iframe|safe }}
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

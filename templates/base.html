@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+{% load compress %}
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=8,9,11">
+	{% comment %} <title>da Fonte, {% trans "Advogados" %} | {% block subtitle %}{{ page.title }}{% endblock %}</title> {% endcomment %}
+	<title>{% site_param "head-title" %} | {% block subtitle %}{{ page.title }}{% endblock %}</title>
+
+	<!-- add to homescreen for chrome on android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="{% static "images/icons/icon-192x192.png" %}">
+
+    <meta name="author" content="da Fonte" />
+    <meta name="description" content=" A especialização técnica da equipe do escritório da Fonte Advogados, a qualidade do atendimento e os princípios e valores da cultura organizacional são a nossa bússola, na missão de proporcionar segurança jurídica e eficácia às relações empresariais e patrimoniais de nossos clientes." />
+
+    <!-- Le facebook tags
+    ================================================== -->
+    <meta property="og:title" content="da Fonte, Advogados" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content=" A especialização técnica da equipe do escritório da Fonte Advogados, a qualidade do atendimento e os princípios e valores da cultura organizacional são a nossa bússola, na missão de proporcionar segurança jurídica e eficácia às relações empresariais e patrimoniais de nossos clientes." />
+    <meta property="og:url" content="http://dafonte.capyba.com"/>
+
+    <!-- Le twitter tags
+    ================================================== -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="http://dafonte.capyba.com">
+    <meta name="twitter:title" content="da Fonte, Advogados">
+	<meta name="twitter:description" content=" A especialização técnica da equipe do escritório da Fonte Advogados, a qualidade do atendimento e os princípios e valores da cultura organizacional são a nossa bússola, na missão de proporcionar segurança jurídica e eficácia às relações empresariais e patrimoniais de nossos clientes.">
+	
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="{% static "images/icons/apple-touch-icon-precomposed.png" %}">
+
+    <!-- Le google plus tags
+    ================================================== -->
+    <meta itemprop="name" content="da Fonte, Advogados">
+    <meta itemprop="description" content=" A especialização técnica da equipe do escritório da Fonte Advogados, a qualidade do atendimento e os princípios e valores da cultura organizacional são a nossa bússola, na missão de proporcionar segurança jurídica e eficácia às relações empresariais e patrimoniais de nossos clientes.">
+	<meta itemprop="image" content="{% static "images/icons/apple-touch-icon-precomposed.png" %}">
+	
+
+	<!-- add to homescreen for safari on ios -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="da Fonte Advogados">
+	<link rel="apple-touch-icon-precomposed" href="{% static "images/icons/apple-touch-icon-precomposed.png" %}">
+	<!-- tile icon for win8 -->
+	<meta name="msapplication-TileImage" content="144x144.png">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="{% site_param "head-title-icon" %}">
+	<link rel="icon" href="{% site_param "head-title-icon" %}">
+	<!-- favicon -->
+
+	<!-- {% static "images/logo-default.png" %} -->
+
+	{% compress css %}
+		<!-- CSS: Fontes -->
+		<link rel="stylesheet" href="{% static "fonts/poppins-400-500-600-700.css" %}" />
+
+		<!-- CSS: Ícones -->
+		<!-- <link rel="stylesheet" href="{% static "fonts/material-icons.css" %}" /> -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link rel="stylesheet" href="{% static "custom-libs/fontawesome/css/all.min.css" %}"/>
+
+		<!-- CSS: Frameworks e Bibliotecas -->
+		<link rel="stylesheet" href="{% static "libs/bootstrap-4.3.1/bootstrap.min.css" %}" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="{% static "stylesheets/lib-customs/bootstrap.css" %}" />
+		<link rel="stylesheet" href="{% static "stylesheets/base.css" %}" />
+		<style>
+			.header {
+				background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url({% page_background_cover %}) no-repeat
+				center;
+				background-size: cover;
+			}
+		</style>
+		{% block extra_css %}{% endblock %}
+	{% endcompress %}
+
+	{% compress js %}
+		<!-- JS: Frameworks e Bibliotecas -->
+		<script src="{% static "js/jquery.min.js" %}"></script>
+		<script src="{% static "libs/bootstrap-4.3.1/bootstrap.bundle.js" %}"></script>
+
+		<!-- JS -->
+		<script src="{% static "js/ievalidator.js" %}"></script>
+		<script src="{% static "custom-libs/jquery-toggle-flex/jquery-toggle-flex.js" %}"></script>
+		<script src="{% static "js/utils.js" %}"></script>
+		<script src="{% static "js/base.js" %}"></script>
+		{% block extra_js %}{% endblock %}
+	{% endcompress %}
+
+	{% block ga %}
+  		{% include "includes/ga.html" with ga_tracking_id=ga_tracking_id %}
+	{% endblock ga %}
+</head>
+<body>
+
+<!-- <div style="height: 100vh; width: 100vw; background-color: black; position: fixed; top: 0; z-index: 99">
+	<div style="height: 74%; width: 100%; background-color: #373435; background-image: url('static/images/default-header.jpg'); background-repeat: no-repeat; background-size: cover; background-position: bottom">
+		<div style="position: relative; height: 50%; width: 100%; top: 50%; transform: translateY(-50%); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap">
+			<div style="width: 450px; margin-left: 6%">
+				<p style="color: #eee; font-size: xx-large; line-height: 1.2em; text-shadow: -2px 0px 8px black;">
+					<b>Página em manutenção. <br /> Voltaremos em breve</b>
+				</p>
+			</div>
+			<div style="height: 100%; width: 30%; margin-right: 4%">
+				<img src="static/images/logo-default-backup.png" style="display: block; position: relative; height: 60%; top: 50%; transform: translateY(-50%)"> 
+			</div>
+		</div>
+	</div>
+	<div style="height: 26%; width: 100%; background-color: #373435; z-index: 99">
+		<div style="display: flex; flex-flow: row wrap; justify-content: space-around; background-color: #373435;">
+			<div style="padding-top: 2%">
+				<h4 style="color: #8FC74A">Recife</h4>
+				<p>
+					<b>
+						Av. Antônio de Góes, 60,<br />
+					JCPM Trade Center, 1&#186; andar<br />
+					CEP: 51.010-000, Pina, Recife/PE, Brasil<br />
+					+ 55 (81) 2126.0092<br />
+					contatoDFPE@dafonteadv.com.br
+					</b>
+				</p>
+			</div>
+			<div style="padding-top: 2%">
+				<h4 style="color: #8FC74A">Brasília</h4>
+				<p>
+					<b>
+						Setor Hoteleiro Sul, quadra 06, conjunto A,<br />
+					bloco C, sala 1212, Brasil XXI<br />
+					CEP: 70.316-000, Brasil XXI, Brasília/DF, Brasil<br />
+					+ 55 (61) 3039.8551<br />
+					contatoDFDF@dafonteadv.com.br
+					</b>
+				</p>
+			</div>
+			<div style="padding-top: 2%">
+				<h4 style="color: #8FC74A">São Paulo</h4>
+				<p>
+					<b>
+						Rua Funchal, 573, conjs 81 e 82, 8&#186;,<br />
+					Edifício Aeroporto<br />
+					CEP: 04.551-910, Vila Olímpia, São Paulo/SP, Brasil<br />
+					+ 55 (11) 3814.6930<br />
+					contatoDFSP@dafonteadv.com.br
+					</b>
+					
+				</p>
+			</div>
+		</div>
+
+		
+	</div>
+</div> -->
+
+<div class="row header">
+	<div class="col-12 header-menu">
+		<div class="logo">
+			<a href="{% url "home" %}">
+				<img class="logo-top" src="{% static "images/logo-default.png" %}" alt="da Fonte logo" />
+			</a>
+		</div>
+		{% include "base-includes/nav-desktop.html" %}
+		{% include "base-includes/nav-phone.html" %}
+	</div>
+	<div class="col-12">
+		<div class="row">
+			{% block header_content_container %}{% endblock %}
+			{% block header_content_split_container %}{% endblock %}
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-12 content">
+		{% block content %}{% endblock %}
+	</div>
+</div>
+
+{% include "base-includes/footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,1502 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+0001_initial.py	../applying/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../members/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../portal/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_auto_20190430_1620.py	../applying/migrations/0002_auto_20190430_1620.py	1;"	kind:file	line:1
+0002_load_intial_data.py	../portal/migrations/0002_load_intial_data.py	1;"	kind:file	line:1
+0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	1;"	kind:file	line:1
+0003_auto_20190424_1812.py	../portal/migrations/0003_auto_20190424_1812.py	1;"	kind:file	line:1
+0003_auto_20190430_1632.py	../applying/migrations/0003_auto_20190430_1632.py	1;"	kind:file	line:1
+0003_memberlawyer_vcard.py	../members/migrations/0003_memberlawyer_vcard.py	1;"	kind:file	line:1
+0004_auto_20190426_1417.py	../portal/migrations/0004_auto_20190426_1417.py	1;"	kind:file	line:1
+0004_memberlawyer_specialization_sector.py	../members/migrations/0004_memberlawyer_specialization_sector.py	1;"	kind:file	line:1
+0005_auto_20190507_1429.py	../members/migrations/0005_auto_20190507_1429.py	1;"	kind:file	line:1
+0005_memberlawyer_phone.py	../portal/migrations/0005_memberlawyer_phone.py	1;"	kind:file	line:1
+0005_publication_content.py	../portal/migrations/0005_publication_content.py	1;"	kind:file	line:1
+0006_auto_20190429_1728.py	../portal/migrations/0006_auto_20190429_1728.py	1;"	kind:file	line:1
+0006_auto_20190507_1645.py	../members/migrations/0006_auto_20190507_1645.py	1;"	kind:file	line:1
+0007_auto_20190507_1857.py	../members/migrations/0007_auto_20190507_1857.py	1;"	kind:file	line:1
+0007_memberlawyer_other_activities.py	../portal/migrations/0007_memberlawyer_other_activities.py	1;"	kind:file	line:1
+0008_auto_20190429_1739.py	../portal/migrations/0008_auto_20190429_1739.py	1;"	kind:file	line:1
+0008_auto_20190507_1900.py	../members/migrations/0008_auto_20190507_1900.py	1;"	kind:file	line:1
+0009_auto_20190507_1901.py	../members/migrations/0009_auto_20190507_1901.py	1;"	kind:file	line:1
+0009_event_related_members.py	../portal/migrations/0009_event_related_members.py	1;"	kind:file	line:1
+0010_auto_20190429_1844.py	../portal/migrations/0010_auto_20190429_1844.py	1;"	kind:file	line:1
+0010_auto_20190507_1941.py	../members/migrations/0010_auto_20190507_1941.py	1;"	kind:file	line:1
+0011_auto_20190429_1852.py	../portal/migrations/0011_auto_20190429_1852.py	1;"	kind:file	line:1
+0012_merge_20190430_2021.py	../portal/migrations/0012_merge_20190430_2021.py	1;"	kind:file	line:1
+0013_auto_20190502_1232.py	../portal/migrations/0013_auto_20190502_1232.py	1;"	kind:file	line:1
+0014_pageparameter_description.py	../portal/migrations/0014_pageparameter_description.py	1;"	kind:file	line:1
+0015_auto_20190502_1442.py	../portal/migrations/0015_auto_20190502_1442.py	1;"	kind:file	line:1
+0016_remove_pageparameter_description.py	../portal/migrations/0016_remove_pageparameter_description.py	1;"	kind:file	line:1
+0017_auto_20190502_1456.py	../portal/migrations/0017_auto_20190502_1456.py	1;"	kind:file	line:1
+0018_remove_language_flag.py	../portal/migrations/0018_remove_language_flag.py	1;"	kind:file	line:1
+0019_auto_20190502_1659.py	../portal/migrations/0019_auto_20190502_1659.py	1;"	kind:file	line:1
+0020_alter_members_tables.py	../portal/migrations/0020_alter_members_tables.py	1;"	kind:file	line:1
+0021_auto_20190502_1908.py	../portal/migrations/0021_auto_20190502_1908.py	1;"	kind:file	line:1
+0022_state_delete_members.py	../portal/migrations/0022_state_delete_members.py	1;"	kind:file	line:1
+0023_contact.py	../portal/migrations/0023_contact.py	1;"	kind:file	line:1
+0024_auto_20190502_2001.py	../portal/migrations/0024_auto_20190502_2001.py	1;"	kind:file	line:1
+0025_values.py	../portal/migrations/0025_values.py	1;"	kind:file	line:1
+0026_auto_20190506_1535.py	../portal/migrations/0026_auto_20190506_1535.py	1;"	kind:file	line:1
+0027_auto_20190506_1744.py	../portal/migrations/0027_auto_20190506_1744.py	1;"	kind:file	line:1
+0028_auto_20190506_1751.py	../portal/migrations/0028_auto_20190506_1751.py	1;"	kind:file	line:1
+0029_auto_20190507_1750.py	../portal/migrations/0029_auto_20190507_1750.py	1;"	kind:file	line:1
+0030_auto_20190507_1857.py	../portal/migrations/0030_auto_20190507_1857.py	1;"	kind:file	line:1
+ADMINISTRATIVE_STAFF	../members/models.py	/^    ADMINISTRATIVE_STAFF = 2$/;"	kind:variable	line:13
+ALLOWED_HOSTS	../dafonte_portal/settings/local.py	/^ALLOWED_HOSTS = ["*", ]/;"	kind:variable	line:14
+ALLOWED_HOSTS	../dafonte_portal/settings/production.py	/^ALLOWED_HOSTS = ["dafonte.capyba.com", ]$/;"	kind:variable	line:11
+ALLOWED_HOSTS	../dafonte_portal/settings/staging.py	/^ALLOWED_HOSTS = ["staging.dafonte.capyba.com", ]$/;"	kind:variable	line:12
+ALLOWED_HOSTS	../dafonte_portal/settings/test.py	/^ALLOWED_HOSTS = ["test.dafonte.capyba.com", ]$/;"	kind:variable	line:12
+ARTICLE	../portal/models.py	/^    ARTICLE = 2$/;"	kind:variable	line:251
+AUTH_PASSWORD_VALIDATORS	../dafonte_portal/settings/base.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:100
+AWS_ACCESS_KEY_ID	../dafonte_portal/settings/production.py	/^AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')$/;"	kind:variable	line:18
+AWS_ACCESS_KEY_ID	../dafonte_portal/settings/staging.py	/^AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')$/;"	kind:variable	line:20
+AWS_ACCESS_KEY_ID	../dafonte_portal/settings/test.py	/^AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')$/;"	kind:variable	line:19
+AWS_AUTO_CREATE_BUCKET	../dafonte_portal/settings/production.py	/^AWS_AUTO_CREATE_BUCKET = True$/;"	kind:variable	line:22
+AWS_AUTO_CREATE_BUCKET	../dafonte_portal/settings/staging.py	/^AWS_AUTO_CREATE_BUCKET = True$/;"	kind:variable	line:24
+AWS_AUTO_CREATE_BUCKET	../dafonte_portal/settings/test.py	/^AWS_AUTO_CREATE_BUCKET = True$/;"	kind:variable	line:23
+AWS_LOCATION	../dafonte_portal/settings/production.py	/^AWS_LOCATION = "production"$/;"	kind:variable	line:23
+AWS_LOCATION	../dafonte_portal/settings/staging.py	/^AWS_LOCATION = "staging"$/;"	kind:variable	line:25
+AWS_LOCATION	../dafonte_portal/settings/test.py	/^AWS_LOCATION = "test"$/;"	kind:variable	line:24
+AWS_S3_CUSTOM_DOMAIN	../dafonte_portal/settings/production.py	/^AWS_S3_CUSTOM_DOMAIN = "s3.{}.amazonaws.com\/{}".format(AWS_S3_REGION_NAME, AWS_STORAGE_BUCKET_NAME)$/;"	kind:variable	line:24
+AWS_S3_CUSTOM_DOMAIN	../dafonte_portal/settings/staging.py	/^AWS_S3_CUSTOM_DOMAIN = "s3.{}.amazonaws.com\/{}".format(AWS_S3_REGION_NAME, AWS_STORAGE_BUCKET_NAME)$/;"	kind:variable	line:26
+AWS_S3_CUSTOM_DOMAIN	../dafonte_portal/settings/test.py	/^AWS_S3_CUSTOM_DOMAIN = "s3.{}.amazonaws.com\/{}".format(AWS_S3_REGION_NAME, AWS_STORAGE_BUCKET_NAME)$/;"	kind:variable	line:25
+AWS_S3_REGION_NAME	../dafonte_portal/settings/production.py	/^AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', 'us-east-2')$/;"	kind:variable	line:21
+AWS_S3_REGION_NAME	../dafonte_portal/settings/staging.py	/^AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', 'us-east-2')$/;"	kind:variable	line:23
+AWS_S3_REGION_NAME	../dafonte_portal/settings/test.py	/^AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', 'us-east-2')$/;"	kind:variable	line:22
+AWS_SECRET_ACCESS_KEY	../dafonte_portal/settings/production.py	/^AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')$/;"	kind:variable	line:19
+AWS_SECRET_ACCESS_KEY	../dafonte_portal/settings/staging.py	/^AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')$/;"	kind:variable	line:21
+AWS_SECRET_ACCESS_KEY	../dafonte_portal/settings/test.py	/^AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')$/;"	kind:variable	line:20
+AWS_STORAGE_BUCKET_NAME	../dafonte_portal/settings/production.py	/^AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', '')$/;"	kind:variable	line:20
+AWS_STORAGE_BUCKET_NAME	../dafonte_portal/settings/staging.py	/^AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', '')$/;"	kind:variable	line:22
+AWS_STORAGE_BUCKET_NAME	../dafonte_portal/settings/test.py	/^AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', '')$/;"	kind:variable	line:21
+Academic	../applying/models.py	/^class Academic(Model):$/;"	kind:class	line:41
+AcademicAdmin	../applying/admin.py	/^class AcademicAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:95
+AcademicInline	../applying/admin.py	/^class AcademicInline(admin.TabularInline):$/;"	kind:class	line:16
+Affiliate	../portal/models.py	/^class Affiliate(Model):$/;"	kind:class	line:190
+Application	../applying/models.py	/^class Application(Model):$/;"	kind:class	line:7
+ApplicationAdmin	../applying/admin.py	/^class ApplicationAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:83
+ApplicationLanguage	../applying/models.py	/^class ApplicationLanguage(Model):$/;"	kind:class	line:54
+ApplicationLanguageAdmin	../applying/admin.py	/^class ApplicationLanguageAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:99
+ApplicationLanguageInline	../applying/admin.py	/^class ApplicationLanguageInline(admin.TabularInline):$/;"	kind:class	line:22
+ApplyingConfig	../applying/apps.py	/^class ApplyingConfig(AppConfig):$/;"	kind:class	line:4
+Approach	../portal/models.py	/^class Approach(Model):$/;"	kind:class	line:115
+ApproachInline	../portal/admin.py	/^class ApproachInline(TranslationTabularInline):$/;"	kind:class	line:23
+ApproachSector	../portal/models.py	/^class ApproachSector(Model):$/;"	kind:class	line:128
+ApproachSectorInline	../portal/admin.py	/^class ApproachSectorInline(TranslationTabularInline):$/;"	kind:class	line:27
+ApproachSectorTranslation	../portal/translation.py	/^class ApproachSectorTranslation(TranslationOptions):$/;"	kind:class	line:38
+ApproachTranslation	../portal/translation.py	/^class ApproachTranslation(TranslationOptions):$/;"	kind:class	line:34
+ArticleDetailView	../portal/views.py	/^class ArticleDetailView(PageView):$/;"	kind:class	line:242
+ArticleListView	../portal/views.py	/^class ArticleListView(PageView):$/;"	kind:class	line:213
+Award	../portal/models.py	/^class Award(Model):$/;"	kind:class	line:154
+AwardAdmin	../portal/admin.py	/^class AwardAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:64
+AwardListView	../portal/views.py	/^class AwardListView(PageView):$/;"	kind:class	line:156
+AwardMembers	../members/models.py	/^class AwardMembers(models.Model):$/;"	kind:class	line:56
+AwardMembersInline	../members/admin.py	/^class AwardMembersInline(admin.StackedInline):$/;"	kind:class	line:19
+AwardTranslation	../portal/translation.py	/^class AwardTranslation(TranslationOptions):$/;"	kind:class	line:47
+BASE_DIR	../dafonte_portal/settings/base.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:21
+BaseMemberAdmin	../members/admin.py	/^class BaseMemberAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:52
+BaseMemberChildInlineFormSet	../members/admin.py	/^class BaseMemberChildInlineFormSet(BaseInlineFormSet):$/;"	kind:class	line:11
+CKEDITOR_UPLOAD_PATH	../dafonte_portal/settings/base.py	/^CKEDITOR_UPLOAD_PATH = 'ckeditor\/'$/;"	kind:variable	line:147
+COMPRESS_ROOT	../dafonte_portal/settings/base.py	/^COMPRESS_ROOT = 'static\/'$/;"	kind:variable	line:142
+Contact	../portal/models.py	/^class Contact(Model):$/;"	kind:class	line:333
+ContactAdmin	../portal/admin.py	/^class ContactAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:69
+ContactForm	../portal/forms.py	/^class ContactForm(forms.ModelForm):$/;"	kind:class	line:10
+ContactTranslation	../portal/translation.py	/^class ContactTranslation(TranslationOptions):$/;"	kind:class	line:81
+ContactTranslation	../portal/translation.py	/^class ContactTranslation(TranslationOptions):$/;"	kind:class	line:85
+ContactView	../portal/views.py	/^class ContactView(PageView):$/;"	kind:class	line:316
+CultureView	../portal/views.py	/^class CultureView(PageView):$/;"	kind:class	line:143
+DATABASES	../dafonte_portal/settings/base.py	/^DATABASES = {$/;"	kind:variable	line:93
+DEBUG	../dafonte_portal/settings/base.py	/^DEBUG = False$/;"	kind:variable	line:30
+DEBUG	../dafonte_portal/settings/local.py	/^DEBUG = True$/;"	kind:variable	line:12
+DEBUG	../dafonte_portal/settings/staging.py	/^DEBUG = True$/;"	kind:variable	line:15
+DEFAULT_FILE_STORAGE	../dafonte_portal/settings/production.py	/^DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' # <-- here is where we reference it$/;"	kind:variable	line:25
+DEFAULT_FILE_STORAGE	../dafonte_portal/settings/staging.py	/^DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' # <-- here is where we reference it$/;"	kind:variable	line:27
+DEFAULT_FILE_STORAGE	../dafonte_portal/settings/test.py	/^DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' # <-- here is where we reference it$/;"	kind:variable	line:26
+Event	../portal/models.py	/^class Event(Model):$/;"	kind:class	line:289
+EventAdmin	../portal/admin.py	/^class EventAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:59
+EventDetailView	../portal/views.py	/^class EventDetailView(PageView):$/;"	kind:class	line:279
+EventListView	../portal/views.py	/^class EventListView(PageView):$/;"	kind:class	line:255
+EventTranslation	../portal/translation.py	/^class EventTranslation(TranslationOptions):$/;"	kind:class	line:72
+HomeView	../portal/views.py	/^class HomeView(PageView):$/;"	kind:class	line:40
+INSTALLED_APPS	../dafonte_portal/settings/base.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:34
+INTERN	../members/models.py	/^    INTERN = 4$/;"	kind:variable	line:15
+JobTitle	../members/models.py	/^class JobTitle(models.Model):$/;"	kind:class	line:27
+JobTitleTranslation	../members/translation.py	/^class JobTitleTranslation(TranslationOptions):$/;"	kind:class	line:9
+LANGUAGES	../dafonte_portal/settings/base.py	/^LANGUAGES = [$/;"	kind:variable	line:111
+LANGUAGE_CODE	../dafonte_portal/settings/base.py	/^LANGUAGE_CODE = 'pt-br'$/;"	kind:variable	line:110
+LAWYER	../members/models.py	/^    LAWYER = 1$/;"	kind:variable	line:12
+LOCALE_PATHS	../dafonte_portal/settings/base.py	/^LOCALE_PATHS = [$/;"	kind:variable	line:115
+Language	../portal/models.py	/^class Language(Model):$/;"	kind:class	line:141
+LanguageTranslation	../portal/translation.py	/^class LanguageTranslation(TranslationOptions):$/;"	kind:class	line:42
+MEDIA_ROOT	../dafonte_portal/settings/base.py	/^MEDIA_ROOT = 'files\/'$/;"	kind:variable	line:145
+MEDIA_URL	../dafonte_portal/settings/base.py	/^MEDIA_URL = '\/files\/'$/;"	kind:variable	line:144
+MIDDLEWARE	../dafonte_portal/settings/base.py	/^MIDDLEWARE = [$/;"	kind:variable	line:58
+Member	../members/models.py	/^class Member(models.Model):$/;"	kind:class	line:39
+MemberAdministrativeStaff	../members/models.py	/^class MemberAdministrativeStaff(models.Model, MemberChild):$/;"	kind:class	line:122
+MemberAdministrativeStaffInline	../members/admin.py	/^class MemberAdministrativeStaffInline(admin.StackedInline):$/;"	kind:class	line:32
+MemberChild	../members/models.py	/^class MemberChild:$/;"	kind:class	line:68
+MemberDetailView	../members/views.py	/^class MemberDetailView(PageView):$/;"	kind:class	line:58
+MemberIntern	../members/models.py	/^class MemberIntern(models.Model, MemberChild):$/;"	kind:class	line:149
+MemberInternInline	../members/admin.py	/^class MemberInternInline(admin.StackedInline):$/;"	kind:class	line:45
+MemberLawyer	../members/models.py	/^class MemberLawyer(models.Model, MemberChild):$/;"	kind:class	line:99
+MemberLawyerInline	../members/admin.py	/^class MemberLawyerInline(TranslationStackedInline):$/;"	kind:class	line:25
+MemberLawyerTranslation	../members/translation.py	/^class MemberLawyerTranslation(TranslationOptions):$/;"	kind:class	line:19
+MemberListView	../members/views.py	/^class MemberListView(PageView):$/;"	kind:class	line:9
+MemberTrainee	../members/models.py	/^class MemberTrainee(models.Model, MemberChild):$/;"	kind:class	line:136
+MemberTraineeInline	../members/admin.py	/^class MemberTraineeInline(admin.StackedInline):$/;"	kind:class	line:38
+MemberType	../members/models.py	/^class MemberType(models.Model):$/;"	kind:class	line:10
+MemberTypeTranslation	../members/translation.py	/^class MemberTypeTranslation(TranslationOptions):$/;"	kind:class	line:14
+MembersConfig	../members/apps.py	/^class MembersConfig(AppConfig):$/;"	kind:class	line:4
+Meta	../applying/models.py	/^    class Meta:$/;"	kind:class	line:15
+Meta	../applying/models.py	/^    class Meta:$/;"	kind:class	line:34
+Meta	../applying/models.py	/^    class Meta:$/;"	kind:class	line:47
+Meta	../applying/models.py	/^    class Meta:$/;"	kind:class	line:58
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:114
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:127
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:141
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:154
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:19
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:30
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:45
+Meta	../members/models.py	/^    class Meta:$/;"	kind:class	line:62
+Meta	../members/proxies.py	/^    class Meta:$/;"	kind:class	line:17
+Meta	../members/proxies.py	/^    class Meta:$/;"	kind:class	line:28
+Meta	../members/proxies.py	/^    class Meta:$/;"	kind:class	line:39
+Meta	../members/proxies.py	/^    class Meta:$/;"	kind:class	line:50
+Meta	../portal/forms.py	/^    class Meta:$/;"	kind:class	line:16
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:102
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:120
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:133
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:146
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:161
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:182
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:194
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:21
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:217
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:233
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:255
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:280
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:306
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:324
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:339
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:349
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:41
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:55
+Meta	../portal/models.py	/^    class Meta:$/;"	kind:class	line:79
+Migration	../applying/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../applying/migrations/0002_auto_20190430_1620.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../applying/migrations/0003_auto_20190430_1632.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../members/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../members/migrations/0003_memberlawyer_vcard.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../members/migrations/0004_memberlawyer_specialization_sector.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../members/migrations/0005_auto_20190507_1429.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../members/migrations/0006_auto_20190507_1645.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../members/migrations/0007_auto_20190507_1857.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../members/migrations/0008_auto_20190507_1900.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../members/migrations/0009_auto_20190507_1901.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../members/migrations/0010_auto_20190507_1941.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+Migration	../portal/migrations/0002_load_intial_data.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:292
+Migration	../portal/migrations/0003_auto_20190424_1812.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../portal/migrations/0004_auto_20190426_1417.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0005_memberlawyer_phone.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0005_publication_content.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../portal/migrations/0006_auto_20190429_1728.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../portal/migrations/0007_memberlawyer_other_activities.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0008_auto_20190429_1739.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0009_event_related_members.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0010_auto_20190429_1844.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0011_auto_20190429_1852.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0012_merge_20190430_2021.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0013_auto_20190502_1232.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0014_pageparameter_description.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0015_auto_20190502_1442.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0016_remove_pageparameter_description.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0017_auto_20190502_1456.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0018_remove_language_flag.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0019_auto_20190502_1659.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0020_alter_members_tables.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0021_auto_20190502_1908.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../portal/migrations/0022_state_delete_members.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0023_contact.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0024_auto_20190502_2001.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../portal/migrations/0025_values.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0026_auto_20190506_1535.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../portal/migrations/0027_auto_20190506_1744.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Migration	../portal/migrations/0028_auto_20190506_1751.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:7
+Migration	../portal/migrations/0029_auto_20190507_1750.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../portal/migrations/0030_auto_20190507_1857.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+Office	../portal/models.py	/^class Office(Model):$/;"	kind:class	line:205
+OfficeTranslation	../portal/translation.py	/^class OfficeTranslation(TranslationOptions):$/;"	kind:class	line:52
+Opportunity	../portal/models.py	/^class Opportunity(Model):$/;"	kind:class	line:225
+OpportunityDetailView	../applying/views.py	/^class OpportunityDetailView(PageView):$/;"	kind:class	line:9
+OpportunityListFilter	../applying/admin.py	/^class OpportunityListFilter(admin.SimpleListFilter):$/;"	kind:class	line:29
+OpportunityTranslation	../portal/translation.py	/^class OpportunityTranslation(TranslationOptions):$/;"	kind:class	line:57
+PRESS	../portal/models.py	/^    PRESS = 1$/;"	kind:variable	line:250
+Page	../portal/models.py	/^class Page(Model):$/;"	kind:class	line:34
+PageAdmin	../portal/admin.py	/^class PageAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:18
+PageParameter	../portal/models.py	/^class PageParameter(Model):$/;"	kind:class	line:49
+PageParameterInline	../portal/admin.py	/^class PageParameterInline(TranslationTabularInline):$/;"	kind:class	line:12
+PageParameterTranslation	../portal/translation.py	/^class PageParameterTranslation(TranslationOptions):$/;"	kind:class	line:19
+PageTranslation	../portal/translation.py	/^class PageTranslation(TranslationOptions):$/;"	kind:class	line:14
+PageView	../portal/views.py	/^class PageView(DetailView):$/;"	kind:class	line:20
+Partner	../portal/models.py	/^class Partner(Model):$/;"	kind:class	line:178
+PortalConfig	../portal/apps.py	/^class PortalConfig(AppConfig):$/;"	kind:class	line:4
+PracticeArea	../portal/models.py	/^class PracticeArea(Model):$/;"	kind:class	line:69
+PracticeAreaAdmin	../portal/admin.py	/^class PracticeAreaAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:32
+PracticeAreaDetailView	../portal/views.py	/^class PracticeAreaDetailView(PageView):$/;"	kind:class	line:115
+PracticeAreaListView	../portal/views.py	/^class PracticeAreaListView(PageView):$/;"	kind:class	line:69
+PracticeAreaTranslation	../portal/translation.py	/^class PracticeAreaTranslation(TranslationOptions):$/;"	kind:class	line:24
+PracticeAreaTranslation	../portal/translation.py	/^class PracticeAreaTranslation(TranslationOptions):$/;"	kind:class	line:29
+PressDetailView	../portal/views.py	/^class PressDetailView(PageView):$/;"	kind:class	line:200
+PressListView	../portal/views.py	/^class PressListView(PageView):$/;"	kind:class	line:169
+ProfessionalExperience	../applying/models.py	/^class ProfessionalExperience(Model):$/;"	kind:class	line:26
+ProfessionalExperienceAdmin	../applying/admin.py	/^class ProfessionalExperienceAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:91
+ProfessionalExperienceInline	../applying/admin.py	/^class ProfessionalExperienceInline(admin.StackedInline):$/;"	kind:class	line:10
+ProxyAdministrativeStaff	../members/proxies.py	/^class ProxyAdministrativeStaff(Member):$/;"	kind:class	line:45
+ProxyAdministrativeStaffAdmin	../members/admin.py	/^class ProxyAdministrativeStaffAdmin(BaseMemberAdmin):$/;"	kind:class	line:82
+ProxyIntern	../members/proxies.py	/^class ProxyIntern(Member):$/;"	kind:class	line:12
+ProxyInternAdmin	../members/admin.py	/^class ProxyInternAdmin(BaseMemberAdmin):$/;"	kind:class	line:67
+ProxyLawyer	../members/proxies.py	/^class ProxyLawyer(Member):$/;"	kind:class	line:23
+ProxyLawyerAdmin	../members/admin.py	/^class ProxyLawyerAdmin(BaseMemberAdmin):$/;"	kind:class	line:72
+ProxyMemberManager	../members/proxies.py	/^class ProxyMemberManager(models.Manager):$/;"	kind:class	line:6
+ProxyTrainee	../members/proxies.py	/^class ProxyTrainee(Member):$/;"	kind:class	line:34
+ProxyTraineeAdmin	../members/admin.py	/^class ProxyTraineeAdmin(BaseMemberAdmin):$/;"	kind:class	line:77
+Publication	../portal/models.py	/^class Publication(Model):$/;"	kind:class	line:263
+PublicationAdmin	../portal/admin.py	/^class PublicationAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:53
+PublicationTranslation	../portal/translation.py	/^class PublicationTranslation(TranslationOptions):$/;"	kind:class	line:67
+PublicationType	../portal/models.py	/^class PublicationType(Model):$/;"	kind:class	line:248
+PublicationTypeTranslation	../portal/translation.py	/^class PublicationTypeTranslation(TranslationOptions):$/;"	kind:class	line:62
+ROOT_URLCONF	../dafonte_portal/settings/base.py	/^ROOT_URLCONF = 'dafonte_portal.urls'$/;"	kind:variable	line:69
+SENTRY_ENVIRONMENT	../dafonte_portal/settings/production.py	/^SENTRY_ENVIRONMENT = 'production'/;"	kind:variable	line:27
+SENTRY_ENVIRONMENT	../dafonte_portal/settings/staging.py	/^SENTRY_ENVIRONMENT = 'staging'/;"	kind:variable	line:30
+SENTRY_ENVIRONMENT	../dafonte_portal/settings/test.py	/^SENTRY_ENVIRONMENT = 'test'/;"	kind:variable	line:29
+STATICFILES_DIRS	../dafonte_portal/settings/base.py	/^STATICFILES_DIRS = [$/;"	kind:variable	line:132
+STATICFILES_FINDERS	../dafonte_portal/settings/base.py	/^STATICFILES_FINDERS = [$/;"	kind:variable	line:136
+STATIC_URL	../dafonte_portal/settings/base.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:130
+SUIT_CONFIG	../dafonte_portal/settings/base.py	/^SUIT_CONFIG = {$/;"	kind:variable	line:149
+SiteParameter	../portal/models.py	/^class SiteParameter(Model):$/;"	kind:class	line:15
+SiteParameterTranslation	../portal/translation.py	/^class SiteParameterTranslation(TranslationOptions):$/;"	kind:class	line:9
+SocialEntity	../portal/models.py	/^class SocialEntity(Model):$/;"	kind:class	line:318
+SocialEntityTranslation	../portal/translation.py	/^class SocialEntityTranslation(TranslationOptions):$/;"	kind:class	line:77
+SocialResponsabilityView	../portal/views.py	/^class SocialResponsabilityView(PageView):$/;"	kind:class	line:292
+SpecializationSector	../portal/models.py	/^class SpecializationSector(Model):$/;"	kind:class	line:92
+SpecializationSectorAdmin	../portal/admin.py	/^class SpecializationSectorAdmin(TabbedTranslationAdmin):$/;"	kind:class	line:42
+SpecializationSectorDetailView	../portal/views.py	/^class SpecializationSectorDetailView(PageView):$/;"	kind:class	line:94
+TEMPLATES	../dafonte_portal/settings/base.py	/^TEMPLATES = [$/;"	kind:variable	line:71
+TIME_ZONE	../dafonte_portal/settings/base.py	/^TIME_ZONE = 'America\/Recife'$/;"	kind:variable	line:119
+TRAINEE	../members/models.py	/^    TRAINEE = 3$/;"	kind:variable	line:14
+USE_I18N	../dafonte_portal/settings/base.py	/^USE_I18N = True$/;"	kind:variable	line:121
+USE_L10N	../dafonte_portal/settings/base.py	/^USE_L10N = True$/;"	kind:variable	line:123
+USE_TZ	../dafonte_portal/settings/base.py	/^USE_TZ = True$/;"	kind:variable	line:125
+Values	../portal/models.py	/^class Values(Model):$/;"	kind:class	line:345
+WSGI_APPLICATION	../dafonte_portal/settings/base.py	/^WSGI_APPLICATION = 'dafonte_portal.wsgi.application'$/;"	kind:variable	line:88
+WhoWeAreView	../portal/views.py	/^class WhoWeAreView(PageView):$/;"	kind:class	line:138
+__init__.py	../applying/__init__.py	1;"	kind:file	line:1
+__init__.py	../applying/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../dafonte_portal/__init__.py	1;"	kind:file	line:1
+__init__.py	../dafonte_portal/settings/__init__.py	1;"	kind:file	line:1
+__init__.py	../members/__init__.py	1;"	kind:file	line:1
+__init__.py	../members/fixtures/__init__.py	1;"	kind:file	line:1
+__init__.py	../members/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../portal/__init__.py	1;"	kind:file	line:1
+__init__.py	../portal/fixtures/__init__.py	1;"	kind:file	line:1
+__init__.py	../portal/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../portal/templatetags/__init__.py	1;"	kind:file	line:1
+__str__	../applying/models.py	/^    def __str__(self):$/;"	kind:member	line:19
+__str__	../applying/models.py	/^    def __str__(self):$/;"	kind:member	line:38
+__str__	../applying/models.py	/^    def __str__(self):$/;"	kind:member	line:51
+__str__	../applying/models.py	/^    def __str__(self):$/;"	kind:member	line:62
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:118
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:132
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:145
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:158
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:23
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:35
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:49
+__str__	../members/models.py	/^    def __str__(self):$/;"	kind:member	line:65
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:107
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:125
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:138
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:150
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:165
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:197
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:221
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:236
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:259
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:26
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:285
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:310
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:329
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:343
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:353
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:45
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:61
+__str__	../portal/models.py	/^    def __str__(self):$/;"	kind:member	line:84
+academic_formation	../members/models.py	/^    academic_formation = models.TextField("Formação Acadêmica")$/;"	kind:variable	line:104
+activities	../applying/models.py	/^    activities = TextField("Principais atividades desenvolvidas")$/;"	kind:variable	line:31
+address	../applying/models.py	/^    address = TextField("Address")$/;"	kind:variable	line:11
+address	../portal/models.py	/^    address = CharField("Endereço", max_length=200, default="")$/;"	kind:variable	line:210
+address	../portal/models.py	/^    address = CharField("Endereço", max_length=200, default="")$/;"	kind:variable	line:296
+admin.py	../applying/admin.py	1;"	kind:file	line:1
+admin.py	../members/admin.py	1;"	kind:file	line:1
+admin.py	../portal/admin.py	1;"	kind:file	line:1
+application	../applying/models.py	/^    application = ForeignKey(Application, CASCADE, related_name="related_academic")$/;"	kind:variable	line:45
+application	../applying/models.py	/^    application = ForeignKey(Application, CASCADE, related_name="related_idioms")$/;"	kind:variable	line:56
+application	../applying/models.py	/^    application = ForeignKey(Application, CASCADE, related_name="related_professional")$/;"	kind:variable	line:32
+application	../dafonte_portal/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../applying/apps.py	1;"	kind:file	line:1
+apps.py	../members/apps.py	1;"	kind:file	line:1
+apps.py	../portal/apps.py	1;"	kind:file	line:1
+area	../applying/models.py	/^    area = CharField("Area", max_length=50)$/;"	kind:variable	line:29
+author	../portal/models.py	/^    author = CharField("Autor", max_length=100, default="")$/;"	kind:variable	line:270
+awards	../members/models.py	/^    awards = models.ManyToManyField(AwardMembers, verbose_name="Prêmios", related_name="lawyers", blank=True)$/;"	kind:variable	line:112
+awards_and_publications	../members/models.py	/^    awards_and_publications = models.TextField("Prêmios e Publicações", blank=True)$/;"	kind:variable	line:106
+background_image	../portal/models.py	/^    background_image = ImageField("Imagem de Fundo", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:37
+base	../portal/context_processors.py	/^def base(request):$/;"	kind:function	line:7
+base.py	../dafonte_portal/settings/base.py	1;"	kind:file	line:1
+bases	../members/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:112
+bases	../members/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:57
+bases	../members/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:70
+bases	../members/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:99
+bases	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            bases=('members.member',),$/;"	kind:variable	line:23
+bases	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            bases=('members.member',),$/;"	kind:variable	line:35
+bases	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            bases=('members.member',),$/;"	kind:variable	line:47
+bases	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            bases=('members.member',),$/;"	kind:variable	line:59
+bases	../portal/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:141
+bases	../portal/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:153
+bases	../portal/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:179
+bases	../portal/migrations/0001_initial.py	/^            bases=(models.Model, members.models.MemberChild),$/;"	kind:variable	line:191
+checked	../portal/templatetags/site_tags.py	/^def checked(expected, value):$/;"	kind:function	line:48
+city	../portal/models.py	/^    city = CharField("Cidade", max_length=50, blank=True, null=True)$/;"	kind:variable	line:295
+city	../portal/models.py	/^    city = CharField("Cidade", max_length=50, default="")$/;"	kind:variable	line:208
+city	../portal/models.py	/^    city = CharField("Cidade", max_length=50, default="")$/;"	kind:variable	line:227
+classed	../portal/templatetags/site_tags.py	/^def classed(expected, value, classes):$/;"	kind:function	line:62
+classes	../members/admin.py	/^    classes = ["collapse"]$/;"	kind:variable	line:28
+classes	../members/admin.py	/^    classes = ["collapse"]$/;"	kind:variable	line:35
+classes	../members/admin.py	/^    classes = ["collapse"]$/;"	kind:variable	line:41
+classes	../members/admin.py	/^    classes = ["collapse"]$/;"	kind:variable	line:48
+clean	../members/admin.py	/^    def clean(self):$/;"	kind:member	line:13
+clean	../portal/models.py	/^    def clean(self):$/;"	kind:member	line:168
+clean	../portal/models.py	/^    def clean(self):$/;"	kind:member	line:29
+clean	../portal/models.py	/^    def clean(self):$/;"	kind:member	line:64
+conclusion	../applying/models.py	/^    conclusion = IntegerField("Ano de conclusão")$/;"	kind:variable	line:44
+content	../portal/models.py	/^    content = RichTextField(blank=True)$/;"	kind:variable	line:279
+content	../portal/models.py	/^    content = RichTextField(blank=True, null=True, default="")$/;"	kind:variable	line:304
+context_processors.py	../portal/context_processors.py	1;"	kind:file	line:1
+country	../portal/models.py	/^    country = CharField("País", max_length=2, blank=True, null=True)$/;"	kind:variable	line:294
+country	../portal/models.py	/^    country = CharField("País", max_length=50, default="Brasil")$/;"	kind:variable	line:206
+course	../applying/models.py	/^    course = CharField("Curso", max_length=50)$/;"	kind:variable	line:42
+creation_date	../portal/models.py	/^    creation_date = DateTimeField("Data de Criação", default=datetime.now)$/;"	kind:variable	line:264
+culture_tags.py	../portal/templatetags/culture_tags.py	1;"	kind:file	line:1
+database_operations	../portal/migrations/0020_alter_members_tables.py	/^            database_operations=database_operations,$/;"	kind:variable	line:26
+database_operations	../portal/migrations/0020_alter_members_tables.py	/^    database_operations = [$/;"	kind:variable	line:12
+date	../portal/models.py	/^    date = DateField("Data")$/;"	kind:variable	line:290
+default_value	../applying/admin.py	/^    default_value = None$/;"	kind:variable	line:42
+dependencies	../applying/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../applying/migrations/0002_auto_20190430_1620.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../applying/migrations/0003_auto_20190430_1632.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../members/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+dependencies	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../members/migrations/0003_memberlawyer_vcard.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../members/migrations/0004_memberlawyer_specialization_sector.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../members/migrations/0005_auto_20190507_1429.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../members/migrations/0006_auto_20190507_1645.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../members/migrations/0007_auto_20190507_1857.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../members/migrations/0008_auto_20190507_1900.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../members/migrations/0009_auto_20190507_1901.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../members/migrations/0010_auto_20190507_1941.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:14
+dependencies	../portal/migrations/0002_load_intial_data.py	/^    dependencies = [$/;"	kind:variable	line:293
+dependencies	../portal/migrations/0003_auto_20190424_1812.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../portal/migrations/0004_auto_20190426_1417.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0005_memberlawyer_phone.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0005_publication_content.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../portal/migrations/0006_auto_20190429_1728.py	/^    dependencies = [$/;"	kind:variable	line:11
+dependencies	../portal/migrations/0007_memberlawyer_other_activities.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0008_auto_20190429_1739.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0009_event_related_members.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0010_auto_20190429_1844.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0011_auto_20190429_1852.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0012_merge_20190430_2021.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0013_auto_20190502_1232.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0014_pageparameter_description.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0015_auto_20190502_1442.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0016_remove_pageparameter_description.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0017_auto_20190502_1456.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0018_remove_language_flag.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0019_auto_20190502_1659.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0020_alter_members_tables.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0021_auto_20190502_1908.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../portal/migrations/0022_state_delete_members.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0023_contact.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0024_auto_20190502_2001.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../portal/migrations/0025_values.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0026_auto_20190506_1535.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../portal/migrations/0027_auto_20190506_1744.py	/^    dependencies = [$/;"	kind:variable	line:8
+dependencies	../portal/migrations/0028_auto_20190506_1751.py	/^    dependencies = [$/;"	kind:variable	line:9
+dependencies	../portal/migrations/0029_auto_20190507_1750.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	../portal/migrations/0030_auto_20190507_1857.py	/^    dependencies = [$/;"	kind:variable	line:8
+description	../members/models.py	/^    description = RichTextUploadingField("Descrição", default="", max_length=100)$/;"	kind:variable	line:60
+description	../portal/models.py	/^    description = RichTextUploadingField("Descrição", default="", max_length=100)$/;"	kind:variable	line:158
+description	../portal/models.py	/^    description = RichTextUploadingField("Descrição", default="", max_length=3000)$/;"	kind:variable	line:229
+description	../portal/models.py	/^    description = TextField("Descrição", blank=True, null=True)$/;"	kind:variable	line:268
+description	../portal/models.py	/^    description = TextField("Descrição", blank=True, null=True)$/;"	kind:variable	line:71
+description	../portal/models.py	/^    description = TextField("Descrição", blank=True, null=True)$/;"	kind:variable	line:94
+description	../portal/models.py	/^    description = TextField("Descrição", default="")$/;"	kind:variable	line:321
+description	../portal/models.py	/^    description = TextField("Descrição", default="")$/;"	kind:variable	line:347
+description	../portal/models.py	/^    description = TextField("Descrição", default="", blank=True, null=True)$/;"	kind:variable	line:293
+description_short	../portal/models.py	/^    description_short = TextField("Descrição Curta", default="")$/;"	kind:variable	line:228
+description_short	../portal/models.py	/^    description_short = TextField("Descrição Curta", default="")$/;"	kind:variable	line:267
+description_short	../portal/models.py	/^    description_short = TextField("Descrição Curta", default="", blank=True, null=True)$/;"	kind:variable	line:292
+disabled	../portal/templatetags/site_tags.py	/^def disabled(condition):$/;"	kind:function	line:69
+email	../applying/models.py	/^    email = CharField("E-mail", max_length=50)$/;"	kind:variable	line:9
+email	../members/models.py	/^    email = models.CharField("E-mail", max_length=50)$/;"	kind:variable	line:101
+email	../portal/forms.py	/^    email = forms.CharField(label='Email', max_length=70, required=False)$/;"	kind:variable	line:12
+email	../portal/models.py	/^    email = CharField("E-mail", max_length=50, default="")$/;"	kind:variable	line:214
+email	../portal/models.py	/^    email = CharField("E-mail", max_length=70, default="")$/;"	kind:variable	line:335
+enterprise	../applying/models.py	/^    enterprise = CharField("Empresa", max_length=50)$/;"	kind:variable	line:27
+exclude	../members/admin.py	/^    exclude = ("type", )$/;"	kind:variable	line:53
+extra	../applying/admin.py	/^    extra = 0$/;"	kind:variable	line:14
+extra	../applying/admin.py	/^    extra = 0$/;"	kind:variable	line:20
+extra	../applying/admin.py	/^    extra = 0$/;"	kind:variable	line:26
+extra	../members/admin.py	/^    extra = 0$/;"	kind:variable	line:23
+extra	../portal/admin.py	/^	extra = 0$/;"	kind:variable	line:14
+extra	../portal/admin.py	/^	extra = 0$/;"	kind:variable	line:25
+extra	../portal/admin.py	/^	extra = 0$/;"	kind:variable	line:29
+extra_qualification	../applying/models.py	/^    extra_qualification = TextField("Qualificações e atividades complementares", default="")$/;"	kind:variable	line:12
+fail_template_name	../portal/views.py	/^  fail_template_name = "page-object-not-found.html"$/;"	kind:variable	line:22
+fieds	../portal/translation.py	/^	fieds= ["name", "telefone", "email", "message"]$/;"	kind:variable	line:82
+fieds	../portal/translation.py	/^	fieds= ["title", "description"]/;"	kind:variable	line:86
+field	../applying/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='related_academic', to='applying.Application'),$/;"	kind:variable	line:58
+field	../applying/migrations/0002_auto_20190430_1620.py	/^            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, related_name='related_application', to='portal.Opportunity'),$/;"	kind:variable	line:34
+field	../applying/migrations/0003_auto_20190430_1632.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='related_applications', to='portal.Opportunity'),$/;"	kind:variable	line:17
+field	../members/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='members', to='members.MemberType', verbose_name='Tipo de Membro'),$/;"	kind:variable	line:130
+field	../members/migrations/0003_memberlawyer_vcard.py	/^            field=models.FileField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to),$/;"	kind:variable	line:17
+field	../members/migrations/0004_memberlawyer_specialization_sector.py	/^            field=models.ManyToManyField(related_name='lawyers', to='portal.SpecializationSector', verbose_name='Setor de Especialização'),$/;"	kind:variable	line:17
+field	../members/migrations/0006_auto_20190507_1645.py	/^            field=models.TextField(default='', null=True, verbose_name='Outras Atividades'),$/;"	kind:variable	line:16
+field	../members/migrations/0006_auto_20190507_1645.py	/^            field=models.TextField(default='', null=True, verbose_name='Outras Atividades'),$/;"	kind:variable	line:21
+field	../members/migrations/0007_auto_20190507_1857.py	/^            field=models.ManyToManyField(related_name='lawyers', to='members.AwardMembers', verbose_name='Prêmios'),$/;"	kind:variable	line:32
+field	../members/migrations/0008_auto_20190507_1900.py	/^            field=models.ManyToManyField(null=True, related_name='lawyers', to='members.AwardMembers', verbose_name='Prêmios'),$/;"	kind:variable	line:20
+field	../members/migrations/0009_auto_20190507_1901.py	/^            field=models.ManyToManyField(blank=True, related_name='lawyers', to='members.AwardMembers', verbose_name='Prêmios'),$/;"	kind:variable	line:16
+field	../members/migrations/0010_auto_20190507_1941.py	/^            field=models.ManyToManyField(blank=True, related_name='lawyers', to='portal.SpecializationSector', verbose_name='Setor de Especialização'),$/;"	kind:variable	line:46
+field	../members/migrations/0010_auto_20190507_1941.py	/^            field=models.TextField(blank=True, default='', null=True, verbose_name='Outras Atividades'),$/;"	kind:variable	line:36
+field	../members/migrations/0010_auto_20190507_1941.py	/^            field=models.TextField(blank=True, default='', null=True, verbose_name='Outras Atividades'),$/;"	kind:variable	line:41
+field	../members/migrations/0010_auto_20190507_1941.py	/^            field=models.TextField(blank=True, default='', verbose_name='Outras Atividades'),$/;"	kind:variable	line:31
+field	../members/migrations/0010_auto_20190507_1941.py	/^            field=models.TextField(blank=True, null=True, verbose_name='Prêmios e Publicações'),$/;"	kind:variable	line:21
+field	../members/migrations/0010_auto_20190507_1941.py	/^            field=models.TextField(blank=True, null=True, verbose_name='Prêmios e Publicações'),$/;"	kind:variable	line:26
+field	../members/migrations/0010_auto_20190507_1941.py	/^            field=models.TextField(blank=True, verbose_name='Prêmios e Publicações'),$/;"	kind:variable	line:16
+field	../portal/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='approaches', to='portal.PracticeArea', verbose_name='Área de Atuação'),$/;"	kind:variable	line:449
+field	../portal/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='members', to='portal.MemberType', verbose_name='Tipo de Membro'),$/;"	kind:variable	line:444
+field	../portal/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='publications', to='portal.PublicationType', verbose_name='Tipo de Publicação'),$/;"	kind:variable	line:424
+field	../portal/migrations/0001_initial.py	/^            field=models.ManyToManyField(related_name='interns', to='portal.PracticeArea'),$/;"	kind:variable	line:439
+field	../portal/migrations/0001_initial.py	/^            field=models.ManyToManyField(related_name='lawyers', to='portal.PracticeArea', verbose_name='Áreas de Atuação'),$/;"	kind:variable	line:434
+field	../portal/migrations/0001_initial.py	/^            field=models.ManyToManyField(related_name='trainees', to='portal.PracticeArea', verbose_name='Áreas de Atuação'),$/;"	kind:variable	line:429
+field	../portal/migrations/0003_auto_20190424_1812.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=100, null=True, verbose_name='Descrição'),$/;"	kind:variable	line:22
+field	../portal/migrations/0003_auto_20190424_1812.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=100, null=True, verbose_name='Descrição'),$/;"	kind:variable	line:27
+field	../portal/migrations/0003_auto_20190424_1812.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=100, verbose_name='Descrição'),$/;"	kind:variable	line:17
+field	../portal/migrations/0004_auto_20190426_1417.py	/^            field=models.TextField(blank=True, default='', null=True, verbose_name='Valor'),$/;"	kind:variable	line:21
+field	../portal/migrations/0004_auto_20190426_1417.py	/^            field=models.TextField(blank=True, default='', null=True, verbose_name='Valor'),$/;"	kind:variable	line:26
+field	../portal/migrations/0004_auto_20190426_1417.py	/^            field=models.TextField(blank=True, default='', verbose_name='Valor'),$/;"	kind:variable	line:16
+field	../portal/migrations/0005_memberlawyer_phone.py	/^            field=models.CharField(default='', max_length=19, verbose_name='Telefone'),$/;"	kind:variable	line:16
+field	../portal/migrations/0005_publication_content.py	/^            field=ckeditor.fields.RichTextField(blank=True),$/;"	kind:variable	line:17
+field	../portal/migrations/0007_memberlawyer_other_activities.py	/^            field=models.CharField(default='', max_length=250, verbose_name='Outras Atividades'),$/;"	kind:variable	line:16
+field	../portal/migrations/0008_auto_20190429_1739.py	/^            field=models.TextField(default='', verbose_name='Outras Atividades'),$/;"	kind:variable	line:16
+field	../portal/migrations/0009_event_related_members.py	/^            field=models.ManyToManyField(blank=True, related_name='related_events', to='portal.Member', verbose_name='Membros Relacionados'),$/;"	kind:variable	line:16
+field	../portal/migrations/0010_auto_20190429_1844.py	/^            field=models.ManyToManyField(blank=True, related_name='related_lawyers', to='portal.MemberLawyer', verbose_name='Advogados Relacionados'),$/;"	kind:variable	line:20
+field	../portal/migrations/0010_auto_20190429_1844.py	/^            field=models.ManyToManyField(blank=True, related_name='related_trainees', to='portal.MemberTrainee', verbose_name='Trainees Relacionados'),$/;"	kind:variable	line:25
+field	../portal/migrations/0011_auto_20190429_1852.py	/^            field=models.ManyToManyField(blank=True, related_name='related_events_lawyers', to='portal.MemberLawyer', verbose_name='Advogados Relacionados'),$/;"	kind:variable	line:24
+field	../portal/migrations/0011_auto_20190429_1852.py	/^            field=models.ManyToManyField(blank=True, related_name='related_events_trainees', to='portal.MemberTrainee', verbose_name='Trainees Relacionados'),$/;"	kind:variable	line:29
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:101
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:106
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:116
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:121
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:126
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:51
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:56
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:61
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:71
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:76
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:81
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Arquivo'),$/;"	kind:variable	line:96
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Foto'),$/;"	kind:variable	line:41
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem de Fundo'),$/;"	kind:variable	line:46
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem'),$/;"	kind:variable	line:111
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem'),$/;"	kind:variable	line:131
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem'),$/;"	kind:variable	line:21
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem'),$/;"	kind:variable	line:26
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem'),$/;"	kind:variable	line:31
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem'),$/;"	kind:variable	line:86
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Imagem'),$/;"	kind:variable	line:91
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(upload_to='', verbose_name='Bandeira'),$/;"	kind:variable	line:36
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(upload_to='', verbose_name='Logo'),$/;"	kind:variable	line:16
+field	../portal/migrations/0013_auto_20190502_1232.py	/^            field=models.ImageField(upload_to='', verbose_name='Logo'),$/;"	kind:variable	line:66
+field	../portal/migrations/0014_pageparameter_description.py	/^            field=models.TextField(blank=True, default='', verbose_name='Valor'),$/;"	kind:variable	line:16
+field	../portal/migrations/0015_auto_20190502_1442.py	/^            field=models.TextField(blank=True, default='', verbose_name='Descrição'),$/;"	kind:variable	line:16
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.FileField(blank=True, default='', max_length=50, null=True, upload_to='', verbose_name='Anexo PDF'),$/;"	kind:variable	line:55
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.FileField(blank=True, default='', max_length=50, null=True, upload_to='', verbose_name='Anexo PDF'),$/;"	kind:variable	line:60
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.FileField(blank=True, default='', max_length=50, null=True, upload_to='', verbose_name='Anexo PDF'),$/;"	kind:variable	line:65
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Capa da publicação'),$/;"	kind:variable	line:70
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Capa da página'),$/;"	kind:variable	line:45
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Capa da página'),$/;"	kind:variable	line:50
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Capa da página'),$/;"	kind:variable	line:80
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Capa do evento'),$/;"	kind:variable	line:40
+field	../portal/migrations/0019_auto_20190502_1659.py	/^            field=models.ImageField(blank=True, null=True, upload_to='', verbose_name='Logo da entidade social'),$/;"	kind:variable	line:75
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.FileField(blank=True, default='', max_length=50, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Anexo PDF'),$/;"	kind:variable	line:69
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.FileField(blank=True, default='', max_length=50, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Anexo PDF'),$/;"	kind:variable	line:74
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.FileField(blank=True, default='', max_length=50, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Anexo PDF'),$/;"	kind:variable	line:79
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.FileField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Arquivo'),$/;"	kind:variable	line:104
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.FileField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Arquivo'),$/;"	kind:variable	line:94
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.FileField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Arquivo'),$/;"	kind:variable	line:99
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='members.MemberLawyer'),$/;"	kind:variable	line:29
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Capa da publicação'),$/;"	kind:variable	line:84
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Capa da página'),$/;"	kind:variable	line:114
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Capa do evento'),$/;"	kind:variable	line:39
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Imagem de Fundo'),$/;"	kind:variable	line:54
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Imagem'),$/;"	kind:variable	line:24
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Imagem'),$/;"	kind:variable	line:34
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Imagem'),$/;"	kind:variable	line:64
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Logo da entidade social'),$/;"	kind:variable	line:109
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(upload_to=dafonte_portal.utils.upload_to, verbose_name='Logo'),$/;"	kind:variable	line:19
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ImageField(upload_to=dafonte_portal.utils.upload_to, verbose_name='Logo'),$/;"	kind:variable	line:59
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ManyToManyField(blank=True, related_name='related_events_lawyers', to='members.MemberLawyer', verbose_name='Advogados Relacionados'),$/;"	kind:variable	line:44
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ManyToManyField(blank=True, related_name='related_events_trainees', to='members.MemberTrainee', verbose_name='Trainees Relacionados'),$/;"	kind:variable	line:49
+field	../portal/migrations/0021_auto_20190502_1908.py	/^            field=models.ManyToManyField(blank=True, related_name='related_publications', to='members.Member', verbose_name='Membros Relacionados'),$/;"	kind:variable	line:89
+field	../portal/migrations/0024_auto_20190502_2001.py	/^            field=ckeditor.fields.RichTextField(blank=True, default='', null=True),$/;"	kind:variable	line:18
+field	../portal/migrations/0024_auto_20190502_2001.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=1000, null=True, verbose_name='Descrição'),$/;"	kind:variable	line:33
+field	../portal/migrations/0024_auto_20190502_2001.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=1000, null=True, verbose_name='Descrição'),$/;"	kind:variable	line:38
+field	../portal/migrations/0024_auto_20190502_2001.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=1000, verbose_name='Descrição'),$/;"	kind:variable	line:28
+field	../portal/migrations/0024_auto_20190502_2001.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=1500, verbose_name='Requisitos'),$/;"	kind:variable	line:23
+field	../portal/migrations/0027_auto_20190506_1744.py	/^            field=models.ManyToManyField(blank=True, related_name='related_areas', to='portal.PracticeArea', verbose_name='Áreas de Atuação Relacionadas'),$/;"	kind:variable	line:16
+field	../portal/migrations/0027_auto_20190506_1744.py	/^            field=models.ManyToManyField(blank=True, related_name='related_sectors', to='portal.SpecializationSector', verbose_name='Setores de Especialização Relacionados'),$/;"	kind:variable	line:21
+field	../portal/migrations/0028_auto_20190506_1751.py	/^            field=models.ManyToManyField(blank=True, related_name='related_event_areas', to='portal.PracticeArea', verbose_name='Áreas de Atuação Relacionadas'),$/;"	kind:variable	line:21
+field	../portal/migrations/0028_auto_20190506_1751.py	/^            field=models.ManyToManyField(blank=True, related_name='related_event_sectors', to='portal.SpecializationSector', verbose_name='Setores de Especialização Relacionados'),$/;"	kind:variable	line:26
+field	../portal/migrations/0028_auto_20190506_1751.py	/^            field=models.ManyToManyField(blank=True, related_name='related_publication_areas', to='portal.PracticeArea', verbose_name='Áreas de Atuação Relacionadas'),$/;"	kind:variable	line:36
+field	../portal/migrations/0028_auto_20190506_1751.py	/^            field=models.ManyToManyField(blank=True, related_name='related_publication_sectors', to='portal.SpecializationSector', verbose_name='Setores de Especialização Relacionados'),$/;"	kind:variable	line:31
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=3000, null=True, verbose_name='Descrição'),$/;"	kind:variable	line:76
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=3000, null=True, verbose_name='Descrição'),$/;"	kind:variable	line:81
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=3000, verbose_name='Descrição'),$/;"	kind:variable	line:71
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=ckeditor_uploader.fields.RichTextUploadingField(default='', max_length=3000, verbose_name='Requisitos'),$/;"	kind:variable	line:86
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, null=True, verbose_name='Título'),$/;"	kind:variable	line:101
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, null=True, verbose_name='Título'),$/;"	kind:variable	line:126
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, null=True, verbose_name='Título'),$/;"	kind:variable	line:131
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, null=True, verbose_name='Título'),$/;"	kind:variable	line:51
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, null=True, verbose_name='Título'),$/;"	kind:variable	line:56
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, null=True, verbose_name='Título'),$/;"	kind:variable	line:96
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, verbose_name='Titulo'),$/;"	kind:variable	line:136
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, verbose_name='Título'),$/;"	kind:variable	line:121
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, verbose_name='Título'),$/;"	kind:variable	line:46
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, verbose_name='Título'),$/;"	kind:variable	line:61
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=200, verbose_name='Título'),$/;"	kind:variable	line:91
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(default='', max_length=50, verbose_name='Nome'),$/;"	kind:variable	line:66
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(max_length=200, null=True, unique=True, verbose_name='Título'),$/;"	kind:variable	line:111
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(max_length=200, null=True, unique=True, verbose_name='Título'),$/;"	kind:variable	line:116
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.CharField(max_length=200, unique=True, verbose_name='Título'),$/;"	kind:variable	line:106
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Logo para footer'),$/;"	kind:variable	line:26
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Logo para footer'),$/;"	kind:variable	line:36
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Logo para página de quem somos'),$/;"	kind:variable	line:31
+field	../portal/migrations/0029_auto_20190507_1750.py	/^            field=models.ImageField(blank=True, null=True, upload_to=dafonte_portal.utils.upload_to, verbose_name='Logo para página de quem somos'),$/;"	kind:variable	line:41
+fields	../applying/admin.py	/^    fields = ["name", "email", "phone", "address", "opportunity"]$/;"	kind:variable	line:85
+fields	../applying/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:17
+fields	../applying/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:26
+fields	../applying/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:37
+fields	../applying/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:45
+fields	../members/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:103
+fields	../members/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:116
+fields	../members/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:20
+fields	../members/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:34
+fields	../members/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:47
+fields	../members/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:61
+fields	../members/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:74
+fields	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            fields=[$/;"	kind:variable	line:15
+fields	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            fields=[$/;"	kind:variable	line:27
+fields	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            fields=[$/;"	kind:variable	line:39
+fields	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            fields=[$/;"	kind:variable	line:51
+fields	../members/migrations/0007_auto_20190507_1857.py	/^            fields=[$/;"	kind:variable	line:18
+fields	../members/translation.py	/^    fields = ["academic_formation", "professional_experience", "awards_and_publications", "other_activities"]$/;"	kind:variable	line:20
+fields	../members/translation.py	/^    fields = ["name"]$/;"	kind:variable	line:10
+fields	../members/translation.py	/^    fields = ["name"]$/;"	kind:variable	line:15
+fields	../portal/forms.py	/^        fields = ('name', 'email', 'telefone', 'message')/;"	kind:variable	line:18
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:104
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:118
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:131
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:145
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:157
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:183
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:195
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:20
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:208
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:238
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:260
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:275
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:294
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:30
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:304
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:325
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:354
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:367
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:385
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:402
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:43
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:62
+fields	../portal/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:90
+fields	../portal/migrations/0006_auto_20190429_1728.py	/^            fields=[$/;"	kind:variable	line:18
+fields	../portal/migrations/0023_contact.py	/^            fields=[$/;"	kind:variable	line:15
+fields	../portal/migrations/0025_values.py	/^            fields=[$/;"	kind:variable	line:15
+fields	../portal/migrations/0026_auto_20190506_1535.py	/^            fields=[$/;"	kind:variable	line:16
+fields	../portal/translation.py	/^	fields = ["country", "state", "city", "address", "neighborhood"]$/;"	kind:variable	line:53
+fields	../portal/translation.py	/^	fields = ["description"]$/;"	kind:variable	line:78
+fields	../portal/translation.py	/^	fields = ["description_short", "description", "country", "city", "address"]$/;"	kind:variable	line:73
+fields	../portal/translation.py	/^	fields = ["name", "description"]$/;"	kind:variable	line:25
+fields	../portal/translation.py	/^	fields = ["name", "description"]$/;"	kind:variable	line:30
+fields	../portal/translation.py	/^	fields = ["name"]$/;"	kind:variable	line:43
+fields	../portal/translation.py	/^	fields = ["name"]$/;"	kind:variable	line:63
+fields	../portal/translation.py	/^	fields = ["text"]$/;"	kind:variable	line:35
+fields	../portal/translation.py	/^	fields = ["text"]$/;"	kind:variable	line:39
+fields	../portal/translation.py	/^	fields = ["title", "city", "description_short", "description"]$/;"	kind:variable	line:58
+fields	../portal/translation.py	/^	fields = ["title", "description"]$/;"	kind:variable	line:48
+fields	../portal/translation.py	/^	fields = ["title", "description_short", "description", "file"]$/;"	kind:variable	line:68
+fields	../portal/translation.py	/^	fields = ["title"]$/;"	kind:variable	line:15
+fields	../portal/translation.py	/^	fields = ["value", "file"]$/;"	kind:variable	line:10
+fields	../portal/translation.py	/^	fields = ["value"]$/;"	kind:variable	line:20
+fieldsets	../portal/admin.py	/^	fieldsets = [$/;"	kind:variable	line:34
+fieldsets	../portal/admin.py	/^	fieldsets = [$/;"	kind:variable	line:44
+fieldsets	../portal/admin.py	/^	fieldsets = [$/;"	kind:variable	line:71
+file	../portal/models.py	/^    file = FileField("Anexo PDF", max_length=50, default="", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:272
+file	../portal/models.py	/^    file = FileField("Arquivo", blank=True, upload_to=upload_to, null=True)$/;"	kind:variable	line:18
+filter_horizontal	../members/admin.py	/^    filter_horizontal = ["practice_areas", "languages", "specialization_sector", "awards"]$/;"	kind:variable	line:29
+filter_horizontal	../members/admin.py	/^    filter_horizontal = ["practice_areas"]$/;"	kind:variable	line:42
+filter_horizontal	../members/admin.py	/^    filter_horizontal = ["practice_areas"]$/;"	kind:variable	line:49
+filter_horizontal	../portal/admin.py	/^	filter_horizontal = ["related_members"]$/;"	kind:variable	line:55
+first_name	../members/models.py	/^    def first_name(self):$/;"	kind:member	line:75
+first_name	../members/models.py	/^    first_name = models.CharField("Nome", max_length=50, default="")$/;"	kind:variable	line:40
+fk_name	../members/admin.py	/^    fk_name = 'member'$/;"	kind:variable	line:22
+flag_file	../portal/templatetags/site_tags.py	/^def flag_file(language_code):$/;"	kind:function	line:39
+forms.py	../portal/forms.py	1;"	kind:file	line:1
+formset	../members/admin.py	/^    formset = BaseMemberChildInlineFormSet$/;"	kind:variable	line:27
+formset	../members/admin.py	/^    formset = BaseMemberChildInlineFormSet$/;"	kind:variable	line:34
+formset	../members/admin.py	/^    formset = BaseMemberChildInlineFormSet$/;"	kind:variable	line:40
+formset	../members/admin.py	/^    formset = BaseMemberChildInlineFormSet$/;"	kind:variable	line:47
+full_name	../members/models.py	/^    def full_name(self):$/;"	kind:member	line:53
+full_name	../members/models.py	/^    def full_name(self):$/;"	kind:member	line:87
+function	../applying/models.py	/^    function = CharField("Cargo", max_length=50)$/;"	kind:variable	line:28
+get	../members/views.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:13
+get	../portal/views.py	/^  def get(self, request, *args, **kwargs):$/;"	kind:member	line:173
+get	../portal/views.py	/^  def get(self, request, *args, **kwargs):$/;"	kind:member	line:217
+get	../portal/views.py	/^  def get(self, request, *args, **kwargs):$/;"	kind:member	line:259
+get	../portal/views.py	/^  def get(self, request, *args, **kwargs):$/;"	kind:member	line:296
+get	../portal/views.py	/^  def get(self, request, *args, **kwargs):$/;"	kind:member	line:320
+get_context_data	../applying/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:13
+get_context_data	../members/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:62
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:119
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:147
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:160
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:204
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:246
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:283
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:31
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:44
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:73
+get_context_data	../portal/views.py	/^  def get_context_data(self, **kwargs):$/;"	kind:member	line:98
+get_object	../portal/views.py	/^  def get_object(self, queryset=None):$/;"	kind:member	line:25
+get_queryset	../members/proxies.py	/^    def get_queryset(self):$/;"	kind:member	line:8
+get_values	../portal/templatetags/culture_tags.py	/^def get_values(context):$/;"	kind:function	line:11
+gmaps_iframe	../portal/models.py	/^    gmaps_iframe = CharField("Iframe Embbedado do Google", max_length=500, default="")$/;"	kind:variable	line:211
+id	../applying/admin.py	/^    id = models.AutoField(primary_key=True, editable=False)$/;"	kind:variable	line:11
+id	../applying/admin.py	/^    id = models.AutoField(primary_key=True, editable=False)$/;"	kind:variable	line:17
+id	../applying/admin.py	/^    id = models.AutoField(primary_key=True, editable=False)$/;"	kind:variable	line:23
+id	../members/admin.py	/^    id = models.AutoField(primary_key=True, editable=False)$/;"	kind:variable	line:20
+initial	../applying/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:9
+initial	../members/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
+initial	../portal/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:12
+inlines	../applying/admin.py	/^    inlines = [ProfessionalExperienceInline, AcademicInline, ApplicationLanguageInline]$/;"	kind:variable	line:86
+inlines	../members/admin.py	/^    inlines = [MemberAdministrativeStaffInline]$/;"	kind:variable	line:83
+inlines	../members/admin.py	/^    inlines = [MemberInternInline]$/;"	kind:variable	line:68
+inlines	../members/admin.py	/^    inlines = [MemberLawyerInline]$/;"	kind:variable	line:73
+inlines	../members/admin.py	/^    inlines = [MemberTraineeInline]$/;"	kind:variable	line:78
+inlines	../portal/admin.py	/^	inlines = [ApproachInline]$/;"	kind:variable	line:38
+inlines	../portal/admin.py	/^	inlines = [ApproachSectorInline]$/;"	kind:variable	line:48
+inlines	../portal/admin.py	/^	inlines = [PageParameterInline]$/;"	kind:variable	line:20
+institution	../applying/models.py	/^    institution = CharField("Instituição", max_length=100)$/;"	kind:variable	line:43
+is_active	../portal/models.py	/^    def is_active(self):$/;"	kind:member	line:240
+is_highlight	../portal/models.py	/^    is_highlight = BooleanField("Em Destaque", default=False)$/;"	kind:variable	line:159
+is_parent	../portal/models.py	/^    is_parent = BooleanField("Matriz", default=False)$/;"	kind:variable	line:215
+job_title	../members/models.py	/^    job_title = models.ForeignKey(JobTitle, models.PROTECT, verbose_name="Nome da Função", related_name="members")$/;"	kind:variable	line:125
+language	../applying/models.py	/^    language = CharField("Idioma", max_length=30)$/;"	kind:variable	line:55
+languages	../members/models.py	/^    languages = models.ManyToManyField("portal.Language", verbose_name="Idiomas", related_name="lawyers")$/;"	kind:variable	line:111
+last_name	../members/models.py	/^    def last_name(self):$/;"	kind:member	line:79
+last_name	../members/models.py	/^    last_name = models.CharField("Sobrenome", max_length=50, default="")$/;"	kind:variable	line:41
+list_display	../applying/admin.py	/^    list_display = ["course", "institution", "conclusion", "application"]$/;"	kind:variable	line:96
+list_display	../applying/admin.py	/^    list_display = ["enterprise", "function", "area", "periodo", "activities", "application"]$/;"	kind:variable	line:92
+list_display	../applying/admin.py	/^    list_display = ["language"]/;"	kind:variable	line:100
+list_display	../applying/admin.py	/^    list_display = ["name", "email", "phone", "address", "opportunity"]$/;"	kind:variable	line:84
+list_display	../portal/admin.py	/^	list_display = ["__str__", "description_short", "creation_date"]$/;"	kind:variable	line:54
+list_display	../portal/admin.py	/^	list_display = ["description_short", "date", "time"]$/;"	kind:variable	line:60
+list_display	../portal/admin.py	/^	list_display = ["name", "description"]$/;"	kind:variable	line:33
+list_display	../portal/admin.py	/^	list_display = ["name", "description"]$/;"	kind:variable	line:43
+list_display	../portal/admin.py	/^	list_display = ["name", "email", "telefone"]$/;"	kind:variable	line:70
+list_display	../portal/admin.py	/^	list_display = ["title", "is_highlight"]$/;"	kind:variable	line:65
+list_filter	../applying/admin.py	/^    list_filter = (OpportunityListFilter,)$/;"	kind:variable	line:88
+load_initial_members_types	../portal/migrations/0002_load_intial_data.py	/^def load_initial_members_types(apps, schema_editor):$/;"	kind:function	line:19
+load_initial_offices	../portal/migrations/0002_load_intial_data.py	/^def load_initial_offices(apps, schema_editor):$/;"	kind:function	line:105
+load_initial_pages	../portal/migrations/0002_load_intial_data.py	/^def load_initial_pages(apps, schema_editor):$/;"	kind:function	line:33
+load_initial_practice_areas	../portal/migrations/0002_load_intial_data.py	/^def load_initial_practice_areas(apps, schema_editor):$/;"	kind:function	line:169
+load_initial_publication_types	../portal/migrations/0002_load_intial_data.py	/^def load_initial_publication_types(apps, schema_editor):$/;"	kind:function	line:27
+load_initial_user	../portal/migrations/0002_load_intial_data.py	/^def load_initial_user(apps, schema_editor):$/;"	kind:function	line:7
+local.py	../dafonte_portal/settings/local.py	1;"	kind:file	line:1
+logo_footer	../portal/models.py	/^    logo_footer = ImageField("Logo para footer", upload_to=upload_to, blank=True, null=True)$/;"	kind:variable	line:179
+logo_footer	../portal/models.py	/^    logo_footer = ImageField("Logo para footer", upload_to=upload_to, blank=True, null=True)$/;"	kind:variable	line:191
+logo_normal	../portal/models.py	/^    logo_normal = ImageField("Logo para página de quem somos", upload_to=upload_to, blank=True, null=True)$/;"	kind:variable	line:180
+logo_normal	../portal/models.py	/^    logo_normal = ImageField("Logo para página de quem somos", upload_to=upload_to, blank=True, null=True)$/;"	kind:variable	line:192
+lookups	../applying/admin.py	/^    def lookups(self, request, model_admin):$/;"	kind:member	line:44
+make_range	../portal/templatetags/site_tags.py	/^def make_range(n1, n2=None, n3=None):$/;"	kind:function	line:74
+manage.py	../manage.py	1;"	kind:file	line:1
+member	../members/models.py	/^    def member(self):$/;"	kind:member	line:71
+member	../members/models.py	/^    member = models.OneToOneField(Member, models.CASCADE, related_name="administrative_staff")$/;"	kind:variable	line:124
+member	../members/models.py	/^    member = models.OneToOneField(Member, models.CASCADE, related_name="intern")$/;"	kind:variable	line:151
+member	../members/models.py	/^    member = models.OneToOneField(Member, models.CASCADE, related_name="lawyer")$/;"	kind:variable	line:108
+member	../members/models.py	/^    member = models.OneToOneField(Member, models.CASCADE, related_name="trainee")$/;"	kind:variable	line:138
+member_type	../members/admin.py	/^    def member_type(self, obj):$/;"	kind:member	line:57
+member_type	../members/proxies.py	/^    member_type = MemberType.ADMINISTRATIVE_STAFF$/;"	kind:variable	line:46
+member_type	../members/proxies.py	/^    member_type = MemberType.INTERN$/;"	kind:variable	line:13
+member_type	../members/proxies.py	/^    member_type = MemberType.LAWYER$/;"	kind:variable	line:24
+member_type	../members/proxies.py	/^    member_type = MemberType.TRAINEE$/;"	kind:variable	line:35
+members	../portal/models.py	/^    def members(self):$/;"	kind:member	line:111
+members	../portal/models.py	/^    def members(self):$/;"	kind:member	line:88
+message	../portal/forms.py	/^    message = forms.CharField(label="Mensagem", required=False)$/;"	kind:variable	line:14
+message	../portal/models.py	/^    message = TextField("Mensagem", blank=True, null=True)$/;"	kind:variable	line:337
+model	../applying/admin.py	/^    model = Academic$/;"	kind:variable	line:18
+model	../applying/admin.py	/^    model = ApplicationLanguage$/;"	kind:variable	line:24
+model	../applying/admin.py	/^    model = ProfessionalExperience$/;"	kind:variable	line:12
+model	../members/admin.py	/^    model = AwardMembers$/;"	kind:variable	line:21
+model	../members/admin.py	/^    model = MemberAdministrativeStaff$/;"	kind:variable	line:33
+model	../members/admin.py	/^    model = MemberIntern$/;"	kind:variable	line:46
+model	../members/admin.py	/^    model = MemberLawyer$/;"	kind:variable	line:26
+model	../members/admin.py	/^    model = MemberTrainee$/;"	kind:variable	line:39
+model	../portal/admin.py	/^	model = Approach$/;"	kind:variable	line:24
+model	../portal/admin.py	/^	model = ApproachSector$/;"	kind:variable	line:28
+model	../portal/admin.py	/^	model = PageParameter$/;"	kind:variable	line:13
+model	../portal/forms.py	/^        model = Contact$/;"	kind:variable	line:17
+model	../portal/views.py	/^  model = Page$/;"	kind:variable	line:21
+model_name	../applying/migrations/0001_initial.py	/^            model_name='academic',$/;"	kind:variable	line:56
+model_name	../applying/migrations/0002_auto_20190430_1620.py	/^            model_name='application',$/;"	kind:variable	line:32
+model_name	../applying/migrations/0003_auto_20190430_1632.py	/^            model_name='application',$/;"	kind:variable	line:15
+model_name	../members/migrations/0001_initial.py	/^            model_name='member',$/;"	kind:variable	line:128
+model_name	../members/migrations/0003_memberlawyer_vcard.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:15
+model_name	../members/migrations/0004_memberlawyer_specialization_sector.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:15
+model_name	../members/migrations/0005_auto_20190507_1429.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:14
+model_name	../members/migrations/0005_auto_20190507_1429.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:18
+model_name	../members/migrations/0005_auto_20190507_1429.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:22
+model_name	../members/migrations/0006_auto_20190507_1645.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:14
+model_name	../members/migrations/0006_auto_20190507_1645.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:19
+model_name	../members/migrations/0007_auto_20190507_1857.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:30
+model_name	../members/migrations/0008_auto_20190507_1900.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:18
+model_name	../members/migrations/0009_auto_20190507_1901.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:14
+model_name	../members/migrations/0010_auto_20190507_1941.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:14
+model_name	../members/migrations/0010_auto_20190507_1941.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:19
+model_name	../members/migrations/0010_auto_20190507_1941.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:24
+model_name	../members/migrations/0010_auto_20190507_1941.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:29
+model_name	../members/migrations/0010_auto_20190507_1941.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:34
+model_name	../members/migrations/0010_auto_20190507_1941.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:39
+model_name	../members/migrations/0010_auto_20190507_1941.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:44
+model_name	../portal/migrations/0001_initial.py	/^            model_name='approach',$/;"	kind:variable	line:447
+model_name	../portal/migrations/0001_initial.py	/^            model_name='member',$/;"	kind:variable	line:442
+model_name	../portal/migrations/0001_initial.py	/^            model_name='memberintern',$/;"	kind:variable	line:437
+model_name	../portal/migrations/0001_initial.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:432
+model_name	../portal/migrations/0001_initial.py	/^            model_name='membertrainee',$/;"	kind:variable	line:427
+model_name	../portal/migrations/0001_initial.py	/^            model_name='publication',$/;"	kind:variable	line:422
+model_name	../portal/migrations/0003_auto_20190424_1812.py	/^            model_name='award',$/;"	kind:variable	line:15
+model_name	../portal/migrations/0003_auto_20190424_1812.py	/^            model_name='award',$/;"	kind:variable	line:20
+model_name	../portal/migrations/0003_auto_20190424_1812.py	/^            model_name='award',$/;"	kind:variable	line:25
+model_name	../portal/migrations/0004_auto_20190426_1417.py	/^            model_name='pageparameter',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0004_auto_20190426_1417.py	/^            model_name='pageparameter',$/;"	kind:variable	line:19
+model_name	../portal/migrations/0004_auto_20190426_1417.py	/^            model_name='pageparameter',$/;"	kind:variable	line:24
+model_name	../portal/migrations/0005_memberlawyer_phone.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0005_publication_content.py	/^            model_name='publication',$/;"	kind:variable	line:15
+model_name	../portal/migrations/0007_memberlawyer_other_activities.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0008_auto_20190429_1739.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0009_event_related_members.py	/^            model_name='event',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0010_auto_20190429_1844.py	/^            model_name='event',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0010_auto_20190429_1844.py	/^            model_name='event',$/;"	kind:variable	line:18
+model_name	../portal/migrations/0010_auto_20190429_1844.py	/^            model_name='event',$/;"	kind:variable	line:23
+model_name	../portal/migrations/0011_auto_20190429_1852.py	/^            model_name='event',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0011_auto_20190429_1852.py	/^            model_name='event',$/;"	kind:variable	line:18
+model_name	../portal/migrations/0011_auto_20190429_1852.py	/^            model_name='event',$/;"	kind:variable	line:22
+model_name	../portal/migrations/0011_auto_20190429_1852.py	/^            model_name='event',$/;"	kind:variable	line:27
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='affiliate',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='award',$/;"	kind:variable	line:19
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='awardmembers',$/;"	kind:variable	line:24
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='event',$/;"	kind:variable	line:29
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='language',$/;"	kind:variable	line:34
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='member',$/;"	kind:variable	line:39
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='page',$/;"	kind:variable	line:44
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='pageparameter',$/;"	kind:variable	line:49
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='pageparameter',$/;"	kind:variable	line:54
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='pageparameter',$/;"	kind:variable	line:59
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='partner',$/;"	kind:variable	line:64
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='practicearea',$/;"	kind:variable	line:69
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='practicearea',$/;"	kind:variable	line:74
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='practicearea',$/;"	kind:variable	line:79
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='practicearea',$/;"	kind:variable	line:84
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='publication',$/;"	kind:variable	line:89
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='siteparameter',$/;"	kind:variable	line:104
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='siteparameter',$/;"	kind:variable	line:94
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='siteparameter',$/;"	kind:variable	line:99
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='socialentity',$/;"	kind:variable	line:109
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='specializationsector',$/;"	kind:variable	line:114
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='specializationsector',$/;"	kind:variable	line:119
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='specializationsector',$/;"	kind:variable	line:124
+model_name	../portal/migrations/0013_auto_20190502_1232.py	/^            model_name='specializationsector',$/;"	kind:variable	line:129
+model_name	../portal/migrations/0014_pageparameter_description.py	/^            model_name='pageparameter',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0015_auto_20190502_1442.py	/^            model_name='pageparameter',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0016_remove_pageparameter_description.py	/^            model_name='pageparameter',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0017_auto_20190502_1456.py	/^            model_name='pageparameter',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0017_auto_20190502_1456.py	/^            model_name='pageparameter',$/;"	kind:variable	line:18
+model_name	../portal/migrations/0017_auto_20190502_1456.py	/^            model_name='pageparameter',$/;"	kind:variable	line:22
+model_name	../portal/migrations/0018_remove_language_flag.py	/^            model_name='language',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='event',$/;"	kind:variable	line:38
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='page',$/;"	kind:variable	line:43
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='practicearea',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='practicearea',$/;"	kind:variable	line:18
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='practicearea',$/;"	kind:variable	line:22
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='practicearea',$/;"	kind:variable	line:48
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='publication',$/;"	kind:variable	line:53
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='publication',$/;"	kind:variable	line:58
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='publication',$/;"	kind:variable	line:63
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='publication',$/;"	kind:variable	line:68
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='socialentity',$/;"	kind:variable	line:73
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='specializationsector',$/;"	kind:variable	line:26
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='specializationsector',$/;"	kind:variable	line:30
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='specializationsector',$/;"	kind:variable	line:34
+model_name	../portal/migrations/0019_auto_20190502_1659.py	/^            model_name='specializationsector',$/;"	kind:variable	line:78
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='affiliate',$/;"	kind:variable	line:17
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='award',$/;"	kind:variable	line:22
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='awardmembers',$/;"	kind:variable	line:27
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='awardmembers',$/;"	kind:variable	line:32
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='event',$/;"	kind:variable	line:37
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='event',$/;"	kind:variable	line:42
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='event',$/;"	kind:variable	line:47
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='page',$/;"	kind:variable	line:52
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='partner',$/;"	kind:variable	line:57
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='practicearea',$/;"	kind:variable	line:62
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='publication',$/;"	kind:variable	line:67
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='publication',$/;"	kind:variable	line:72
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='publication',$/;"	kind:variable	line:77
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='publication',$/;"	kind:variable	line:82
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='publication',$/;"	kind:variable	line:87
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='siteparameter',$/;"	kind:variable	line:102
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='siteparameter',$/;"	kind:variable	line:92
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='siteparameter',$/;"	kind:variable	line:97
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='socialentity',$/;"	kind:variable	line:107
+model_name	../portal/migrations/0021_auto_20190502_1908.py	/^            model_name='specializationsector',$/;"	kind:variable	line:112
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='member',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='memberadministrativestaff',$/;"	kind:variable	line:18
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='memberadministrativestaff',$/;"	kind:variable	line:22
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='memberintern',$/;"	kind:variable	line:26
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='memberintern',$/;"	kind:variable	line:30
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:34
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:38
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='memberlawyer',$/;"	kind:variable	line:42
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='membertrainee',$/;"	kind:variable	line:46
+model_name	../portal/migrations/0022_state_delete_members.py	/^            model_name='membertrainee',$/;"	kind:variable	line:50
+model_name	../portal/migrations/0024_auto_20190502_2001.py	/^            model_name='event',$/;"	kind:variable	line:16
+model_name	../portal/migrations/0024_auto_20190502_2001.py	/^            model_name='opportunity',$/;"	kind:variable	line:21
+model_name	../portal/migrations/0024_auto_20190502_2001.py	/^            model_name='opportunity',$/;"	kind:variable	line:26
+model_name	../portal/migrations/0024_auto_20190502_2001.py	/^            model_name='opportunity',$/;"	kind:variable	line:31
+model_name	../portal/migrations/0024_auto_20190502_2001.py	/^            model_name='opportunity',$/;"	kind:variable	line:36
+model_name	../portal/migrations/0027_auto_20190506_1744.py	/^            model_name='publication',$/;"	kind:variable	line:14
+model_name	../portal/migrations/0027_auto_20190506_1744.py	/^            model_name='publication',$/;"	kind:variable	line:19
+model_name	../portal/migrations/0028_auto_20190506_1751.py	/^            model_name='event',$/;"	kind:variable	line:19
+model_name	../portal/migrations/0028_auto_20190506_1751.py	/^            model_name='event',$/;"	kind:variable	line:24
+model_name	../portal/migrations/0028_auto_20190506_1751.py	/^            model_name='publication',$/;"	kind:variable	line:15
+model_name	../portal/migrations/0028_auto_20190506_1751.py	/^            model_name='publication',$/;"	kind:variable	line:29
+model_name	../portal/migrations/0028_auto_20190506_1751.py	/^            model_name='publication',$/;"	kind:variable	line:34
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='affiliate',$/;"	kind:variable	line:16
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='affiliate',$/;"	kind:variable	line:24
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='affiliate',$/;"	kind:variable	line:29
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='award',$/;"	kind:variable	line:44
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='award',$/;"	kind:variable	line:49
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='award',$/;"	kind:variable	line:54
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='awardmembers',$/;"	kind:variable	line:59
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='contact',$/;"	kind:variable	line:64
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='opportunity',$/;"	kind:variable	line:69
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='opportunity',$/;"	kind:variable	line:74
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='opportunity',$/;"	kind:variable	line:79
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='opportunity',$/;"	kind:variable	line:84
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='opportunity',$/;"	kind:variable	line:89
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='opportunity',$/;"	kind:variable	line:94
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='opportunity',$/;"	kind:variable	line:99
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='page',$/;"	kind:variable	line:104
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='page',$/;"	kind:variable	line:109
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='page',$/;"	kind:variable	line:114
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='partner',$/;"	kind:variable	line:20
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='partner',$/;"	kind:variable	line:34
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='partner',$/;"	kind:variable	line:39
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='publication',$/;"	kind:variable	line:119
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='publication',$/;"	kind:variable	line:124
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='publication',$/;"	kind:variable	line:129
+model_name	../portal/migrations/0029_auto_20190507_1750.py	/^            model_name='values',$/;"	kind:variable	line:134
+model_name	../portal/migrations/0030_auto_20190507_1857.py	/^            model_name='awardmembers',$/;"	kind:variable	line:14
+models.py	../applying/models.py	1;"	kind:file	line:1
+models.py	../members/models.py	1;"	kind:file	line:1
+models.py	../portal/models.py	1;"	kind:file	line:1
+name	../applying/apps.py	/^    name = 'applying'$/;"	kind:variable	line:5
+name	../applying/migrations/0001_initial.py	/^            name='Academic',$/;"	kind:variable	line:16
+name	../applying/migrations/0001_initial.py	/^            name='Application',$/;"	kind:variable	line:25
+name	../applying/migrations/0001_initial.py	/^            name='ApplicationLanguage',$/;"	kind:variable	line:36
+name	../applying/migrations/0001_initial.py	/^            name='ProfessionalExperience',$/;"	kind:variable	line:44
+name	../applying/migrations/0001_initial.py	/^            name='application',$/;"	kind:variable	line:57
+name	../applying/migrations/0002_auto_20190430_1620.py	/^            name='academic',$/;"	kind:variable	line:16
+name	../applying/migrations/0002_auto_20190430_1620.py	/^            name='application',$/;"	kind:variable	line:20
+name	../applying/migrations/0002_auto_20190430_1620.py	/^            name='applicationlanguage',$/;"	kind:variable	line:24
+name	../applying/migrations/0002_auto_20190430_1620.py	/^            name='opportunity',$/;"	kind:variable	line:33
+name	../applying/migrations/0002_auto_20190430_1620.py	/^            name='professionalexperience',$/;"	kind:variable	line:28
+name	../applying/migrations/0003_auto_20190430_1632.py	/^            name='opportunity',$/;"	kind:variable	line:16
+name	../applying/models.py	/^    name = CharField("Nome", max_length=200)$/;"	kind:variable	line:8
+name	../members/apps.py	/^    name = 'members'$/;"	kind:variable	line:5
+name	../members/migrations/0001_initial.py	/^            name='JobTitle',$/;"	kind:variable	line:19
+name	../members/migrations/0001_initial.py	/^            name='Member',$/;"	kind:variable	line:33
+name	../members/migrations/0001_initial.py	/^            name='MemberAdministrativeStaff',$/;"	kind:variable	line:46
+name	../members/migrations/0001_initial.py	/^            name='MemberIntern',$/;"	kind:variable	line:60
+name	../members/migrations/0001_initial.py	/^            name='MemberLawyer',$/;"	kind:variable	line:73
+name	../members/migrations/0001_initial.py	/^            name='MemberTrainee',$/;"	kind:variable	line:102
+name	../members/migrations/0001_initial.py	/^            name='MemberType',$/;"	kind:variable	line:115
+name	../members/migrations/0001_initial.py	/^            name='type',$/;"	kind:variable	line:129
+name	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            name='ProxyAdministrativeStaff',$/;"	kind:variable	line:14
+name	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            name='ProxyIntern',$/;"	kind:variable	line:26
+name	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            name='ProxyLawyer',$/;"	kind:variable	line:38
+name	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            name='ProxyTrainee',$/;"	kind:variable	line:50
+name	../members/migrations/0003_memberlawyer_vcard.py	/^            name='vcard',$/;"	kind:variable	line:16
+name	../members/migrations/0004_memberlawyer_specialization_sector.py	/^            name='specialization_sector',$/;"	kind:variable	line:16
+name	../members/migrations/0005_auto_20190507_1429.py	/^            name='profile',$/;"	kind:variable	line:15
+name	../members/migrations/0005_auto_20190507_1429.py	/^            name='profile_en',$/;"	kind:variable	line:19
+name	../members/migrations/0005_auto_20190507_1429.py	/^            name='profile_pt_br',$/;"	kind:variable	line:23
+name	../members/migrations/0006_auto_20190507_1645.py	/^            name='other_activities_en',$/;"	kind:variable	line:15
+name	../members/migrations/0006_auto_20190507_1645.py	/^            name='other_activities_pt_br',$/;"	kind:variable	line:20
+name	../members/migrations/0007_auto_20190507_1857.py	/^            name='AwardMembers',$/;"	kind:variable	line:17
+name	../members/migrations/0007_auto_20190507_1857.py	/^            name='awards',$/;"	kind:variable	line:31
+name	../members/migrations/0008_auto_20190507_1900.py	/^            name='awardmembers',$/;"	kind:variable	line:14
+name	../members/migrations/0008_auto_20190507_1900.py	/^            name='awards',$/;"	kind:variable	line:19
+name	../members/migrations/0009_auto_20190507_1901.py	/^            name='awards',$/;"	kind:variable	line:15
+name	../members/migrations/0010_auto_20190507_1941.py	/^            name='awards_and_publications',$/;"	kind:variable	line:15
+name	../members/migrations/0010_auto_20190507_1941.py	/^            name='awards_and_publications_en',$/;"	kind:variable	line:20
+name	../members/migrations/0010_auto_20190507_1941.py	/^            name='awards_and_publications_pt_br',$/;"	kind:variable	line:25
+name	../members/migrations/0010_auto_20190507_1941.py	/^            name='other_activities',$/;"	kind:variable	line:30
+name	../members/migrations/0010_auto_20190507_1941.py	/^            name='other_activities_en',$/;"	kind:variable	line:35
+name	../members/migrations/0010_auto_20190507_1941.py	/^            name='other_activities_pt_br',$/;"	kind:variable	line:40
+name	../members/migrations/0010_auto_20190507_1941.py	/^            name='specialization_sector',$/;"	kind:variable	line:45
+name	../members/models.py	/^    name = models.CharField("Nome", max_length=50)$/;"	kind:variable	line:17
+name	../members/models.py	/^    name = models.CharField("Nome", max_length=50)$/;"	kind:variable	line:28
+name	../portal/apps.py	/^    name = 'portal'$/;"	kind:variable	line:5
+name	../portal/forms.py	/^    name = forms.CharField(label='Nome', max_length=100, required=False)$/;"	kind:variable	line:11
+name	../portal/migrations/0001_initial.py	/^            name='Affiliate',$/;"	kind:variable	line:19
+name	../portal/migrations/0001_initial.py	/^            name='Approach',$/;"	kind:variable	line:29
+name	../portal/migrations/0001_initial.py	/^            name='Award',$/;"	kind:variable	line:42
+name	../portal/migrations/0001_initial.py	/^            name='Event',$/;"	kind:variable	line:61
+name	../portal/migrations/0001_initial.py	/^            name='JobTitle',$/;"	kind:variable	line:89
+name	../portal/migrations/0001_initial.py	/^            name='Language',$/;"	kind:variable	line:103
+name	../portal/migrations/0001_initial.py	/^            name='Member',$/;"	kind:variable	line:117
+name	../portal/migrations/0001_initial.py	/^            name='MemberAdministrativeStaff',$/;"	kind:variable	line:130
+name	../portal/migrations/0001_initial.py	/^            name='MemberIntern',$/;"	kind:variable	line:144
+name	../portal/migrations/0001_initial.py	/^            name='MemberLawyer',$/;"	kind:variable	line:156
+name	../portal/migrations/0001_initial.py	/^            name='MemberTrainee',$/;"	kind:variable	line:182
+name	../portal/migrations/0001_initial.py	/^            name='MemberType',$/;"	kind:variable	line:194
+name	../portal/migrations/0001_initial.py	/^            name='Office',$/;"	kind:variable	line:207
+name	../portal/migrations/0001_initial.py	/^            name='Opportunity',$/;"	kind:variable	line:237
+name	../portal/migrations/0001_initial.py	/^            name='Page',$/;"	kind:variable	line:259
+name	../portal/migrations/0001_initial.py	/^            name='PageParameter',$/;"	kind:variable	line:274
+name	../portal/migrations/0001_initial.py	/^            name='Partner',$/;"	kind:variable	line:293
+name	../portal/migrations/0001_initial.py	/^            name='PracticeArea',$/;"	kind:variable	line:303
+name	../portal/migrations/0001_initial.py	/^            name='Publication',$/;"	kind:variable	line:324
+name	../portal/migrations/0001_initial.py	/^            name='PublicationType',$/;"	kind:variable	line:353
+name	../portal/migrations/0001_initial.py	/^            name='SiteParameter',$/;"	kind:variable	line:366
+name	../portal/migrations/0001_initial.py	/^            name='SocialEntity',$/;"	kind:variable	line:384
+name	../portal/migrations/0001_initial.py	/^            name='SpecializationSector',$/;"	kind:variable	line:401
+name	../portal/migrations/0001_initial.py	/^            name='approach',$/;"	kind:variable	line:456
+name	../portal/migrations/0001_initial.py	/^            name='pageparameter',$/;"	kind:variable	line:452
+name	../portal/migrations/0001_initial.py	/^            name='practice_area',$/;"	kind:variable	line:448
+name	../portal/migrations/0001_initial.py	/^            name='practice_areas',$/;"	kind:variable	line:428
+name	../portal/migrations/0001_initial.py	/^            name='practice_areas',$/;"	kind:variable	line:433
+name	../portal/migrations/0001_initial.py	/^            name='practice_areas',$/;"	kind:variable	line:438
+name	../portal/migrations/0001_initial.py	/^            name='type',$/;"	kind:variable	line:423
+name	../portal/migrations/0001_initial.py	/^            name='type',$/;"	kind:variable	line:443
+name	../portal/migrations/0003_auto_20190424_1812.py	/^            name='description',$/;"	kind:variable	line:16
+name	../portal/migrations/0003_auto_20190424_1812.py	/^            name='description_en',$/;"	kind:variable	line:21
+name	../portal/migrations/0003_auto_20190424_1812.py	/^            name='description_pt_br',$/;"	kind:variable	line:26
+name	../portal/migrations/0004_auto_20190426_1417.py	/^            name='value',$/;"	kind:variable	line:15
+name	../portal/migrations/0004_auto_20190426_1417.py	/^            name='value_en',$/;"	kind:variable	line:20
+name	../portal/migrations/0004_auto_20190426_1417.py	/^            name='value_pt_br',$/;"	kind:variable	line:25
+name	../portal/migrations/0005_memberlawyer_phone.py	/^            name='phone',$/;"	kind:variable	line:15
+name	../portal/migrations/0005_publication_content.py	/^            name='content',$/;"	kind:variable	line:16
+name	../portal/migrations/0006_auto_20190429_1728.py	/^            name='AwardMembers',$/;"	kind:variable	line:17
+name	../portal/migrations/0007_memberlawyer_other_activities.py	/^            name='other_activities',$/;"	kind:variable	line:15
+name	../portal/migrations/0008_auto_20190429_1739.py	/^            name='other_activities',$/;"	kind:variable	line:15
+name	../portal/migrations/0009_event_related_members.py	/^            name='related_members',$/;"	kind:variable	line:15
+name	../portal/migrations/0010_auto_20190429_1844.py	/^            name='related_lawyers',$/;"	kind:variable	line:19
+name	../portal/migrations/0010_auto_20190429_1844.py	/^            name='related_members',$/;"	kind:variable	line:15
+name	../portal/migrations/0010_auto_20190429_1844.py	/^            name='related_trainees',$/;"	kind:variable	line:24
+name	../portal/migrations/0011_auto_20190429_1852.py	/^            name='related_events_lawyers',$/;"	kind:variable	line:23
+name	../portal/migrations/0011_auto_20190429_1852.py	/^            name='related_events_trainees',$/;"	kind:variable	line:28
+name	../portal/migrations/0011_auto_20190429_1852.py	/^            name='related_lawyers',$/;"	kind:variable	line:15
+name	../portal/migrations/0011_auto_20190429_1852.py	/^            name='related_trainees',$/;"	kind:variable	line:19
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='background_image',$/;"	kind:variable	line:45
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file',$/;"	kind:variable	line:115
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file',$/;"	kind:variable	line:50
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file',$/;"	kind:variable	line:70
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file',$/;"	kind:variable	line:95
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_en',$/;"	kind:variable	line:100
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_en',$/;"	kind:variable	line:120
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_en',$/;"	kind:variable	line:55
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_en',$/;"	kind:variable	line:75
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_pt_br',$/;"	kind:variable	line:105
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_pt_br',$/;"	kind:variable	line:125
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_pt_br',$/;"	kind:variable	line:60
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='file_pt_br',$/;"	kind:variable	line:80
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='flag',$/;"	kind:variable	line:35
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='logo',$/;"	kind:variable	line:15
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='logo',$/;"	kind:variable	line:65
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='photo',$/;"	kind:variable	line:40
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='picture',$/;"	kind:variable	line:110
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='picture',$/;"	kind:variable	line:130
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='picture',$/;"	kind:variable	line:20
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='picture',$/;"	kind:variable	line:25
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='picture',$/;"	kind:variable	line:30
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='picture',$/;"	kind:variable	line:85
+name	../portal/migrations/0013_auto_20190502_1232.py	/^            name='picture',$/;"	kind:variable	line:90
+name	../portal/migrations/0014_pageparameter_description.py	/^            name='description',$/;"	kind:variable	line:15
+name	../portal/migrations/0015_auto_20190502_1442.py	/^            name='description',$/;"	kind:variable	line:15
+name	../portal/migrations/0016_remove_pageparameter_description.py	/^            name='description',$/;"	kind:variable	line:15
+name	../portal/migrations/0017_auto_20190502_1456.py	/^            name='file',$/;"	kind:variable	line:15
+name	../portal/migrations/0017_auto_20190502_1456.py	/^            name='file_en',$/;"	kind:variable	line:19
+name	../portal/migrations/0017_auto_20190502_1456.py	/^            name='file_pt_br',$/;"	kind:variable	line:23
+name	../portal/migrations/0018_remove_language_flag.py	/^            name='flag',$/;"	kind:variable	line:15
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='background_image',$/;"	kind:variable	line:44
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file',$/;"	kind:variable	line:15
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file',$/;"	kind:variable	line:27
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file',$/;"	kind:variable	line:54
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file_en',$/;"	kind:variable	line:19
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file_en',$/;"	kind:variable	line:31
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file_en',$/;"	kind:variable	line:59
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file_pt_br',$/;"	kind:variable	line:23
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file_pt_br',$/;"	kind:variable	line:35
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='file_pt_br',$/;"	kind:variable	line:64
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='picture',$/;"	kind:variable	line:39
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='picture',$/;"	kind:variable	line:49
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='picture',$/;"	kind:variable	line:69
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='picture',$/;"	kind:variable	line:74
+name	../portal/migrations/0019_auto_20190502_1659.py	/^            name='picture',$/;"	kind:variable	line:79
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='background_image',$/;"	kind:variable	line:53
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='file',$/;"	kind:variable	line:68
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='file',$/;"	kind:variable	line:93
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='file_en',$/;"	kind:variable	line:73
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='file_en',$/;"	kind:variable	line:98
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='file_pt_br',$/;"	kind:variable	line:103
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='file_pt_br',$/;"	kind:variable	line:78
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='logo',$/;"	kind:variable	line:18
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='logo',$/;"	kind:variable	line:58
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='member',$/;"	kind:variable	line:28
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='picture',$/;"	kind:variable	line:108
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='picture',$/;"	kind:variable	line:113
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='picture',$/;"	kind:variable	line:23
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='picture',$/;"	kind:variable	line:33
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='picture',$/;"	kind:variable	line:38
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='picture',$/;"	kind:variable	line:63
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='picture',$/;"	kind:variable	line:83
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='related_events_lawyers',$/;"	kind:variable	line:43
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='related_events_trainees',$/;"	kind:variable	line:48
+name	../portal/migrations/0021_auto_20190502_1908.py	/^            name='related_members',$/;"	kind:variable	line:88
+name	../portal/migrations/0022_state_delete_members.py	/^            name='JobTitle',$/;"	kind:variable	line:54
+name	../portal/migrations/0022_state_delete_members.py	/^            name='Member',$/;"	kind:variable	line:57
+name	../portal/migrations/0022_state_delete_members.py	/^            name='MemberAdministrativeStaff',$/;"	kind:variable	line:60
+name	../portal/migrations/0022_state_delete_members.py	/^            name='MemberIntern',$/;"	kind:variable	line:63
+name	../portal/migrations/0022_state_delete_members.py	/^            name='MemberLawyer',$/;"	kind:variable	line:66
+name	../portal/migrations/0022_state_delete_members.py	/^            name='MemberTrainee',$/;"	kind:variable	line:69
+name	../portal/migrations/0022_state_delete_members.py	/^            name='MemberType',$/;"	kind:variable	line:72
+name	../portal/migrations/0022_state_delete_members.py	/^            name='job_title',$/;"	kind:variable	line:19
+name	../portal/migrations/0022_state_delete_members.py	/^            name='languages',$/;"	kind:variable	line:35
+name	../portal/migrations/0022_state_delete_members.py	/^            name='member',$/;"	kind:variable	line:23
+name	../portal/migrations/0022_state_delete_members.py	/^            name='member',$/;"	kind:variable	line:27
+name	../portal/migrations/0022_state_delete_members.py	/^            name='member',$/;"	kind:variable	line:39
+name	../portal/migrations/0022_state_delete_members.py	/^            name='member',$/;"	kind:variable	line:47
+name	../portal/migrations/0022_state_delete_members.py	/^            name='practice_areas',$/;"	kind:variable	line:31
+name	../portal/migrations/0022_state_delete_members.py	/^            name='practice_areas',$/;"	kind:variable	line:43
+name	../portal/migrations/0022_state_delete_members.py	/^            name='practice_areas',$/;"	kind:variable	line:51
+name	../portal/migrations/0022_state_delete_members.py	/^            name='type',$/;"	kind:variable	line:15
+name	../portal/migrations/0023_contact.py	/^            name='Contact',$/;"	kind:variable	line:14
+name	../portal/migrations/0024_auto_20190502_2001.py	/^            name='content',$/;"	kind:variable	line:17
+name	../portal/migrations/0024_auto_20190502_2001.py	/^            name='description',$/;"	kind:variable	line:27
+name	../portal/migrations/0024_auto_20190502_2001.py	/^            name='description_en',$/;"	kind:variable	line:32
+name	../portal/migrations/0024_auto_20190502_2001.py	/^            name='description_pt_br',$/;"	kind:variable	line:37
+name	../portal/migrations/0024_auto_20190502_2001.py	/^            name='requirements',$/;"	kind:variable	line:22
+name	../portal/migrations/0025_values.py	/^            name='Values',$/;"	kind:variable	line:14
+name	../portal/migrations/0026_auto_20190506_1535.py	/^            name='ApproachSector',$/;"	kind:variable	line:15
+name	../portal/migrations/0026_auto_20190506_1535.py	/^            name='approachsector',$/;"	kind:variable	line:29
+name	../portal/migrations/0027_auto_20190506_1744.py	/^            name='related_practice_areas',$/;"	kind:variable	line:15
+name	../portal/migrations/0027_auto_20190506_1744.py	/^            name='relates_specialization_sector',$/;"	kind:variable	line:20
+name	../portal/migrations/0028_auto_20190506_1751.py	/^            name='related_practice_areas',$/;"	kind:variable	line:20
+name	../portal/migrations/0028_auto_20190506_1751.py	/^            name='related_practice_areas',$/;"	kind:variable	line:35
+name	../portal/migrations/0028_auto_20190506_1751.py	/^            name='related_specialization_sector',$/;"	kind:variable	line:25
+name	../portal/migrations/0028_auto_20190506_1751.py	/^            name='related_specialization_sector',$/;"	kind:variable	line:30
+name	../portal/migrations/0028_auto_20190506_1751.py	/^            name='relates_specialization_sector',$/;"	kind:variable	line:16
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='description',$/;"	kind:variable	line:70
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='description_en',$/;"	kind:variable	line:75
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='description_pt_br',$/;"	kind:variable	line:80
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='logo',$/;"	kind:variable	line:17
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='logo',$/;"	kind:variable	line:21
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='logo_footer',$/;"	kind:variable	line:25
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='logo_footer',$/;"	kind:variable	line:35
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='logo_normal',$/;"	kind:variable	line:30
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='logo_normal',$/;"	kind:variable	line:40
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='name',$/;"	kind:variable	line:65
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='requirements',$/;"	kind:variable	line:85
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title',$/;"	kind:variable	line:105
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title',$/;"	kind:variable	line:120
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title',$/;"	kind:variable	line:135
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title',$/;"	kind:variable	line:45
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title',$/;"	kind:variable	line:60
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title',$/;"	kind:variable	line:90
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_en',$/;"	kind:variable	line:110
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_en',$/;"	kind:variable	line:125
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_en',$/;"	kind:variable	line:50
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_en',$/;"	kind:variable	line:95
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_pt_br',$/;"	kind:variable	line:100
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_pt_br',$/;"	kind:variable	line:115
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_pt_br',$/;"	kind:variable	line:130
+name	../portal/migrations/0029_auto_20190507_1750.py	/^            name='title_pt_br',$/;"	kind:variable	line:55
+name	../portal/migrations/0030_auto_20190507_1857.py	/^            name='AwardMembers',$/;"	kind:variable	line:18
+name	../portal/migrations/0030_auto_20190507_1857.py	/^            name='member',$/;"	kind:variable	line:15
+name	../portal/models.py	/^    name = CharField("Nome", max_length=50, default="")$/;"	kind:variable	line:253
+name	../portal/models.py	/^    name = CharField("Nome", max_length=50, default="")$/;"	kind:variable	line:319
+name	../portal/models.py	/^    name = CharField("Nome", max_length=50, default="")$/;"	kind:variable	line:334
+name	../portal/models.py	/^    name = CharField("Nome", max_length=50, unique=True)$/;"	kind:variable	line:142
+name	../portal/models.py	/^    name = CharField("Nome", max_length=50, unique=True)$/;"	kind:variable	line:70
+name	../portal/models.py	/^    name = CharField("Nome", max_length=50, unique=True)$/;"	kind:variable	line:93
+name	../portal/models.py	/^    name = SlugField("Nome", max_length=30)$/;"	kind:variable	line:50
+name	../portal/models.py	/^    name = SlugField("Nome", max_length=30, unique=True)$/;"	kind:variable	line:16
+neighborhood	../portal/models.py	/^    neighborhood = CharField("Bairro", max_length=50, default="")$/;"	kind:variable	line:209
+objects	../members/proxies.py	/^    objects = ProxyMemberManager()$/;"	kind:variable	line:15
+objects	../members/proxies.py	/^    objects = ProxyMemberManager()$/;"	kind:variable	line:26
+objects	../members/proxies.py	/^    objects = ProxyMemberManager()$/;"	kind:variable	line:37
+objects	../members/proxies.py	/^    objects = ProxyMemberManager()$/;"	kind:variable	line:48
+operations	../applying/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../applying/migrations/0002_auto_20190430_1620.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../applying/migrations/0003_auto_20190430_1632.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../members/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:134
+operations	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../members/migrations/0003_memberlawyer_vcard.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../members/migrations/0004_memberlawyer_specialization_sector.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../members/migrations/0005_auto_20190507_1429.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../members/migrations/0006_auto_20190507_1645.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../members/migrations/0007_auto_20190507_1857.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../members/migrations/0008_auto_20190507_1900.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../members/migrations/0009_auto_20190507_1901.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../members/migrations/0010_auto_20190507_1941.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:17
+operations	../portal/migrations/0002_load_intial_data.py	/^    operations = [$/;"	kind:variable	line:297
+operations	../portal/migrations/0003_auto_20190424_1812.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../portal/migrations/0004_auto_20190426_1417.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0005_memberlawyer_phone.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0005_publication_content.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../portal/migrations/0006_auto_20190429_1728.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../portal/migrations/0007_memberlawyer_other_activities.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0008_auto_20190429_1739.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0009_event_related_members.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0010_auto_20190429_1844.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0011_auto_20190429_1852.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0012_merge_20190430_2021.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../portal/migrations/0013_auto_20190502_1232.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0014_pageparameter_description.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0015_auto_20190502_1442.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0016_remove_pageparameter_description.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0017_auto_20190502_1456.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0018_remove_language_flag.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0019_auto_20190502_1659.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0020_alter_members_tables.py	/^    operations = [$/;"	kind:variable	line:24
+operations	../portal/migrations/0021_auto_20190502_1908.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../portal/migrations/0022_state_delete_members.py	/^    operations = [$/;"	kind:variable	line:76
+operations	../portal/migrations/0023_contact.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0024_auto_20190502_2001.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../portal/migrations/0025_values.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0026_auto_20190506_1535.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../portal/migrations/0027_auto_20190506_1744.py	/^    operations = [$/;"	kind:variable	line:12
+operations	../portal/migrations/0028_auto_20190506_1751.py	/^    operations = [$/;"	kind:variable	line:13
+operations	../portal/migrations/0029_auto_20190507_1750.py	/^    operations = [$/;"	kind:variable	line:14
+operations	../portal/migrations/0030_auto_20190507_1857.py	/^    operations = [$/;"	kind:variable	line:12
+opportunity	../applying/models.py	/^    opportunity = ForeignKey(Opportunity, PROTECT, related_name="related_applications")$/;"	kind:variable	line:13
+options	../applying/migrations/0002_auto_20190430_1620.py	/^            options={'verbose_name': 'currículo', 'verbose_name_plural': 'currículos'},$/;"	kind:variable	line:21
+options	../applying/migrations/0002_auto_20190430_1620.py	/^            options={'verbose_name': 'experiência profissional', 'verbose_name_plural': 'experiências profissionais'},$/;"	kind:variable	line:29
+options	../applying/migrations/0002_auto_20190430_1620.py	/^            options={'verbose_name': 'formação acadêmica', 'verbose_name_plural': 'formações acadêmicas'},$/;"	kind:variable	line:17
+options	../applying/migrations/0002_auto_20190430_1620.py	/^            options={'verbose_name': 'idioma', 'verbose_name_plural': 'idiomas'},$/;"	kind:variable	line:25
+options	../members/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:108
+options	../members/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:122
+options	../members/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:26
+options	../members/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:40
+options	../members/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:52
+options	../members/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:66
+options	../members/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:95
+options	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            options={$/;"	kind:variable	line:17
+options	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            options={$/;"	kind:variable	line:29
+options	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            options={$/;"	kind:variable	line:41
+options	../members/migrations/0002_proxyadministrativestaff_proxyintern_proxylawyer_proxytrainee.py	/^            options={$/;"	kind:variable	line:53
+options	../members/migrations/0007_auto_20190507_1857.py	/^            options={$/;"	kind:variable	line:25
+options	../members/migrations/0008_auto_20190507_1900.py	/^            options={'verbose_name': 'prêmios de advogado'},$/;"	kind:variable	line:15
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:111
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:124
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:136
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:149
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:175
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:187
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:201
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:231
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:24
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:254
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:268
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:286
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:298
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:317
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:346
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:36
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:360
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:377
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:394
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:415
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:55
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:83
+options	../portal/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:96
+options	../portal/migrations/0006_auto_20190429_1728.py	/^            options={$/;"	kind:variable	line:26
+options	../portal/migrations/0023_contact.py	/^            options={$/;"	kind:variable	line:22
+options	../portal/migrations/0025_values.py	/^            options={$/;"	kind:variable	line:20
+options	../portal/migrations/0026_auto_20190506_1535.py	/^            options={$/;"	kind:variable	line:23
+ordering	../members/models.py	/^        ordering = ["first_name"]$/;"	kind:variable	line:47
+ordering	../members/models.py	/^        ordering = ["member__first_name"]$/;"	kind:variable	line:116
+ordering	../members/models.py	/^        ordering = ["member__first_name"]$/;"	kind:variable	line:130
+ordering	../members/models.py	/^        ordering = ["member__first_name"]$/;"	kind:variable	line:143
+ordering	../members/models.py	/^        ordering = ["member__first_name"]$/;"	kind:variable	line:156
+ordering	../members/models.py	/^        ordering = ["name"]$/;"	kind:variable	line:33
+ordering	../portal/models.py	/^        ordering = ["-creation_date"]$/;"	kind:variable	line:283
+ordering	../portal/models.py	/^        ordering = ["-date", "-time"]$/;"	kind:variable	line:308
+ordering	../portal/models.py	/^        ordering = ["-is_highlight"]$/;"	kind:variable	line:163
+ordering	../portal/models.py	/^        ordering = ["-is_parent"]$/;"	kind:variable	line:219
+ordering	../portal/models.py	/^        ordering = ["name"]$/;"	kind:variable	line:105
+ordering	../portal/models.py	/^        ordering = ["name"]$/;"	kind:variable	line:148
+ordering	../portal/models.py	/^        ordering = ["name"]$/;"	kind:variable	line:24
+ordering	../portal/models.py	/^        ordering = ["name"]$/;"	kind:variable	line:327
+ordering	../portal/models.py	/^        ordering = ["name"]$/;"	kind:variable	line:58
+ordering	../portal/models.py	/^        ordering = ["name"]$/;"	kind:variable	line:82
+ordering	../portal/models.py	/^        ordering = ["title"]$/;"	kind:variable	line:43
+other_activities	../members/models.py	/^    other_activities = models.TextField("Outras Atividades", default="", blank=True)$/;"	kind:variable	line:107
+page	../portal/models.py	/^    page = ForeignKey(Page, CASCADE, verbose_name="Página", related_name="parameters")$/;"	kind:variable	line:53
+page_background_cover	../portal/templatetags/site_tags.py	/^def page_background_cover(context):$/;"	kind:function	line:96
+page_param	../portal/templatetags/site_tags.py	/^def page_param(context, param_name):$/;"	kind:function	line:29
+parameter_name	../applying/admin.py	/^    parameter_name = 'opportunities'$/;"	kind:variable	line:40
+periodo	../applying/models.py	/^    periodo = CharField("Periodo", max_length=150)$/;"	kind:variable	line:30
+phone	../applying/models.py	/^    phone = CharField("Telefone", max_length=19, default="")$/;"	kind:variable	line:10
+phone	../members/models.py	/^    phone = models.CharField("Telefone", max_length=19, default="")$/;"	kind:variable	line:102
+phone	../portal/models.py	/^    phone = CharField("Telefone", max_length=19, default="")$/;"	kind:variable	line:213
+photo	../members/models.py	/^    def photo(self):$/;"	kind:member	line:83
+photo	../members/models.py	/^    photo = models.ImageField("Foto", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:42
+picture	../members/models.py	/^    picture = models.ImageField("Imagem", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:57
+picture	../portal/models.py	/^    picture = ImageField("Capa da publicação", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:269
+picture	../portal/models.py	/^    picture = ImageField("Capa da página", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:95
+picture	../portal/models.py	/^    picture = ImageField("Capa do evento", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:297
+picture	../portal/models.py	/^    picture = ImageField("Imagem", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:155
+picture	../portal/models.py	/^    picture = ImageField("Imagem", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:72
+picture	../portal/models.py	/^    picture = ImageField("Logo da entidade social", blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:320
+post	../portal/views.py	/^  def post(self, request, *args, **kwargs):$/;"	kind:member	line:338
+postcode	../portal/models.py	/^    postcode = CharField("CEP", max_length=10, default="")$/;"	kind:variable	line:212
+practice_area	../portal/models.py	/^    practice_area = ForeignKey(PracticeArea, CASCADE, verbose_name="Área de Atuação", related_name="approaches")$/;"	kind:variable	line:118
+practice_areas	../members/models.py	/^    practice_areas = models.ManyToManyField("portal.PracticeArea", related_name="interns")$/;"	kind:variable	line:152
+practice_areas	../members/models.py	/^    practice_areas = models.ManyToManyField("portal.PracticeArea", verbose_name="Áreas de Atuação", related_name="lawyers")$/;"	kind:variable	line:109
+practice_areas	../members/models.py	/^    practice_areas = models.ManyToManyField("portal.PracticeArea", verbose_name="Áreas de Atuação", related_name="trainees")$/;"	kind:variable	line:139
+prepopulated_fields	../portal/admin.py	/^	prepopulated_fields = dict(slug=["title"])$/;"	kind:variable	line:19
+preserve_default	../applying/migrations/0002_auto_20190430_1620.py	/^            preserve_default=False,$/;"	kind:variable	line:35
+production.py	../dafonte_portal/settings/production.py	1;"	kind:file	line:1
+professional_experience	../members/models.py	/^    professional_experience = models.TextField("Experiência Profisisonal")$/;"	kind:variable	line:105
+proxies.py	../members/proxies.py	1;"	kind:file	line:1
+proxy	../members/proxies.py	/^        proxy = True$/;"	kind:variable	line:18
+proxy	../members/proxies.py	/^        proxy = True$/;"	kind:variable	line:29
+proxy	../members/proxies.py	/^        proxy = True$/;"	kind:variable	line:40
+proxy	../members/proxies.py	/^        proxy = True$/;"	kind:variable	line:51
+publication_date	../members/models.py	/^    publication_date = models.DateField("Data de Publicação", default=datetime.now)$/;"	kind:variable	line:58
+publication_date	../portal/models.py	/^    publication_date = DateField("Data de Publicação", default=datetime.now)$/;"	kind:variable	line:156
+queryset	../applying/admin.py	/^    def queryset(self, request, queryset):$/;"	kind:member	line:60
+readonly_fields	../members/admin.py	/^    readonly_fields = ("member_type", )$/;"	kind:variable	line:54
+register	../portal/templatetags/culture_tags.py	/^register = template.Library()$/;"	kind:variable	line:7
+register	../portal/templatetags/site_tags.py	/^register = template.Library()$/;"	kind:variable	line:12
+related_applications	../portal/models.py	/^    def related_applications(self):$/;"	kind:member	line:244
+related_events_lawyers	../members/models.py	/^    def related_events_lawyers(self):$/;"	kind:member	line:95
+related_events_lawyers	../portal/models.py	/^    related_events_lawyers = ManyToManyField("members.MemberLawyer", verbose_name="Advogados Relacionados", related_name="related_events_lawyers", blank=True)$/;"	kind:variable	line:298
+related_events_trainees	../portal/models.py	/^    related_events_trainees = ManyToManyField("members.MemberTrainee", verbose_name="Trainees Relacionados", related_name="related_events_trainees", blank=True)$/;"	kind:variable	line:299
+related_members	../portal/models.py	/^    related_members = ManyToManyField("members.Member", verbose_name="Membros Relacionados", related_name="related_publications", blank=True)$/;"	kind:variable	line:278
+related_practice_areas	../portal/models.py	/^    related_practice_areas = ManyToManyField(PracticeArea, verbose_name="Áreas de Atuação Relacionadas", related_name="related_event_areas", blank=True)$/;"	kind:variable	line:300
+related_practice_areas	../portal/models.py	/^    related_practice_areas = ManyToManyField(PracticeArea, verbose_name="Áreas de Atuação Relacionadas", related_name="related_publication_areas", blank=True)$/;"	kind:variable	line:274
+related_professional	../applying/models.py	/^def related_professional(self):$/;"	kind:function	line:23
+related_publications	../members/models.py	/^    def related_publications(self):$/;"	kind:member	line:91
+related_specialization_sector	../portal/models.py	/^    related_specialization_sector = ManyToManyField(SpecializationSector, verbose_name="Setores de Especialização Relacionados", related_name="related_event_sectors", blank=True)$/;"	kind:variable	line:301
+related_specialization_sector	../portal/models.py	/^    related_specialization_sector = ManyToManyField(SpecializationSector, verbose_name="Setores de Especialização Relacionados", related_name="related_publication_sectors", blank=True)$/;"	kind:variable	line:275
+requirements	../portal/models.py	/^    requirements = RichTextUploadingField("Requisitos", default="", max_length=3000)$/;"	kind:variable	line:230
+save	../portal/models.py	/^    def save(self, *args, **kwargs):$/;"	kind:member	line:313
+save_model	../members/admin.py	/^    def save_model(self, request, obj, form, change):$/;"	kind:member	line:61
+search_fields	../applying/admin.py	/^    search_fields = ("name", "opportunity__title")$/;"	kind:variable	line:87
+search_fields	../members/admin.py	/^    search_fields = ["first_name", "last_name"]$/;"	kind:variable	line:55
+selected	../portal/templatetags/site_tags.py	/^def selected(expected, value):$/;"	kind:function	line:55
+site	../portal/models.py	/^    site = URLField("Site", default="")$/;"	kind:variable	line:322
+site_param	../portal/templatetags/site_tags.py	/^def site_param(param_name):$/;"	kind:function	line:16
+site_tags.py	../portal/templatetags/site_tags.py	1;"	kind:file	line:1
+slug	../applying/views.py	/^    slug = "opportunity-detail"$/;"	kind:variable	line:11
+slug	../members/views.py	/^    slug = "member-detail"$/;"	kind:variable	line:60
+slug	../members/views.py	/^    slug = "member-list"$/;"	kind:variable	line:11
+slug	../portal/models.py	/^    slug = SlugField("Slug", unique=True)$/;"	kind:variable	line:36
+slug	../portal/views.py	/^  slug = "article-list"$/;"	kind:variable	line:215
+slug	../portal/views.py	/^  slug = "award-list"$/;"	kind:variable	line:158
+slug	../portal/views.py	/^  slug = "contact"$/;"	kind:variable	line:318
+slug	../portal/views.py	/^  slug = "culture"$/;"	kind:variable	line:145
+slug	../portal/views.py	/^  slug = "event-list"$/;"	kind:variable	line:257
+slug	../portal/views.py	/^  slug = "home"$/;"	kind:variable	line:42
+slug	../portal/views.py	/^  slug = "practice-area-detail"$/;"	kind:variable	line:117
+slug	../portal/views.py	/^  slug = "practice-area-list"$/;"	kind:variable	line:71
+slug	../portal/views.py	/^  slug = "press-list"$/;"	kind:variable	line:171
+slug	../portal/views.py	/^  slug = "social-reponsability"$/;"	kind:variable	line:294
+slug	../portal/views.py	/^  slug = "specialization-sector-detail"$/;"	kind:variable	line:96
+slug	../portal/views.py	/^  slug = "who-we-are"$/;"	kind:variable	line:140
+slug	../portal/views.py	/^  slug = None$/;"	kind:variable	line:23
+slug	../portal/views.py	/^  slug="article-detail"$/;"	kind:variable	line:244
+slug	../portal/views.py	/^  slug="event-detail"$/;"	kind:variable	line:281
+slug	../portal/views.py	/^  slug="press-detail"$/;"	kind:variable	line:202
+specialization_sector	../members/models.py	/^    specialization_sector = models.ManyToManyField("portal.SpecializationSector", verbose_name="Setor de Especialização", related_name="lawyers", blank=True)$/;"	kind:variable	line:110
+specialization_sector	../portal/models.py	/^    specialization_sector = ForeignKey(SpecializationSector, CASCADE, verbose_name="Setor de Especialização", related_name="approaches", null=True)$/;"	kind:variable	line:131
+spots	../portal/models.py	/^    spots = IntegerField("Vagas", default=0)$/;"	kind:variable	line:231
+staging.py	../dafonte_portal/settings/staging.py	1;"	kind:file	line:1
+state	../portal/models.py	/^    state = CharField("Estado", max_length=50, default="")$/;"	kind:variable	line:207
+state_operations	../members/migrations/0001_initial.py	/^    state_operations = [$/;"	kind:variable	line:17
+state_operations	../portal/migrations/0020_alter_members_tables.py	/^            state_operations=state_operations$/;"	kind:variable	line:27
+state_operations	../portal/migrations/0020_alter_members_tables.py	/^    state_operations = []$/;"	kind:variable	line:22
+state_operations	../portal/migrations/0022_state_delete_members.py	/^    state_operations = [$/;"	kind:variable	line:12
+telefone	../portal/forms.py	/^    telefone = forms.CharField(label='Telefone', max_length=20, required=False)$/;"	kind:variable	line:13
+telefone	../portal/models.py	/^    telefone = CharField("Telefone", max_length=20, default="")$/;"	kind:variable	line:336
+template_name	../applying/views.py	/^    template_name = "opportunity-detail.html"$/;"	kind:variable	line:10
+template_name	../members/views.py	/^    template_name = "member-detail.html"$/;"	kind:variable	line:59
+template_name	../members/views.py	/^    template_name = "member-list.html"$/;"	kind:variable	line:10
+template_name	../portal/views.py	/^  template_name = "article-detail.html"$/;"	kind:variable	line:243
+template_name	../portal/views.py	/^  template_name = "article-list.html"$/;"	kind:variable	line:214
+template_name	../portal/views.py	/^  template_name = "award-list.html"$/;"	kind:variable	line:157
+template_name	../portal/views.py	/^  template_name = "contact.html"$/;"	kind:variable	line:317
+template_name	../portal/views.py	/^  template_name = "culture.html"$/;"	kind:variable	line:144
+template_name	../portal/views.py	/^  template_name = "event-detail.html"$/;"	kind:variable	line:280
+template_name	../portal/views.py	/^  template_name = "event-list.html"$/;"	kind:variable	line:256
+template_name	../portal/views.py	/^  template_name = "home.html"$/;"	kind:variable	line:41
+template_name	../portal/views.py	/^  template_name = "practice-area-detail.html"$/;"	kind:variable	line:116
+template_name	../portal/views.py	/^  template_name = "practice-area-list.html"$/;"	kind:variable	line:70
+template_name	../portal/views.py	/^  template_name = "press-detail.html"$/;"	kind:variable	line:201
+template_name	../portal/views.py	/^  template_name = "press-list.html"$/;"	kind:variable	line:170
+template_name	../portal/views.py	/^  template_name = "social-reponsability.html"$/;"	kind:variable	line:293
+template_name	../portal/views.py	/^  template_name = "specialization-sector-detail.html"$/;"	kind:variable	line:95
+template_name	../portal/views.py	/^  template_name = "who-we-are.html"$/;"	kind:variable	line:139
+test.py	../dafonte_portal/settings/test.py	1;"	kind:file	line:1
+tests.py	../applying/tests.py	1;"	kind:file	line:1
+tests.py	../members/tests.py	1;"	kind:file	line:1
+tests.py	../portal/tests.py	1;"	kind:file	line:1
+text	../portal/models.py	/^    text = TextField("Texto")$/;"	kind:variable	line:116
+text	../portal/models.py	/^    text = TextField("Texto")$/;"	kind:variable	line:129
+time	../portal/models.py	/^    time = TimeField("Horário", blank=True, null=True)$/;"	kind:variable	line:291
+title	../applying/admin.py	/^    title = 'opportunities'$/;"	kind:variable	line:37
+title	../members/models.py	/^    title = models.CharField("Título", max_length=100, default="")$/;"	kind:variable	line:59
+title	../portal/models.py	/^    title = CharField("Titulo", max_length=200, default="")$/;"	kind:variable	line:346
+title	../portal/models.py	/^    title = CharField("Título", max_length=200, default="")$/;"	kind:variable	line:157
+title	../portal/models.py	/^    title = CharField("Título", max_length=200, default="")$/;"	kind:variable	line:226
+title	../portal/models.py	/^    title = CharField("Título", max_length=200, default="")$/;"	kind:variable	line:265
+title	../portal/models.py	/^    title = CharField("Título", max_length=200, unique=True)$/;"	kind:variable	line:35
+title_internal	../portal/models.py	/^    title_internal = CharField("Título Interno", max_length=50, blank=True, null=True)$/;"	kind:variable	line:266
+trans_lang	../portal/templatetags/site_tags.py	/^def trans_lang(lang_code):$/;"	kind:function	line:86
+translation.py	../applying/translation.py	1;"	kind:file	line:1
+translation.py	../members/translation.py	1;"	kind:file	line:1
+translation.py	../portal/translation.py	1;"	kind:file	line:1
+type	../members/models.py	/^    type = models.ForeignKey(MemberType, models.PROTECT, verbose_name="Tipo de Membro", related_name="members")$/;"	kind:variable	line:43
+type	../portal/models.py	/^    type = ForeignKey(PublicationType, PROTECT, verbose_name="Tipo de Publicação", related_name="publications")$/;"	kind:variable	line:277
+unique_together	../portal/migrations/0001_initial.py	/^            unique_together={('page', 'name')},$/;"	kind:variable	line:453
+unique_together	../portal/migrations/0001_initial.py	/^            unique_together={('practice_area', 'text')},$/;"	kind:variable	line:457
+unique_together	../portal/migrations/0026_auto_20190506_1535.py	/^            unique_together={('specialization_sector', 'text')},$/;"	kind:variable	line:30
+unique_together	../portal/models.py	/^        unique_together = ("practice_area", "text")$/;"	kind:variable	line:123
+unique_together	../portal/models.py	/^        unique_together = ("specialization_sector", "text")$/;"	kind:variable	line:136
+unique_together	../portal/models.py	/^        unique_together = [("page", "name")]$/;"	kind:variable	line:59
+upfile	../portal/templatetags/site_tags.py	/^def upfile(file_path):$/;"	kind:function	line:92
+upload_to	../dafonte_portal/utils.py	/^def upload_to(instance, filename):$/;"	kind:function	line:2
+urlpatterns	../dafonte_portal/urls.py	/^urlpatterns = [$/;"	kind:variable	line:28
+urlpatterns	../members/urls.py	/^urlpatterns = [$/;"	kind:variable	line:10
+urls.py	../dafonte_portal/urls.py	1;"	kind:file	line:1
+urls.py	../members/urls.py	1;"	kind:file	line:1
+utils.py	../dafonte_portal/utils.py	1;"	kind:file	line:1
+validators.py	../portal/validators.py	1;"	kind:file	line:1
+value	../portal/models.py	/^    value = TextField("Valor", blank=True, null=True)$/;"	kind:variable	line:17
+value	../portal/models.py	/^    value = TextField("Valor", default='', blank=True)$/;"	kind:variable	line:51
+vcard	../members/models.py	/^    vcard = models.FileField(blank=True, null=True, upload_to=upload_to)$/;"	kind:variable	line:103
+vehicle	../portal/models.py	/^    vehicle = CharField("Veículo", max_length=100, blank=True, null=True)$/;"	kind:variable	line:271
+verbose_name	../applying/models.py	/^        verbose_name = "currículo"$/;"	kind:variable	line:16
+verbose_name	../applying/models.py	/^        verbose_name = "experiência profissional"$/;"	kind:variable	line:35
+verbose_name	../applying/models.py	/^        verbose_name = "formação acadêmica"$/;"	kind:variable	line:48
+verbose_name	../applying/models.py	/^        verbose_name = "idioma"$/;"	kind:variable	line:59
+verbose_name	../members/models.py	/^        verbose_name = "advogado"$/;"	kind:variable	line:115
+verbose_name	../members/models.py	/^        verbose_name = "estagiário"$/;"	kind:variable	line:155
+verbose_name	../members/models.py	/^        verbose_name = "membro da equipe administrativa"$/;"	kind:variable	line:128
+verbose_name	../members/models.py	/^        verbose_name = "membro"$/;"	kind:variable	line:46
+verbose_name	../members/models.py	/^        verbose_name = "prêmios de advogado"$/;"	kind:variable	line:63
+verbose_name	../members/models.py	/^        verbose_name = "tipo de membro"$/;"	kind:variable	line:20
+verbose_name	../members/models.py	/^        verbose_name = "trainee"$/;"	kind:variable	line:142
+verbose_name	../members/models.py	/^        verbose_name = "título da função"$/;"	kind:variable	line:31
+verbose_name	../members/proxies.py	/^        verbose_name = MemberAdministrativeStaff._meta.verbose_name$/;"	kind:variable	line:52
+verbose_name	../members/proxies.py	/^        verbose_name = MemberIntern._meta.verbose_name$/;"	kind:variable	line:19
+verbose_name	../members/proxies.py	/^        verbose_name = MemberLawyer._meta.verbose_name$/;"	kind:variable	line:30
+verbose_name	../members/proxies.py	/^        verbose_name = MemberTrainee._meta.verbose_name$/;"	kind:variable	line:41
+verbose_name	../portal/models.py	/^        verbose_name = "Contato"$/;"	kind:variable	line:340
+verbose_name	../portal/models.py	/^        verbose_name = "afiliado"$/;"	kind:variable	line:195
+verbose_name	../portal/models.py	/^        verbose_name = "entidade social"$/;"	kind:variable	line:325
+verbose_name	../portal/models.py	/^        verbose_name = "escritório"$/;"	kind:variable	line:218
+verbose_name	../portal/models.py	/^        verbose_name = "evento"$/;"	kind:variable	line:307
+verbose_name	../portal/models.py	/^        verbose_name = "idioma"$/;"	kind:variable	line:147
+verbose_name	../portal/models.py	/^        verbose_name = "oportunidade"$/;"	kind:variable	line:234
+verbose_name	../portal/models.py	/^        verbose_name = "parceiro"$/;"	kind:variable	line:183
+verbose_name	../portal/models.py	/^        verbose_name = "parâmetro de página"$/;"	kind:variable	line:56
+verbose_name	../portal/models.py	/^        verbose_name = "parâmetro do site"$/;"	kind:variable	line:22
+verbose_name	../portal/models.py	/^        verbose_name = "prêmio"$/;"	kind:variable	line:162
+verbose_name	../portal/models.py	/^        verbose_name = "publicação"$/;"	kind:variable	line:281
+verbose_name	../portal/models.py	/^        verbose_name = "página"$/;"	kind:variable	line:42
+verbose_name	../portal/models.py	/^        verbose_name = "setor de especialização"$/;"	kind:variable	line:103
+verbose_name	../portal/models.py	/^        verbose_name = "solução"$/;"	kind:variable	line:121
+verbose_name	../portal/models.py	/^        verbose_name = "solução"$/;"	kind:variable	line:134
+verbose_name	../portal/models.py	/^        verbose_name = "tipo de publicação"$/;"	kind:variable	line:256
+verbose_name	../portal/models.py	/^        verbose_name = "valor"$/;"	kind:variable	line:350
+verbose_name	../portal/models.py	/^        verbose_name = "área de atuação"$/;"	kind:variable	line:80
+verbose_name_plural	../applying/models.py	/^        verbose_name_plural = "currículos"$/;"	kind:variable	line:17
+verbose_name_plural	../applying/models.py	/^        verbose_name_plural = "experiências profissionais"$/;"	kind:variable	line:36
+verbose_name_plural	../applying/models.py	/^        verbose_name_plural = "formações acadêmicas"$/;"	kind:variable	line:49
+verbose_name_plural	../applying/models.py	/^        verbose_name_plural = "idiomas"$/;"	kind:variable	line:60
+verbose_name_plural	../members/models.py	/^        verbose_name_plural = "membros da equipe administrativa"$/;"	kind:variable	line:129
+verbose_name_plural	../members/models.py	/^        verbose_name_plural = "tipos de membro"$/;"	kind:variable	line:21
+verbose_name_plural	../members/models.py	/^        verbose_name_plural = "titulos das funções"$/;"	kind:variable	line:32
+verbose_name_plural	../members/proxies.py	/^        verbose_name_plural = MemberAdministrativeStaff._meta.verbose_name_plural$/;"	kind:variable	line:53
+verbose_name_plural	../members/proxies.py	/^        verbose_name_plural = MemberIntern._meta.verbose_name_plural$/;"	kind:variable	line:20
+verbose_name_plural	../members/proxies.py	/^        verbose_name_plural = MemberLawyer._meta.verbose_name_plural$/;"	kind:variable	line:31
+verbose_name_plural	../members/proxies.py	/^        verbose_name_plural = MemberTrainee._meta.verbose_name_plural$/;"	kind:variable	line:42
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "Contatos"$/;"	kind:variable	line:341
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "entidades sociais"$/;"	kind:variable	line:326
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "parâmetros de página"$/;"	kind:variable	line:57
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "parâmetros do site"$/;"	kind:variable	line:23
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "publicações"$/;"	kind:variable	line:282
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "setores de especialização"$/;"	kind:variable	line:104
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "soluções"$/;"	kind:variable	line:122
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "soluções"$/;"	kind:variable	line:135
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "tipos de publicação"$/;"	kind:variable	line:257
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "valores"$/;"	kind:variable	line:351
+verbose_name_plural	../portal/models.py	/^        verbose_name_plural = "áreas de atuação"$/;"	kind:variable	line:81
+views.py	../applying/views.py	1;"	kind:file	line:1
+views.py	../members/views.py	1;"	kind:file	line:1
+views.py	../portal/views.py	1;"	kind:file	line:1
+wsgi.py	../dafonte_portal/wsgi.py	1;"	kind:file	line:1

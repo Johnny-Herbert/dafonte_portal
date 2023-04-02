@@ -1,0 +1,203 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static "stylesheets/lib-customs/slick.min.css" %}" />
+<link rel="stylesheet" href="{% static "stylesheets/navigation-circle.css" %}" />
+<link rel="stylesheet" href="{% static "stylesheets/search-container.css" %}" />
+<link rel="stylesheet" href="{% static "stylesheets/home.css" %}" />
+{% endblock %}
+{% block extra_js %}
+<script src="{% static "js/home.js" %}"></script>
+<script src="{% static "js/member-list.js" %}"></script>
+{% endblock %}
+
+{% block header_content %}
+<div class="blurb-header">
+	<h1 class="title">{% page_param "header-blurb-title" %}</h1>
+	<div class="text">{% page_param "header-blurb-text" %}</div>
+	<a class="btn btn-pill btn-primary together" href="{% url "practice-area-list" %}">{% trans "Conheça nossa atuação" %}</a>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row first-row">
+	<div class="col-lg-6 blurb-letsgo">
+		<div>
+			<h2 class="title">{% page_param "letsgo-blurb-title" %}</h2>
+			<div class="text">{% page_param "letsgo-blurb-text" %}</div>
+			<a class="btn btn-pill btn-outline-primary together" href="{% url "who-we-are" %}"> {% trans "Conheça nossa história" %}</a>
+		</div>
+	</div>
+	<div class="col-lg-6 awards-showcase">
+		<div>
+			{% for award in highlighted_awards %}
+			<div class="highlighted-award">
+				<div class="award-picture">
+					{% if award.picture %}
+					<img src="{{ award.picture.url }}" alt="Logo do Prêmio" />
+					{% endif %}
+				</div>
+				<div class="award-text">
+					{{ award.title }}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<span class="emphasis"><a href="{% url 'award-list' %}">
+				{% trans "Saiba mais sobre nossas premiações" %}</a></span>
+	</div>
+</div>
+
+{% include "includes/calendar.html" %}
+
+<div class="row third-row" style="overflow:hidden">
+	<div class="col-lg-4 blurb-practice-area">
+		<div>
+			<div class="modal-found-us">
+				<h2 class="title">{% page_param "practice-area-blurb-title" %}</h2>
+				<div class="text">{% page_param "practice-area-blurb-text" %}</div>
+				<button class="btn btn-pill btn-outline-primary office"><a
+						href="{% url "who-we-are"  %}">{% trans "Encontre nossos escritórios" %}</a></button>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-8 practice-area-list">
+		<div class="practice-area-list-container">
+			<h4 class="title">{% trans "Áreas de atuação:" %}</h4>
+			<ul class="practice-area-list-content">
+				{% for practice_area in practice_areas|slice:":14" %}
+				<li class="list-wrap-icon">
+					<div>
+						<div class="wrap-icon">
+							<i class="material-icons">navigate_next</i>
+							<i class="material-icons last">navigate_next</i>
+						</div>
+						<div>
+							<a href="{% url "practice-area-detail" practice_area.id %}">{{ practice_area.name }}</a>
+						</div>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+			<ul class="practice-area-list-content">
+				<li class="view-all list-wrap-icon">
+					<div class="wrap-icon">
+						<i class="material-icons">navigate_next</i>
+						<i class="material-icons last">navigate_next</i>
+					</div>
+					<a href="{% url "practice-area-list" %}#practice-areas" class="emphasis">{% trans "Ver todas as áreas de atuação" %}</a>
+				</li>
+			</ul>
+		</div>
+		<div class="practice-area-list-container specialization-sectors">
+			<h4 class="title">{% trans "Setores de especialização:" %}</h4>
+			<ul class="practice-area-list-content" id="sectors-of-expertise">
+				{% for sector in specialization_sector|slice:":5" %}
+				<li class="list-wrap-icon">
+					<div class="wrap-icon">
+						<i class="material-icons">navigate_next</i>
+						<i class="material-icons last">navigate_next</i>
+					</div>
+					<a href="{% url "specialization-sector-detail" sector.id %}">{{ sector.name }}</a>
+				</li>
+				{% endfor %}
+				<li class="view-all list-wrap-icon">
+					<div class="wrap-icon">
+						<i class="material-icons">navigate_next</i>
+						<i class="material-icons last">navigate_next</i>
+					</div>
+					<a href="{% url "practice-area-list" %}#specialization-sectors" class="emphasis">{% trans "Ver todos os setores de especialização" %}</a>
+				</li>
+			</ul>
+		</div>
+		<div class="d-block d-lg-none emphasis">Ver todas as áreas de atuação</div>
+		<form class="search-container" action="{% url "member-list" %}" method="GET">
+			<h4 class="title">{% trans "Pesquisar por um de nossos profissionais:" %}</h4>
+			<div class="filters row column-gutters">
+				<div class="col-lg-8">
+					<div class="search">
+						<input name="search-term" class="form-control" placeholder="{% trans 'Buscar pelo nome' %}" />
+						<label id="search-term-icon" class="material-icons">search</label>
+					</div>
+					<div class="filters-initial">
+						<input id="filter-by-initial" name="filter-by-initial" type="hidden" value="false" />
+						{% for initial in initials %}
+							<label>
+								<input type="radio" name="member-initial" value="{{ initial.value }}"
+									{% checked initial.value selected_initial %} {% disabled initial.disabled %} />
+								<span class="{% if initial.disabled  %} initials-invalid {% else %} initials-valid {% endif %}" >{{ initial.value }}</span>
+							</label>
+						•
+						{% endfor %}
+					</div>
+				</div>
+				{% comment %} <div class="col-lg-12 filter-area">
+					<div style="max-width: 850px;">
+						<select name="filter-practice-area" class="form-control area-select">
+							<option value="all" selected>{% trans "Todas as Áreas" %}</option>
+							{% for practice_area in practice_areas %}
+							<option value="{{ practice_area.id }}">{{ practice_area.name }}</option>
+							{% endfor %}
+						</select>
+						<i class="material-icons select-icon">keyboard_arrow_down</i>
+					</div>
+				</div> {% endcomment %}
+			</div>
+		</form>
+	</div>
+</div>
+
+{% include "includes/opportunities-row.html" %}
+
+<div class="row social-reponsability-row">
+	<div class="col-lg-4 social-responsability-blurb-column">
+		<div class="social-responsability-blurb">
+			<h3 class="title">{% page_param "social-responsability-title" %}</h3>
+			<p class="text">{% page_param "social-responsability-text" %}</p>
+			<button class="btn btn-pill btn-outline-primary social"><a
+					href="{% url "social-responsability" %}">{% trans "Saiba mais" %}</a></button>
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="entity-card-list">
+			<div class="entity-card-scroller">
+				<div class="slide-social">
+					{% for entity in social_entities %}
+					<div class="entity-card">
+						{% if entity.picture %}
+						<div class="entity-picture" style="background-image:url({{ entity.picture.url }})"
+							alt="Logo da Entidade">
+						</div>
+						{% else %}
+						<div class="entity-picture" 
+							alt="Logo da Entidade">
+						</div>
+						{% endif %}
+						<div class="entity-info">
+							<div class="entity-name">{{ entity.name }}</div>
+							<div class="entity-description">{{ entity.description }}</div>
+							<a href="{{ entity.site }}" class="emphasis">{% trans "Conheça o projeto" %}</a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row fifth-row">
+	<div class="col-12 together">
+		<div>
+			<h2 class="title">{% trans "Vamos conversar?" %}</h2>
+			<a  class="btn btn-pill btn-primary" href="{% url "contact" %}">{% trans "Entrar em contato" %}</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

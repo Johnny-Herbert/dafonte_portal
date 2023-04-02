@@ -1,0 +1,25 @@
+@import "global-variables";
+
+.content-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 60vh;
+    background-color: #262729;
+    padding:0;
+
+    .center-content{
+        h1{
+            font-size: 15em;
+            font-weight: 600;
+            text-align: center;
+            @media screen and (max-width: 500px){
+                font-size: 8em;
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

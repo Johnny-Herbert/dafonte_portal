@@ -1,0 +1,32 @@
+.content-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 60vh;
+  background-color: #262729;
+  padding: 0;
+}
+
+.content-error .center-content h1 {
+  font-size: 15em;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .content-error .center-content h1 {
+    font-size: 8em;
+  }
+}
+
+.content-error .center-content p {
+  text-align: center;
+}
+/*# sourceMappingURL=error-pages.css.map */

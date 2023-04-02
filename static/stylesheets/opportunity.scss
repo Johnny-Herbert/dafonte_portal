@@ -1,0 +1,86 @@
+@import "global-variables";
+
+.opportunity-content {
+  background-color: white;
+  color: black;
+  min-width: 70%;
+  min-height: 300px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .not-available{
+    margin:50px;
+  }
+
+  .opportunity-info{
+    width: 60%;
+    margin-top: 20px;
+    @media screen and(max-width:$breakpoint-phone){
+      width:90%;
+    }
+  }
+
+  .form-infos-block{
+    padding-bottom: 2em;
+    padding-top: 1em;
+    border-bottom: dotted;
+    border-bottom-color: #d8d8d8;
+    border-bottom-width: 2px;
+  }
+
+  .opportunity-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    border: dotted;
+    border-color: #d8d8d8;
+    border-width: 2px;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    @media screen and (max-width: $breakpoint-phone) {
+      width: 90%;
+    }
+  }
+  .form-control {
+    background-color: #f7f7f7;
+    color: #010101;
+  }
+  h5 {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 35px;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: black;
+  }
+
+  .btn .send {
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    resize: none;
+    background-color: #f7f7f7;
+    color: #010101;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    padding: 5px;
+    width: 100%;
+    @media screen and (max-width: $breakpoint-phone) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{% extends "base-with-split-header.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+{% load util_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+{% block back_url %}{% url "home" %}{% endblock %}
+
+{% block extra_css %}
+	{{ block.super }}
+	<style>
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			.header{display:block;}
+			.header .logo{padding-top:50px;}
+		}
+	</style>
+	<link rel="stylesheet" href="{% static "stylesheets/navigation-circle.css" %}" />
+	<link rel="stylesheet" href="{% static "stylesheets/search-container.css" %}" />
+	<link rel="stylesheet" href="{% static "stylesheets/article-list.css" %}" />
+{% endblock %}
+{% block extra_js %}
+	<script src="{% static "js/press-list.js" %}"></script>
+{% endblock %}
+
+{% block header_content %}
+	<div class="header-left">
+		<div class="page-title">
+			<div class="title">{% trans "Publicações" %} / {% trans "Artigos" %}</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block split_header_content %}
+	<div id="header-desktop" class="header-right d-none d-lg-block">
+		<form class="search-container" action="{% url "article-list" %}" method="GET">
+			<div class="filters row column-gutters">
+				<div class="offset-4 col-lg-9">
+					<div class="search">
+						<input name="search-term" class="form-control" placeholder="{% trans "Buscar nos Artigos" %}" />
+						<label id="search-term-icon" class="material-icons">search</label>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="article-list-container container-head">
+			<div class="article-list article-list-header">
+				{% for article in articles|slice:":2" %}
+					<div id="article-{{article.id}}" class="article-card {% if forloop.counter == 2 %}break-window{% endif %}">
+						<div class="article-card-header">
+							{% if article.picture %}
+								<img src="{{ article.picture.url }}" alt="Imagem da Notícia" />
+							{% endif %}
+						</div>
+						<div class="article-card-body">
+							<h6>{{ article.title }}</h6>
+							<p>{{ article.description_short }}</p>
+							<p>{{ article.creation_date | date:"d/m/Y"}}</p>
+						</div>
+						<div class="full-article-container">
+							<a class="btn btn-pill btn-primary" href="{% url "article-detail" article.pk %}">{% trans "Ler artigo completo" %}</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="article-list-container">
+		<div class="d-lg-none" style="padding-top:20px">
+			<form style="margin-top: 0px;" class="search-container" action="{% url "article-list" %}" method="GET">
+				<div class="filters row column-gutters">
+					<div class="col-lg-9">
+						<div class="search">
+							<input name="search-term" class="form-control" placeholder="{% trans "Buscar nos Artigos" %}" />
+							<label id="search-term-icon" class="material-icons">search</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="article-list">
+			{% if not articles %}
+				<p>Não foi possível localizar um conteúdo com o termo "{{search_term}}". Favor verificar as informações.</p>
+			{% endif %}
+			{% for article in articles %}
+				<div id="article-{{article.id}}" class="article-card">
+					<div class="article-card-header">
+						{% if article.picture.name %}
+							<img src="{{ article.picture.url }}" alt="Imagem da Notícia" />
+						{% endif %}
+					</div>
+					<div class="article-card-body">
+						<h6>{{ article.title }}</h6>
+						<p>{{ article.description_short }}</p>
+						<p>{{ article.creation_date | date:"d/m/Y"}}</p>
+					</div>
+					<div class="full-article-container">
+						<a class="btn btn-pill btn-primary" href="{% url "article-detail" article.pk %}">{% trans "Ler artigo completo" %}</a>
+					</div>
+				</div>
+			{% endfor %}
+        </div>
+		<div class="pagination d-none d-lg-flex">
+			<div class="arrow-left {% classed articles.has_previous False "disabled" %}">
+				<a {% if articles.has_previous %}href="?page={{ articles.previous_page_number }}"{% endif %}>
+					<i class="material-icons">arrow_back</i>
+				</a>
+			</div>
+
+			{% make_range 1 num_pages as pages_left %}
+			{% for page_number in pages_left %}
+				<div class="page-number {% classed current_page page_number "page-current" %}">
+					{% if search_term %}
+						<a href="?page={{ page_number }}&search-term={{ search_term }}">{{ page_number }}</a>
+					{% else %}
+						<a href="?page={{ page_number }}">{{ page_number }}</a>
+					{% endif %}
+				</div>
+			{% endfor %}
+			{% if num_pages > 5 %}
+				<div class="ellipsis">...</div>
+			{% endif %}
+			<div class="arrow-right {% classed articles.has_next False "disabled" %}">
+				<a {% if articles.has_next %}href="?page={{ articles.next_page_number }}"{% endif %}>
+					<i class="material-icons">arrow_forward</i>
+				</a>
+			</div>
+        </div>
+	</div>
+{% endblock %}

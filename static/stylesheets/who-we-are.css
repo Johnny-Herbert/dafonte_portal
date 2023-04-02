@@ -1,0 +1,409 @@
+.who-we-are-container {
+  background-color: #262729;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .who-we-are-container {
+    overflow: hidden;
+  }
+}
+
+.who-we-are-container h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.who-we-are-container .row {
+  margin-left: -48px;
+  margin-right: -48px;
+}
+
+.who-we-are-container .row > div {
+  padding: 48px;
+}
+
+.who-we-are-text {
+  color: #D5D8DE;
+  font-size: 14px;
+}
+
+.awards-showcase,
+.partners-container,
+.affiliate-container {
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -32px -25px 0px;
+  min-height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .awards-showcase,
+  .partners-container,
+  .affiliate-container {
+    margin: -12px -16px 20px;
+  }
+}
+
+.awards-showcase .award:nth-child(n + 4),
+.partners-container .award:nth-child(n + 4),
+.affiliate-container .award:nth-child(n + 4) {
+  display: none;
+}
+
+.awards-showcase .affiliate,
+.awards-showcase .partner,
+.partners-container .affiliate,
+.partners-container .partner,
+.affiliate-container .affiliate,
+.affiliate-container .partner {
+  margin: 30px -11px;
+}
+
+.awards-showcase .award,
+.partners-container .award,
+.affiliate-container .award {
+  text-align: center;
+  margin: 32px 12px;
+}
+
+.awards-showcase .award,
+.awards-showcase .partner,
+.awards-showcase .affiliate,
+.partners-container .award,
+.partners-container .partner,
+.partners-container .affiliate,
+.affiliate-container .award,
+.affiliate-container .partner,
+.affiliate-container .affiliate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 140px;
+}
+
+@media screen and (max-width: 767px) {
+  .awards-showcase .award,
+  .awards-showcase .partner,
+  .awards-showcase .affiliate,
+  .partners-container .award,
+  .partners-container .partner,
+  .partners-container .affiliate,
+  .affiliate-container .award,
+  .affiliate-container .partner,
+  .affiliate-container .affiliate {
+    margin: 12px 16px;
+    width: 110px;
+  }
+}
+
+.awards-showcase .award .award-picture,
+.awards-showcase .award .partner-picture,
+.awards-showcase .award .affiliate-picture,
+.awards-showcase .partner .award-picture,
+.awards-showcase .partner .partner-picture,
+.awards-showcase .partner .affiliate-picture,
+.awards-showcase .affiliate .award-picture,
+.awards-showcase .affiliate .partner-picture,
+.awards-showcase .affiliate .affiliate-picture,
+.partners-container .award .award-picture,
+.partners-container .award .partner-picture,
+.partners-container .award .affiliate-picture,
+.partners-container .partner .award-picture,
+.partners-container .partner .partner-picture,
+.partners-container .partner .affiliate-picture,
+.partners-container .affiliate .award-picture,
+.partners-container .affiliate .partner-picture,
+.partners-container .affiliate .affiliate-picture,
+.affiliate-container .award .award-picture,
+.affiliate-container .award .partner-picture,
+.affiliate-container .award .affiliate-picture,
+.affiliate-container .partner .award-picture,
+.affiliate-container .partner .partner-picture,
+.affiliate-container .partner .affiliate-picture,
+.affiliate-container .affiliate .award-picture,
+.affiliate-container .affiliate .partner-picture,
+.affiliate-container .affiliate .affiliate-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .awards-showcase .award .award-picture,
+  .awards-showcase .award .partner-picture,
+  .awards-showcase .award .affiliate-picture,
+  .awards-showcase .partner .award-picture,
+  .awards-showcase .partner .partner-picture,
+  .awards-showcase .partner .affiliate-picture,
+  .awards-showcase .affiliate .award-picture,
+  .awards-showcase .affiliate .partner-picture,
+  .awards-showcase .affiliate .affiliate-picture,
+  .partners-container .award .award-picture,
+  .partners-container .award .partner-picture,
+  .partners-container .award .affiliate-picture,
+  .partners-container .partner .award-picture,
+  .partners-container .partner .partner-picture,
+  .partners-container .partner .affiliate-picture,
+  .partners-container .affiliate .award-picture,
+  .partners-container .affiliate .partner-picture,
+  .partners-container .affiliate .affiliate-picture,
+  .affiliate-container .award .award-picture,
+  .affiliate-container .award .partner-picture,
+  .affiliate-container .award .affiliate-picture,
+  .affiliate-container .partner .award-picture,
+  .affiliate-container .partner .partner-picture,
+  .affiliate-container .partner .affiliate-picture,
+  .affiliate-container .affiliate .award-picture,
+  .affiliate-container .affiliate .partner-picture,
+  .affiliate-container .affiliate .affiliate-picture {
+    width: 110px !important;
+    height: 110px !important;
+    padding: 0px;
+  }
+}
+
+.awards-showcase .award .award-picture img,
+.awards-showcase .award .partner-picture img,
+.awards-showcase .award .affiliate-picture img,
+.awards-showcase .partner .award-picture img,
+.awards-showcase .partner .partner-picture img,
+.awards-showcase .partner .affiliate-picture img,
+.awards-showcase .affiliate .award-picture img,
+.awards-showcase .affiliate .partner-picture img,
+.awards-showcase .affiliate .affiliate-picture img,
+.partners-container .award .award-picture img,
+.partners-container .award .partner-picture img,
+.partners-container .award .affiliate-picture img,
+.partners-container .partner .award-picture img,
+.partners-container .partner .partner-picture img,
+.partners-container .partner .affiliate-picture img,
+.partners-container .affiliate .award-picture img,
+.partners-container .affiliate .partner-picture img,
+.partners-container .affiliate .affiliate-picture img,
+.affiliate-container .award .award-picture img,
+.affiliate-container .award .partner-picture img,
+.affiliate-container .award .affiliate-picture img,
+.affiliate-container .partner .award-picture img,
+.affiliate-container .partner .partner-picture img,
+.affiliate-container .partner .affiliate-picture img,
+.affiliate-container .affiliate .award-picture img,
+.affiliate-container .affiliate .partner-picture img,
+.affiliate-container .affiliate .affiliate-picture img {
+  width: 98%;
+  max-width: 100%;
+}
+
+.awards-showcase .award .award-description,
+.awards-showcase .partner .award-description,
+.awards-showcase .affiliate .award-description,
+.partners-container .award .award-description,
+.partners-container .partner .award-description,
+.partners-container .affiliate .award-description,
+.affiliate-container .award .award-description,
+.affiliate-container .partner .award-description,
+.affiliate-container .affiliate .award-description {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.awards-showcase .award .affiliate-picture,
+.awards-showcase .award .partner-picture,
+.awards-showcase .partner .affiliate-picture,
+.awards-showcase .partner .partner-picture,
+.awards-showcase .affiliate .affiliate-picture,
+.awards-showcase .affiliate .partner-picture,
+.partners-container .award .affiliate-picture,
+.partners-container .award .partner-picture,
+.partners-container .partner .affiliate-picture,
+.partners-container .partner .partner-picture,
+.partners-container .affiliate .affiliate-picture,
+.partners-container .affiliate .partner-picture,
+.affiliate-container .award .affiliate-picture,
+.affiliate-container .award .partner-picture,
+.affiliate-container .partner .affiliate-picture,
+.affiliate-container .partner .partner-picture,
+.affiliate-container .affiliate .affiliate-picture,
+.affiliate-container .affiliate .partner-picture {
+  width: 120px;
+  height: 120px;
+}
+
+.affiliate-container, .partners-container, .awards-showcase {
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .affiliate-container, .partners-container, .awards-showcase {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.institutional-folder {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.institutional-folder > :first-child {
+  margin-bottom: 16px;
+}
+
+.inst-green {
+  color: #13B277;
+}
+
+.mobile-offices-container {
+  margin-left: -32px;
+  margin-right: -32px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.offices-map {
+  background-color: #1ACE8A;
+}
+
+.offices-map .office-vertical-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offices-map .office-vertical-list .office {
+  cursor: pointer;
+  padding: 16px 24px;
+  border-radius: 8px 0 0 8px;
+  margin: 8px 0;
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+
+.offices-map .office-vertical-list .office.active {
+  background-color: #13B277;
+}
+
+.offices-map .office-vertical-list .office:first-child {
+  margin-top: 64px;
+}
+
+.offices-map .office-vertical-list .office:last-child {
+  margin-bottom: 64px;
+}
+
+.offices-map .office-vertical-list .office .city {
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.offices-map .office-vertical-list .office .location {
+  font-size: 11px;
+  color: #3E3E3E;
+  margin-bottom: 4px;
+}
+
+.offices-map .office-vertical-list .office .contact {
+  font-size: 11px;
+}
+
+.offices-map .offices-maps {
+  width: calc(100% + 165px);
+  height: 100%;
+  margin-right: -165px;
+  overflow: hidden;
+}
+
+.offices-map .offices-maps .map {
+  height: 100%;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+
+.offices-map .offices-maps .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.maps-phone {
+  width: calc(100% + 64px);
+  height: 707px;
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
+@media screen and (max-width: 767px) {
+  .maps-phone {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.maps-phone .maps-scroller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.maps-phone .map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+}
+
+.maps-phone .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.right-content {
+  background-color: white;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  .right-content {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=who-we-are.css.map */

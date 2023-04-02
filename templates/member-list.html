@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{{ page.background_image.url }}{% endblock %}
+
+{% block extra_css %}
+<style>
+	.header{min-height:auto;}
+</style>
+<link rel="stylesheet" href="{% static 'stylesheets/lawyer-card.css' %}" />
+<link rel="stylesheet" href="{% static 'stylesheets/search-container.css' %}" />
+<link rel="stylesheet" href="{% static 'stylesheets/member-list.css' %}" />
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'js/member-list.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="member-list-container">
+	<form class="row column-gutters">
+		<div class="col-12">
+			<div class="search-container">
+				<div class="filters row column-gutters">
+					<div class="col-lg-3">
+						<div class="search">
+							<input name="search-term" class="form-control" value="{{ search_term }}"
+								placeholder="{% trans 'Buscar pelo nome' %}" />
+							<label id="search-term-icon" class="material-icons">search</label>
+						</div>
+					</div>
+					<div class="col">
+						<div class="filters-initial">
+							<input id="filter-by-initial" name="filter-by-initial" type="hidden" value="false" />
+							{% for initial in initials %}
+							<label>
+								<input type="radio" name="member-initial" value="{{ initial.value }}"
+									{% checked initial.value selected_initial %} {% disabled initial.disabled %} />
+								<span>{{ initial.value }}</span>
+							</label>
+							•
+							{% endfor %}
+							<label>
+								<input type="radio" name="member-initial" value="" {% checked '' selected_initial %} />
+								<span>{% trans "Todas" %}</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-filters">
+			<ul class="member-type-area-filter">
+				<li class="{% classed filter_member_type 'all' 'active' %}" data-member-type="all">
+					<div>
+						<span>{% trans "Todos" %}</span>
+						<i class="material-icons">keyboard_arrow_right</i>
+						<input name="filter-member-type" type="radio" value="all"
+							{% checked filter_member_type "all" %} />
+					</div>
+				</li>
+				<li class="{% classed filter_member_type 'lawyer' 'active' %}" data-member-type="lawyer">
+					<div>
+						<span>{% trans "Advogados" %}</span>
+						<i class="material-icons">keyboard_arrow_right</i>
+						<input name="filter-member-type" type="radio" value="lawyer"
+							{% checked filter_member_type "lawyer" %} />
+						<input name="filter-practice-area" type="radio" value="all"
+							{% checked filter_practice_area "all" %} />
+						<input name="filter-specialization-sector" type="radio" value="all"
+							{% checked filter_specialization_sector "all" %} />
+					</div>
+					<ul class="practice-area-filter">
+						{% for practice_area in practice_areas %}
+						<li class="{% classed filter_practice_area practice_area.id 'active' %}">
+							<div>
+								<span>{{ practice_area.name }}</span>
+								<input name="filter-practice-area" type="radio" value="{{ practice_area.id }}"
+									{% checked filter_practice_area practice_area.id %} />
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+					<ul class="specialization-sector-filter">
+						{% for specialization_sector in specialization_sectors %}
+						<li class="{% classed filter_specialization_sector specialization_sector.id 'active' %}">
+							<div>
+								<span>{{ specialization_sector.name }}</span>
+								<input name="filter-specialization-sector" type="radio" value="{{ specialization_sector.id }}"
+									{% checked filter_specialization_sector specialization_sector.id %} />
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li class="{% classed filter_member_type 'ti' 'active' %}" data-member-type="ti">
+					<div>
+						<span>{% trans "Trainees e Estagiários" %}</span>
+						<i class="material-icons">keyboard_arrow_right</i>
+						<input name="filter-member-type" type="radio" value="ti"
+							{% checked filter_member_type "ti" %} />
+					</div>
+				</li>
+				<li class="{% classed filter_member_type 'staff' 'active' %}" data-member-type="staff">
+					<div>
+						<span>{% trans "Equipe administrativa" %}</span>
+						<i class="material-icons">keyboard_arrow_right</i>
+						<input name="filter-member-type" type="radio" value="staff"
+							{% checked filter_member_type "staff" %} />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col-lg-9">
+			<div class="laywer-card-list">
+				<div class="lawyer-scroller">
+					{% for member in members %}
+					<div class="member-card-container type-lawyer">
+						<div class="member-card">
+							<div class="member-photo">
+								{% if member.photo.file is not None %}
+								<div class="photo" style="background-image:url('{{ member.photo.url }}')"></div>
+								<!-- <img src="{{ member.photo.url }}" alt="Foto" /> -->
+								{% else %}
+								<i class="material-icons">person</i>
+								{% endif %}
+								<div class="member-name">
+									<p>{{ member.full_name }}</p>
+									{% if member.type.name == 'Trainee' %}
+									<p class="member-type">{{member.type}}</p>
+									{% else %}
+										{% if member.intern.sex %}
+											{% if member.intern.sex == 'M' %}
+											<p class="member-type">{% trans "Estagiário" %}</p>
+											{% else %}
+											<p class="member-type">{% trans "Estagiária" %}</p>
+											{% endif %}
+										{% endif %}
+									{% endif %}
+								</div>
+							</div>
+							<div class="member-body">
+								<ul style="overflow-y: auto; overflow-x: hidden; max-height: 100%">
+									{% if member.administrative_staff%}
+									{{ member.administrative_staff.job_title.name }}
+									{% endif %}
+									{% for practice_area in member.lawyer.practice_areas.all%}
+									<li>{{ practice_area.name }}</li>
+									{% endfor %}
+									{% for practice_area in member.intern.practice_areas.all %}
+									<li>{{ practice_area.name }}</li>
+									{% endfor %}
+									{% for practice_area in member.trainee.practice_areas.all %}
+									<li>{{ practice_area.name }}</li>
+									{% endfor %}
+
+									{% if member.lawyer.practice_areas.all and member.lawyer.specialization_sector.all %}
+									<li class="member-divisor"></li>
+									{% endif %}
+
+									{% if member.intern.practice_areas.all and member.intern.specialization_sectors.all %}
+									<li class="member-divisor"></li>
+									{% endif %}
+
+									{% if member.trainee.practice_areas.all and member.trainee.specialization_sectors.all %}
+									<li class="member-divisor"></li>
+									{% endif %}
+									
+									
+									{% for specialization_sector in member.lawyer.specialization_sector.all %}
+									<li>{{ specialization_sector.name }}</li>
+									{% endfor %}
+
+									{% for specialization_sector in member.intern.specialization_sectors.all %}
+									<li>{{ specialization_sector.name }}</li>
+									{% endfor %}
+
+									{% for specialization_sector in member.trainee.specialization_sectors.all %}
+									<li>{{ specialization_sector.name }}</li>
+									{% endfor %}
+								</ul>
+								
+								{% if member.lawyer %}
+								<div class="wrap-btn d-none d-lg-block">
+									<a href="{% url 'member-detail' member.lawyer.id %}"
+										class="btn btn-pill btn-primary btn-sm btn-member">
+										{% trans "Ver perfil completo" %}
+									</a>
+								</div>
+								<div class="wrap-btn d-lg-none">
+									<a href="{% url 'member-detail' member.lawyer.id %}">{% trans "Ver perfil completo" %}</a>
+								</div>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+					{% empty%}
+					<div class="not-found-container">
+						<i class="material-icons not-found">search</i>
+						<p>
+							{% trans "Nenhum profissional foi encontrado na sua busca. Tente novamente." %}
+						</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+{% include "includes/opportunities-row.html" %}
+
+{% endblock %}

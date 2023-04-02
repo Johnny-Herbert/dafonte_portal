@@ -1,0 +1,62 @@
+{% extends "base-with-header-content.html" %}
+
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+{% block header_bg_url %}{% if page.background_image %}{{ page.background_image.url }}{% else %} aaaaaaa {% endif%}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static "stylesheets/article-detail.css" %}" />
+{% endblock %}
+
+{% block header_content %}
+<div class="blurb-header article-title">
+	<div class="text uppercase">{% trans "Publicações" %}/{% trans "Artigos" %}</div>
+	<h1 class="title">{{article.title}}</h1>
+</div>
+{% endblock %}
+{% block content %}
+<div class="article-container">
+	<div class="article-mobile">
+		<div class="article-back-mobile">
+			<a href="{% url "article-list" %}">
+				<i class="material-icons">
+					arrow_back
+				</i>
+				<p>{% trans "Voltar" %}</p>
+			</a>
+		</div>
+		<div class="article-date-mobile"> {% trans "Publicado em" %}: {{ article.creation_date | date:"SHORT_DATE_FORMAT" }}</div>
+
+	</div>
+	<div class="article-back col-3">
+		<a href="{% url "article-list" %}">
+			<i class="material-icons">
+				arrow_back
+			</i>
+			<p>{% trans "Voltar" %}</p>
+		</a>
+	</div>
+	<div class="article-mid col-sm-12 col-md-6">
+		<div class=" article-members">
+			{% for member in article.related_members.all %}
+			<span>
+				{% if member.photo %}
+				<img src="{{ member.photo.url }}" alt="Imagem do Membro" />
+				{% else %}
+				<img src="{% static "images/pics/member-photo-placeholder.png"%}" alt="Imagem Padrão do Membro" />
+				{% endif %}
+				<p>{{ member.full_name }}</p>
+			</span>
+			{% endfor %}
+		</div>
+		<div class="article-content">
+			{{ article.content | safe }}
+		</div>
+	</div>
+	<div class="article-date col-3"> {% trans "Publicado em" %}: {{ article.creation_date | date:"SHORT_DATE_FORMAT" }}</div>
+</div>
+
+
+{% endblock %}

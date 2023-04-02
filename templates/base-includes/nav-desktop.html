@@ -1,0 +1,131 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load site_tags %}
+
+<nav class="nav-desktop">
+	<div class="row">
+		<div class="header-languages">
+			<form class="language-menu" action="{% url "set_language" %}" method="post">
+				{% csrf_token %}
+				<input name="next" type="hidden" value="{{ redirect_to }}" />
+				<input name="language" type="hidden" value="" />
+
+				{% get_current_language as current_language_code %}
+				{% get_language_info for current_language_code as current_language %}
+				<div class="current-language">
+					<!-- <i class="flag">
+						{% static "images/icons/flags" as flag_folder %}
+						{% flag_file current_language_code as flag_file %}
+						<img src="{{ flag_folder }}/{{ flag_file }}" alt="Bandeira" />
+					</i> -->
+					<span>{% trans_lang current_language.code %}</span>
+					<i class="material-icons">keyboard_arrow_down</i>
+				</div>
+
+				{% get_available_languages as available_languages_codes %}
+				{% get_language_info_list for available_languages_codes as available_languages %}
+				<ul class="language-list header-dropdown">
+					{% for language in available_languages %}
+						{% if language.code != current_language.code %}
+							<li data-language-code="{{ language.code }}">
+								<a>
+									<!-- <i class="flag">
+										{% static "images/icons/flags" as flag_folder %}
+										{% flag_file language.code as flag_file %}
+										<img src="{{ flag_folder }}/{{ flag_file }}" alt="Bandeira" />
+									</i> -->
+									<span>{% trans_lang language.code %}</span>
+								</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</form>
+		</div>
+		<div class="header-navigation">
+			<ul>
+				<li>
+					<a href="{% url "practice-area-list" %}">{% trans "Atuação" %}</a>
+				</li>
+
+
+
+
+				<li class="dropdown-container who-we-are">
+					<div class="drop-label">
+						<div>
+							<span>{% trans "Quem Somos" %}</span>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="header-dropdown">
+							<li><a  href="{% url "who-we-are" %}">{% trans "Institucional / Escritórios" %}</a></li>
+							<li><a href="{% url "culture" %}">{% trans "Cultura Empresarial" %}</a></li>
+							<li><a href="{% url "member-list" %}?filter-member-type=lawyer">{% trans "Equipe" %}</a></li>
+							<li>
+								<hr />
+							</li>
+							<li>
+								<a href="{% url "institutional-folder" %}">
+									<i class="fas fa-file-download folder-icon"></i>
+									<span>{% trans "Folder Institucional" %}</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+
+
+				<li class="dropdown-container pubilcations" style="justify-content: flex-start">
+					<div>
+						<div>
+							<span>{% trans "Publicações" %}</span>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="header-dropdown">
+							<li>
+								<a href="{% url "press-list" %}">{% trans "Imprensa" %}</a>
+							</li>
+							<li>
+								<a href="{% url "article-list" %}">{% trans "Artigos" %}</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li><a href="{% url "event-list" %}">{% trans "Eventos" %}</a></li>
+
+				<li class="dropdown-container who-we-are">
+					<div class="drop-label" style="align-items: baseline">
+						<div>
+							<span>{% trans "Ética e Privacidade" %}</span>
+							<i class="material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="header-dropdown">
+							<li><a  href="{% url "compliance" %}">{% trans "Compliance" %}</a></li>
+							<li><a href="{% url "collaboration" %}">{% trans "Canal de colaboração" %}</a></li>
+							<li>
+								<hr />
+							</li>
+							<li>
+								<a href="{% url "code-of-conduct" %}">
+									<i class="fas fa-file-download folder-icon"></i>
+									<span>{% trans "Código de conduta" %}</span>
+								</a>
+							</li>
+							<li>
+								<a href="{% url "privacy-policy" %}">
+									<i class="fas fa-file-download folder-icon"></i>
+									<span>{% trans "Política de Privacidade" %}</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+
+				<li><a href="{% url "social-responsability" %}">{% trans "Responsabilidade Social" %}</a></li>
+				<li><a href="{% url "contact" %}">{% trans "Contato" %}</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,33 @@
+version: "2"
+services:
+  db:
+    image: postgres:10.1
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=dafonte_portal
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    command: postgres
+
+  app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/dafonte_portal
+      # - AWS_ACCESS_KEY_ID=AKIAIO2IGSCPXW5ESHOQ
+      # - AWS_SECRET_ACCESS_KEY=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
+      # - AWS_STORAGE_BUCKET_NAME=dafonte-files
+      # - AWS_S3_REGION_NAME=us-east-1
+      - AWS_ACCESS_KEY_ID=2OMQTX2CMKSOPIWIHOPT
+      - AWS_SECRET_ACCESS_KEY=igdUMpeQEgj75O7R4UNGVeOdvNIC24Fz5Ltr05gpl3U
+      - AWS_STORAGE_BUCKET_NAME=dafonte-site-arquivos
+      - AWS_S3_REGION_NAME=fra1
+      
+    depends_on:
+      - db
+    stdin_open: true
+    tty: true
