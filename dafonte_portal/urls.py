@@ -25,7 +25,8 @@ from portal.views import (
     ArticleDetailView, EventListView, EventDetailView,
     SocialResponsabilityView, ContactView, PressDetailView,
     SpecializationSectorDetailView, InstitutionalFolderView, 
-    CodeConductView, PrivacyPolicy, ComplianceView, CollaborationView
+    CodeConductView, PrivacyPolicy, ComplianceView, CollaborationView,
+    InformativeListView, InformativeDetailView
 )
 from applying.views import OpportunityView, ApplyToPdf
 
@@ -53,6 +54,10 @@ urlpatterns = [
          ArticleListView.as_view(), name="article-list"),
     path("publications/article/<int:article_pk>/",
          ArticleDetailView.as_view(), name="article-detail"),
+    path("publications/informative/",
+         InformativeListView.as_view(), name="informative-list"),
+    path("publications/informative/<int:informative_pk>/",
+         InformativeDetailView.as_view(), name="informative-detail"),
     path("events/", EventListView.as_view(), name="event-list"),
     path("events/<int:event_pk>/",
          EventDetailView.as_view(), name="event-detail"),

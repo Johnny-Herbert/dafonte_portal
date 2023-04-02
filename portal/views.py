@@ -259,6 +259,46 @@ class ArticleDetailView(PageView):
       context.update(article=article)
     return context
 
+class InformativeListView(PageView):
+  template_name = "informative-list.html"
+  slug = "informative-list"
+
+  def get(self, request, *args, **kwargs):
+    super(InformativeListView, self).get(request, *args, **kwargs)
+    context = super().get_context_data(**kwargs)
+    search_term = request.GET.get("search-term", "")
+
+    informatives = Publication.objects.filter(type__id=PublicationType.INFORMATIVE)
+
+    if search_term:
+      informatives = informatives.filter(title__icontains=search_term)
+
+    paginator = Paginator(informatives,10)
+    page = request.GET.get("page", 1)
+    page_informatives = paginator.get_page(page)
+
+    context.update(
+        informatives=page_informatives,
+        current_page=page,
+        num_pages=paginator.num_pages,
+        search_term=search_term
+    )
+
+    return self.render_to_response(context)
+
+class InformativeDetailView(PageView):
+  template_name = "informative-detail.html"
+  slug="informative-detail"
+
+  def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    informative_pk = self.kwargs.get("informative_pk", None)
+
+    if self.object.id is not None:
+      informative = get_object_or_404(Publication, pk=informative_pk)
+      context.update(informative=informative)
+    return context
+
 class EventListView(PageView):
   template_name = "event-list.html"
   slug = "event-list"
