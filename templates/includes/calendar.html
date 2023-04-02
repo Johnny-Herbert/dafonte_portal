@@ -61,8 +61,10 @@
                 <a href="
                     {% if publication.type.name == 'Imprensa' %}
                         {% url 'press-detail' publication.pk %}
-                    {% else %}
+                    {% elif publication.type.name == 'Artigo'  %}
                         {% url 'article-detail' publication.pk %}
+                    {% else %}
+                        {% url 'informative-detail' publication.pk %}
                     {% endif %}
                 ">{% trans "Acesse a publicação" %}</a>
             </div>
